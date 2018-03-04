@@ -574,3 +574,53 @@ Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperat
 Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 18.96 ms (1)
 Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 5.43 ms (1)
 Mar 04 12:52:28 symfony [info] {sfWebResponse} Send content (38969 o)
+Mar 04 14:01:41 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 14:01:41 symfony [info] {myUser} Automatic user logout due to timeout
+Mar 04 14:01:41 symfony [info] {myUser} User is not authenticated
+Mar 04 14:01:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 14:01:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 14:01:41 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 14:01:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 14:01:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 14:01:41, 1)
+Mar 04 14:01:41 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 14:01:41 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 14:01:41 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 14:01:41 symfony [info] {main} Get slot "title"
+Mar 04 14:01:41 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 14:01:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 14:01:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 14:01:41 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 14:01:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} Configuration 26.14 ms (13)
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} Factories 31.06 ms (1)
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 92.60 ms (1)
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.70 ms (2)
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 18.89 ms (1)
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 7.74 ms (1)
+Mar 04 14:01:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 2.80 ms (1)
+Mar 04 14:01:41 symfony [info] {sfWebResponse} Send content (39709 o)
+Mar 04 14:01:42 symfony [info] {sfPatternRouting} Match route "notice_new" (/:sf_culture/notice/new.:sf_format) for /en/notice/new with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'new',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 14:01:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 14:01:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 14:01:42 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeNew()"
+Mar 04 14:01:42 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/newSuccess.php"
+Mar 04 14:01:42 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/_form.php"
+Mar 04 14:01:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 14:01:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c - ()
+Mar 04 14:01:42 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 14:01:42 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 14:01:42 symfony [info] {main} Get slot "title"
+Mar 04 14:01:42 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 14:01:42 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 14:01:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 14:01:42 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 14:01:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Configuration 20.20 ms (13)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Factories 24.76 ms (1)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/new" 44.95 ms (1)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/new" 33.23 ms (1)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Partial "sfCooperationNotice/_form" 17.74 ms (1)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 5.26 ms (1)
+Mar 04 14:01:42 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 0.53 ms (1)
+Mar 04 14:01:42 symfony [info] {sfWebResponse} Send content (63134 o)
