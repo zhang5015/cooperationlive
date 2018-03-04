@@ -1,0 +1,576 @@
+mar 04 11:17:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en" (/).
+mar 04 11:17:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+mar 04 11:17:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+mar 04 11:17:08 symfony [info] {sfWebDebugLogger} Configuration 41.11 ms (5)
+mar 04 11:17:08 symfony [info] {sfWebDebugLogger} Factories 38.28 ms (1)
+Mar 04 11:17:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',)
+mar 04 11:17:14 symfony [info] {sfFrontWebController} Action "sfCooperationNotice/index" does not exist
+mar 04 11:17:14 symfony [err] {sfError404Exception} Action "sfCooperationNotice/index" does not exist.
+mar 04 11:17:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+mar 04 11:17:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+mar 04 11:17:14 symfony [info] {sfWebDebugLogger} Configuration 0.37 ms (5)
+mar 04 11:17:14 symfony [info] {sfWebDebugLogger} Factories 17.73 ms (1)
+Mar 04 11:20:19 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',)
+mar 04 11:20:19 symfony [info] {sfFrontWebController} Action "sfCooperationNotice/index" does not exist
+mar 04 11:20:19 symfony [err] {sfError404Exception} Action "sfCooperationNotice/index" does not exist.
+mar 04 11:20:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+mar 04 11:20:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+mar 04 11:20:19 symfony [info] {sfWebDebugLogger} Configuration 22.88 ms (6)
+mar 04 11:20:19 symfony [info] {sfWebDebugLogger} Factories 42.12 ms (1)
+Mar 04 11:20:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',)
+mar 04 11:20:22 symfony [info] {sfFrontWebController} Action "sfCooperationNotice/index" does not exist
+mar 04 11:20:22 symfony [err] {sfError404Exception} Action "sfCooperationNotice/index" does not exist.
+mar 04 11:20:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+mar 04 11:20:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+mar 04 11:20:22 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+mar 04 11:20:22 symfony [info] {sfWebDebugLogger} Factories 20.59 ms (1)
+Mar 04 11:22:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',)
+mar 04 11:22:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+mar 04 11:22:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+mar 04 11:22:01 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:22:01 symfony [info] {sfFrontWebController} Redirect to "http://live.cooperationlive.com:8080/frontend_dev.php/en/"
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send header "Location: http://live.cooperationlive.com:8080/frontend_dev.php/en/"
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Configuration 7.10 ms (9)
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Factories 18.51 ms (1)
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 0.66 ms (1)
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send content (128 o)
+Mar 04 11:22:01 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 11:22:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:22:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:22:01 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:22:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:22:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM coffeeeet_category c LEFT JOIN coffeeeet_coffee c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:22:01, 1)
+Mar 04 11:22:01 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 11:22:01 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:22:01 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:22:01 symfony [info] {main} Get slot "title"
+Mar 04 11:22:01 symfony [err] {sfConfigurationException} The route "coffee" does not exist.
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:22:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Configuration 19.86 ms (11)
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Factories 17.95 ms (1)
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 55.96 ms (1)
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.66 ms (2)
+Mar 04 11:22:01 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 25.62 ms (1)
+Mar 04 11:22:58 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 11:22:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:22:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:22:58 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:22:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:22:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT n.id AS n__id, n.created_at AS n__created_at, n.updated_at AS n__updated_at, n2.id AS n2__id, n2.category_id AS n2__category_id, n2.type AS n2__type, n2.company AS n2__company, n2.logo AS n2__logo, n2.url AS n2__url, n2.position AS n2__position, n2.location AS n2__location, n2.description AS n2__description, n2.how_to_apply AS n2__how_to_apply, n2.token AS n2__token, n2.is_public AS n2__is_public, n2.is_activated AS n2__is_activated, n2.email AS n2__email, n2.expires_at AS n2__expires_at, n2.created_at AS n2__created_at, n2.updated_at AS n2__updated_at FROM noticeeet_category n LEFT JOIN noticeeet_notice n2 ON n.id = n2.category_id WHERE (n2.expires_at > ? AND n2.is_activated = ?) - (2018-03-04 11:22:58, 1)
+Mar 04 11:22:58 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cooperation.noticeeet_category' doesn't exist
+Mar 04 11:22:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 04 11:22:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:22:58 symfony [info] {sfWebDebugLogger} Configuration 17.74 ms (10)
+Mar 04 11:22:58 symfony [info] {sfWebDebugLogger} Factories 18.09 ms (1)
+Mar 04 11:22:58 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 71.29 ms (1)
+Mar 04 11:22:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.12 ms (1)
+Mar 04 11:24:01 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 11:24:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:24:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:24:01 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:24:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:24:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:24:01, 1)
+Mar 04 11:24:01 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cooperation.cooperation_category' doesn't exist
+Mar 04 11:24:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 04 11:24:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:24:01 symfony [info] {sfWebDebugLogger} Configuration 18.50 ms (10)
+Mar 04 11:24:01 symfony [info] {sfWebDebugLogger} Factories 18.36 ms (1)
+Mar 04 11:24:01 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 78.14 ms (1)
+Mar 04 11:24:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (1)
+Mar 04 11:24:02 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 11:24:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:24:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:24:02 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:24:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:24:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:24:02, 1)
+Mar 04 11:24:02 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cooperation.cooperation_category' doesn't exist
+Mar 04 11:24:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 04 11:24:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:24:02 symfony [info] {sfWebDebugLogger} Configuration 26.91 ms (10)
+Mar 04 11:24:02 symfony [info] {sfWebDebugLogger} Factories 20.83 ms (1)
+Mar 04 11:24:02 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 108.99 ms (1)
+Mar 04 11:24:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.11 ms (1)
+Mar 04 11:25:02 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 11:25:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:25:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:25:02 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:25:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:25:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:25:02, 1)
+Mar 04 11:25:02 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cooperation.cooperation_category' doesn't exist
+Mar 04 11:25:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 04 11:25:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:25:02 symfony [info] {sfWebDebugLogger} Configuration 17.14 ms (10)
+Mar 04 11:25:02 symfony [info] {sfWebDebugLogger} Factories 15.87 ms (1)
+Mar 04 11:25:02 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 84.00 ms (1)
+Mar 04 11:25:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (1)
+Mar 04 11:29:13 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 11:29:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:29:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:29:13 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:29:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:29:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:29:13, 1)
+Mar 04 11:29:13 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 11:29:13 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:29:13 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:29:13 symfony [info] {main} Get slot "title"
+Mar 04 11:29:13 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:29:13 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:29:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:29:13 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:29:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} Configuration 26.70 ms (13)
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} Factories 22.38 ms (1)
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 56.58 ms (1)
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 8.82 ms (2)
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 16.94 ms (1)
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 6.96 ms (1)
+Mar 04 11:29:13 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 1.26 ms (1)
+Mar 04 11:29:13 symfony [info] {sfWebResponse} Send content (38919 o)
+Mar 04 11:29:17 symfony [info] {sfPatternRouting} Match route "notice_new" (/:sf_culture/notice/new.:sf_format) for /en/notice/new with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'new',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 11:29:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:29:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:29:17 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeNew()"
+Mar 04 11:29:17 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/newSuccess.php"
+Mar 04 11:29:17 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/_form.php"
+Mar 04 11:29:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:29:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c - ()
+Mar 04 11:29:17 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:29:17 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:29:17 symfony [info] {main} Get slot "title"
+Mar 04 11:29:17 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:29:17 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:29:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:29:17 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:29:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Configuration 17.56 ms (13)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Factories 15.96 ms (1)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/new" 33.67 ms (1)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/new" 26.14 ms (1)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Partial "sfCooperationNotice/_form" 15.59 ms (1)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 4.66 ms (1)
+Mar 04 11:29:17 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 0.43 ms (1)
+Mar 04 11:29:17 symfony [info] {sfWebResponse} Send content (63138 o)
+Mar 04 11:33:48 symfony [info] {sfPatternRouting} Match route "notice_new" (/:sf_culture/notice/new.:sf_format) for /en/notice/new with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'new',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 11:33:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:33:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:33:48 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeNew()"
+Mar 04 11:33:48 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/newSuccess.php"
+Mar 04 11:33:48 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/_form.php"
+Mar 04 11:33:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:33:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c - ()
+Mar 04 11:33:48 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:33:48 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:33:48 symfony [info] {main} Get slot "title"
+Mar 04 11:33:48 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:33:48 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:33:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:33:48 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:33:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Configuration 18.46 ms (13)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Factories 17.68 ms (1)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/new" 40.40 ms (1)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/new" 29.38 ms (1)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationNotice/_form" 17.22 ms (1)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.40 ms (2)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 4.87 ms (1)
+Mar 04 11:33:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 0.51 ms (1)
+Mar 04 11:33:48 symfony [info] {sfWebResponse} Send content (63139 o)
+Mar 04 11:33:51 symfony [info] {sfPatternRouting} Match route "notice_new" (/:sf_culture/notice/new.:sf_format) for /en/notice/new with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'new',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 11:33:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:33:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:33:51 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeNew()"
+Mar 04 11:33:51 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/newSuccess.php"
+Mar 04 11:33:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/_form.php"
+Mar 04 11:33:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:33:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c - ()
+Mar 04 11:33:51 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:33:51 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:33:51 symfony [info] {main} Get slot "title"
+Mar 04 11:33:51 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:33:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:33:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:33:51 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:33:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Configuration 16.49 ms (13)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Factories 14.76 ms (1)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/new" 32.82 ms (1)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/new" 24.93 ms (1)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Partial "sfCooperationNotice/_form" 15.35 ms (1)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.24 ms (2)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 4.12 ms (1)
+Mar 04 11:33:51 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 0.40 ms (1)
+Mar 04 11:33:51 symfony [info] {sfWebResponse} Send content (63170 o)
+Mar 04 11:33:55 symfony [info] {sfPatternRouting} Match route "notice" (/:sf_culture/notice.:sf_format) for /en/notice with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 11:33:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:33:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:33:55 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:33:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:33:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:33:55, 1)
+Mar 04 11:33:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 11:33:55 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:33:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:33:55 symfony [info] {main} Get slot "title"
+Mar 04 11:33:55 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:33:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:33:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:33:55 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:33:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} Configuration 16.82 ms (13)
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} Factories 15.98 ms (1)
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 37.73 ms (1)
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.44 ms (2)
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 12.53 ms (1)
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 6.09 ms (1)
+Mar 04 11:33:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 1.15 ms (1)
+Mar 04 11:33:55 symfony [info] {sfWebResponse} Send content (38994 o)
+Mar 04 11:35:04 symfony [info] {sfPatternRouting} Match route "notice" (/:sf_culture/notice.:sf_format) for /en/notice with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 11:35:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:35:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:35:04 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:35:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:35:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:35:04, 1)
+Mar 04 11:35:04 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 11:35:04 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:35:04 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:35:04 symfony [info] {main} Get slot "title"
+Mar 04 11:35:04 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:35:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:35:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:35:04 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:35:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} Configuration 18.66 ms (13)
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} Factories 17.35 ms (1)
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 40.24 ms (1)
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.43 ms (2)
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 14.47 ms (1)
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 6.47 ms (1)
+Mar 04 11:35:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 1.85 ms (1)
+Mar 04 11:35:04 symfony [info] {sfWebResponse} Send content (39026 o)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/fkTheme.min.css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.32 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 86.40 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/fkModule.min.css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 140.75 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/poshytipAndmCustomScrollbar.min.css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.30 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 205.51 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/base2.min.css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.30 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 298.11 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/newSearchBoxStyle.min.css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.30 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 342.53 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/fkModule.min(1).css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 404.81 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/jzcusstyle.css" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 314.02 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/jzUtils.min.js" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 301.20 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/js/hawkEye.min.js" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 298.07 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/jquery-core.min.js" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.32 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 331.95 ms (1)
+Mar 04 11:35:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/jquery-mousewheel.min.js" (/).
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 04 11:35:05 symfony [info] {sfWebDebugLogger} Factories 374.15 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/fai.min.js" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 397.31 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/jquery-ui-core.min.js" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 2.29 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 396.39 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/site.min.js" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 3.30 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 379.41 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/2052.min.js" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.37 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 338.84 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/fontsIco.min.css" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.39 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 311.82 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.37 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 325.00 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgsfjHwgUort22tAQwiAE4Vw.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 362.46 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgxPjHwgUo4LLvvwYwiAE4Vw.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 3.26 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 400.80 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg0fjHwgUore3JxQUwiAE4Vw.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 437.75 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgp4vIwgUo-KP7RzC_ATiYAQ.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.37 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 446.72 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgr4vIwgUolIWZ0wMwvgE4mAE.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 4.51 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 444.22 ms (1)
+Mar 04 11:35:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgx4vIwgUovJey9gcwvgE4mAE.jpg" (/).
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Configuration 0.42 ms (5)
+Mar 04 11:35:06 symfony [info] {sfWebDebugLogger} Factories 432.49 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgzYvIwgUo9vH09wQwvgE4mAE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.49 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 409.49 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgip-IwgUo4ZK8tQYwogI4wQE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.45 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 381.64 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgqp3IwgUov6TA1AMwogI4wQE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 373.25 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgyJ3IwgUotpKUsAIwogI4wQE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 358.62 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg4p3IwgUo-KiDqwYwogI4wQE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.32 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 356.71 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg8p-IwgUo2bWT9gcw7AI45wE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.36 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 353.49 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0I0amXBhACGAAgga7PxQUoh-nSygIwZDhk.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 351.39 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg-6jIwgUov77PpQUwUThR.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.39 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 348.45 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0I0amXBhACGAAgsc-PxQUo76P-7AQwYzhk.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 345.49 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg56nIwgUonMbwhgQwUThR.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 341.75 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAggt7IwgUo2NipKzCpAjjKAQ.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.32 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 332.34 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAg-N-IwgUovMOQhQUwqQI4ygE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 333.62 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgg_DIwgUoieeZkgEwqQI4ygE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 342.99 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgh_DIwgUowIme9QIwqQI4ygE.jpg" (/).
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 04 11:35:07 symfony [info] {sfWebDebugLogger} Factories 351.64 ms (1)
+Mar 04 11:35:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgkuDIwgUooJ3jlwUwqQI4ygE.jpg" (/).
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Factories 328.42 ms (1)
+Mar 04 11:35:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgluDIwgUooMWN2gUwqQI4ygE.jpg" (/).
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Configuration 1.90 ms (5)
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Factories 303.73 ms (1)
+Mar 04 11:35:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgmeDIwgUosJ5DMKkCOMoB.jpg" (/).
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Factories 279.65 ms (1)
+Mar 04 11:35:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/styles/AD0IlIzuBRACGAAgnODIwgUo_7yyqQQwqQI4ygE.jpg" (/).
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 04 11:35:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Configuration 0.37 ms (5)
+Mar 04 11:35:08 symfony [info] {sfWebDebugLogger} Factories 220.49 ms (1)
+Mar 04 11:39:36 symfony [info] {sfPatternRouting} Match route "notice" (/:sf_culture/notice.:sf_format) for /en/notice with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 11:39:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 11:39:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 11:39:36 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 11:39:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 11:39:36 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 11:39:36, 1)
+Mar 04 11:39:36 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 11:39:36 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:39:36 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 11:39:36 symfony [info] {main} Get slot "title"
+Mar 04 11:39:36 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 11:39:36 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 11:39:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 11:39:36 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 11:39:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} Configuration 26.21 ms (13)
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} Factories 22.20 ms (1)
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 55.09 ms (1)
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.60 ms (2)
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 18.34 ms (1)
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 8.67 ms (1)
+Mar 04 11:39:36 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 1.18 ms (1)
+Mar 04 11:39:36 symfony [info] {sfWebResponse} Send content (39027 o)
+Mar 04 12:38:55 symfony [info] {sfPatternRouting} Match route "notice" (/:sf_culture/notice.:sf_format) for /en/notice with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_format' => 'html',  'sf_culture' => 'en',)
+Mar 04 12:38:55 symfony [info] {myUser} Automatic user logout due to timeout
+Mar 04 12:38:55 symfony [info] {myUser} User is not authenticated
+Mar 04 12:38:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 12:38:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 12:38:55 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 12:38:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 12:38:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 12:38:55, 1)
+Mar 04 12:38:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 12:38:55 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 12:38:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 12:38:55 symfony [info] {main} Get slot "title"
+Mar 04 12:38:55 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 12:38:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 12:38:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 12:38:55 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 12:38:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} Configuration 54.08 ms (12)
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} Factories 37.99 ms (1)
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 42.37 ms (1)
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.80 ms (2)
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 17.07 ms (1)
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 7.75 ms (1)
+Mar 04 12:38:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 1.30 ms (1)
+Mar 04 12:38:55 symfony [info] {sfWebResponse} Send content (39736 o)
+Mar 04 12:52:23 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'sfCooperationLanguage',  'action' => 'changeLanguage',)
+Mar 04 12:52:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 12:52:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 12:52:23 symfony [info] {sfCooperationLanguageActions} Call "sfCooperationLanguageActions->executeChangeLanguage()"
+Mar 04 12:52:23 symfony [info] {sfFrontWebController} Redirect to "http://live.cooperationlive.com:8080/frontend_dev.php/fr/"
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send header "Location: http://live.cooperationlive.com:8080/frontend_dev.php/fr/"
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Configuration 8.21 ms (9)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Factories 40.12 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Action "sfCooperationLanguage/changeLanguage" 20.05 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send content (128 o)
+Mar 04 12:52:23 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /fr/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'fr',)
+Mar 04 12:52:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 12:52:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 12:52:23 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 12:52:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 12:52:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 12:52:23, 1)
+Mar 04 12:52:23 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 12:52:23 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 12:52:23 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 12:52:23 symfony [info] {main} Get slot "title"
+Mar 04 12:52:23 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 12:52:23 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Configuration 42.59 ms (13)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Factories 33.06 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 90.11 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.58 ms (2)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 44.38 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 19.77 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 1.38 ms (1)
+Mar 04 12:52:23 symfony [info] {sfWebResponse} Send content (38984 o)
+Mar 04 12:52:28 symfony [info] {sfPatternRouting} Match route "change_language" (/change_language) for /change_language with parameters array (  'module' => 'sfCooperationLanguage',  'action' => 'changeLanguage',)
+Mar 04 12:52:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 12:52:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 12:52:28 symfony [info] {sfCooperationLanguageActions} Call "sfCooperationLanguageActions->executeChangeLanguage()"
+Mar 04 12:52:28 symfony [info] {sfFrontWebController} Redirect to "http://live.cooperationlive.com:8080/frontend_dev.php/en/"
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send header "Location: http://live.cooperationlive.com:8080/frontend_dev.php/en/"
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Configuration 0.53 ms (8)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Factories 47.04 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Action "sfCooperationLanguage/changeLanguage" 22.13 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send content (128 o)
+Mar 04 12:52:28 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationNotice',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 04 12:52:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 04 12:52:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 04 12:52:28 symfony [info] {sfCooperationNoticeActions} Call "sfCooperationNoticeActions->executeIndex()"
+Mar 04 12:52:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 04 12:52:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.type AS c2__type, c2.company AS c2__company, c2.logo AS c2__logo, c2.url AS c2__url, c2.position AS c2__position, c2.location AS c2__location, c2.description AS c2__description, c2.how_to_apply AS c2__how_to_apply, c2.token AS c2__token, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.email AS c2__email, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_notice c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-04 12:52:28, 1)
+Mar 04 12:52:28 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationNotice/templates/indexSuccess.php"
+Mar 04 12:52:28 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 12:52:28 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/frontend/templates/layout.php"
+Mar 04 12:52:28 symfony [info] {main} Get slot "title"
+Mar 04 12:52:28 symfony [info] {main} Call "sfCooperationLanguage->executeLanguage()"
+Mar 04 12:52:28 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationLanguage/templates/_language.php"
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Configuration 37.23 ms (13)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Factories 34.90 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Action "sfCooperationNotice/index" 94.44 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.38 ms (2)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationNotice/index" 39.63 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Component "sfCooperationLanguage/language" 18.96 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebDebugLogger} Partial "sfCooperationLanguage/_language" 5.43 ms (1)
+Mar 04 12:52:28 symfony [info] {sfWebResponse} Send content (38969 o)

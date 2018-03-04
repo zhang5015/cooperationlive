@@ -1,0 +1,79 @@
+# apps/frontend/config/routing.yml
+affiliate:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          CooperationAffiliate
+    actions:        [new, create]
+    object_actions: { wait: GET }
+    prefix_path:    /:sf_culture/affiliate
+    module:         sfCooperationAffiliate
+  requirements:
+    sf_culture: (?:fr|en)
+
+affiliate_list:
+  url:   /:sf_culture/affiliate
+  param: { module: sfCooperationAffiliate, action: index }
+  requirements:
+    sf_culture: (?:fr|en)
+
+api_notices:
+  url:     /api/:token/notices.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: sfCooperationApi, action: list }
+  options: { model: CooperationNotice, type: list, method: getForToken }
+  requirements:
+    sf_format: (?:xml|json|yaml)
+ 
+category:
+  url:     /:sf_culture/category/:slug.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: sfCooperationCategory, action: show, sf_format: html }
+  options: { model: CooperationCategory, type: object, method: doSelectForSlug }
+  requirements:
+    sf_format: (?:html|atom)
+    sf_culture: (?:fr|en)
+ 
+notice_search:
+  url:   /:sf_culture/search
+  param: { module: sfCooperationNotice, action: search }
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+notice:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          CooperationNotice
+    column:         token
+    object_actions: { publish: PUT, extend: PUT }
+    prefix_path:    /:sf_culture/notice
+    module:         sfCooperationNotice
+  requirements:
+    token: \w+
+    sf_culture: (?:fr|en)
+ 
+notice_show_user:
+  url:     /:sf_culture/notice/:company_slug/:location_slug/:id/:position_slug
+  class:   sfDoctrineRoute
+  options:
+    model: CooperationNotice
+    type: object
+    method_for_query: retrieveActiveNotice
+  param:   { module: sfCooperationNotice, action: show }
+  requirements:
+    id:        \d+
+    sf_method: GET
+    sf_culture: (?:fr|en)
+ 
+change_language:
+  url:   /change_language
+  param: { module: sfCooperationLanguage, action: changeLanguage }
+ 
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: sfCooperationNotice, action: index }
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+homepage:
+  url:   /
+  param: { module: sfCooperationNotice, action: index }

@@ -1,0 +1,3 @@
+# plugins/sfCooperationPlugin/modules/sfCooperationLanguage/config/cache.yml
+_language:
+  enabled: true

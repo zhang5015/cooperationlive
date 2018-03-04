@@ -1,0 +1,531 @@
+.swipe {
+	transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px); perspective: 1600px; -webkit-transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, 0); -moz-perspective: 1600px; -moz-transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, 0); -o-transform: rotateX(0deg) rotateY(0deg) translate3d(0, 0, 0); -o-perspective: 1600px;
+}
+.billboard {
+	transform-origin: center center; overflow: hidden; position: relative; -webkit-transform-origin: center center; -moz-transform-origin: center center; -o-transform-origin: center center;
+}
+.billboard4 {
+	perspective: 1600px; -webkit-perspective: 1600px; -moz-perspective: 1600px; -o-perspective: 1600px;
+}
+.billboard1 {
+	perspective: none; transform-style: flat; -webkit-perspective: none; -moz-perspective: none; -webkit-transform-style: flat; -moz-transform-style: flat; -o-transform-style: flat; -o-perspective: none;
+}
+.billboard2 {
+	perspective: none; transform-style: flat; -webkit-perspective: none; -moz-perspective: none; -webkit-transform-style: flat; -moz-transform-style: flat; -o-transform-style: flat; -o-perspective: none;
+}
+.billboard3 {
+	perspective: none; transform-style: flat; -webkit-perspective: none; -moz-perspective: none; -webkit-transform-style: flat; -moz-transform-style: flat; -o-transform-style: flat; -o-perspective: none;
+}
+.billboardItem_11 {
+	perspective: none; transform-style: flat; -webkit-perspective: none; -moz-perspective: none; -webkit-transform-style: flat; -moz-transform-style: flat; -o-transform-style: flat; -o-perspective: none;
+}
+.billboardItem_13 {
+	perspective: none; transform-style: flat; -webkit-perspective: none; -moz-perspective: none; -webkit-transform-style: flat; -moz-transform-style: flat; -o-transform-style: flat; -o-perspective: none;
+}
+.billboard_item {
+	left: 0px; top: 0px; width: 100%; position: absolute;
+}
+.billboardAnim {
+	animation-timing-function: ease-in-out; animation-fill-mode: both; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -o-animation-fill-mode: both; -webkit-animation-timing-function: ease-in-out; -moz-animation-timing-function: ease-in-out; -o-animation-timing-function: ease-in-out;
+}
+.billboardItem_1 {
+	transform: translate3d(100%, 0px, 0px); -webkit-transform: translate3d(100%, 0, 0); -moz-transform: translate3d(100%, 0, 0); -o-transform: translate3d(100%, 0, 0);
+}
+.billboardItem_1_start {
+	transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0);
+}
+.billboardItem_1_on {
+	animation-name: billboardItem_1_on; -webkit-animation-name: billboardItem_1_on; -moz-animation-name: billboardItem_1_on; -o-animation-name: billboardItem_1_on;
+}
+.billboardItem_1_on_reverse {
+	animation-name: billboardItem_1_on_reverse; -webkit-animation-name: billboardItem_1_on_reverse; -moz-animation-name: billboardItem_1_on_reverse; -o-animation-name: billboardItem_1_on_reverse;
+}
+.billboardItem_1_off {
+	animation-name: billboardItem_1_off; -webkit-animation-name: billboardItem_1_off; -moz-animation-name: billboardItem_1_off; -o-animation-name: billboardItem_1_off;
+}
+.billboardItem_1_off_reverse {
+	animation-name: billboardItem_1_off_reverse; -webkit-animation-name: billboardItem_1_off_reverse; -moz-animation-name: billboardItem_1_off_reverse; -o-animation-name: billboardItem_1_off_reverse;
+}
+.billboardItem_2 {
+	transform: translate3d(0px, 100%, 0px); -webkit-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);
+}
+.billboardItem_2_start {
+	transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0);
+}
+.billboardItem_2_on {
+	animation-name: billboardItem_2_on; -webkit-animation-name: billboardItem_2_on; -moz-animation-name: billboardItem_2_on; -o-animation-name: billboardItem_2_on;
+}
+.billboardItem_2_on_reverse {
+	animation-name: billboardItem_2_on_reverse; -webkit-animation-name: billboardItem_2_on_reverse; -moz-animation-name: billboardItem_2_on_reverse; -o-animation-name: billboardItem_2_on_reverse;
+}
+.billboardItem_2_off {
+	animation-name: billboardItem_2_off; -webkit-animation-name: billboardItem_2_off; -moz-animation-name: billboardItem_2_off; -o-animation-name: billboardItem_2_off;
+}
+.billboardItem_2_off_reverse {
+	animation-name: billboardItem_2_off_reverse; -webkit-animation-name: billboardItem_2_off_reverse; -moz-animation-name: billboardItem_2_off_reverse; -o-animation-name: billboardItem_2_off_reverse;
+}
+.billboard3 {
+	perspective: none;
+}
+.billboard3 * {
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d;
+}
+.billboardItem_3 {
+	transform: rotateY(-90deg); -webkit-transform: rotateY(-90deg); -moz-transform: rotateY(-90deg); -o-transform: rotateY(-90deg);
+}
+.billboardItem_3 * {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.billboardItem_3_start {
+	transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -o-transform: rotateY(0deg);
+}
+.billboardItem_3_on {
+	animation-name: billboardItem_3_on; -webkit-animation-name: billboardItem_3_on; -moz-animation-name: billboardItem_3_on; -o-animation-name: billboardItem_3_on;
+}
+.billboardItem_3_on_reverse {
+	animation-name: billboardItem_3_on_reverse; -webkit-animation-name: billboardItem_3_on_reverse; -moz-animation-name: billboardItem_3_on_reverse; -o-animation-name: billboardItem_3_on_reverse;
+}
+.billboardItem_3_off {
+	animation-name: billboardItem_3_off; -webkit-animation-name: billboardItem_3_off; -moz-animation-name: billboardItem_3_off; -o-animation-name: billboardItem_3_off;
+}
+.billboardItem_3_off_reverse {
+	animation-name: billboardItem_3_off_reverse; -webkit-animation-name: billboardItem_3_off_reverse; -moz-animation-name: billboardItem_3_off_reverse; -o-animation-name: billboardItem_3_off_reverse;
+}
+.billboard4 {
+	perspective: none;
+}
+.billboard4 * {
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d;
+}
+.billboardItem_4 {
+	transform: rotateY(90deg); -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -o-transform: rotateY(90deg);
+}
+.billboardItem_4 * {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.billboardItem_4_start {
+	transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -o-transform: rotateY(0deg);
+}
+.billboardItem_4_on {
+	animation-name: billboardItem_4_on; -webkit-animation-name: billboardItem_4_on; -moz-animation-name: billboardItem_4_on; -o-animation-name: billboardItem_4_on;
+}
+.billboardItem_4_on_reverse {
+	animation-name: billboardItem_4_on_reverse; -webkit-animation-name: billboardItem_4_on_reverse; -moz-animation-name: billboardItem_4_on_reverse; -o-animation-name: billboardItem_4_on_reverse;
+}
+.billboardItem_4_off {
+	animation-name: billboardItem_4_off; -webkit-animation-name: billboardItem_4_off; -moz-animation-name: billboardItem_4_off; -o-animation-name: billboardItem_4_off;
+}
+.billboardItem_4_off_reverse {
+	animation-name: billboardItem_4_off_reverse; -webkit-animation-name: billboardItem_4_off_reverse; -moz-animation-name: billboardItem_4_off_reverse; -o-animation-name: billboardItem_4_off_reverse;
+}
+.billboard5 * {
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d;
+}
+.billboardItem_5 {
+	transform: rotateY(90deg); -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -o-transform: rotateY(90deg);
+}
+.billboardItem_5 * {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.billboardItem_5_start {
+	transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -o-transform: rotateY(0deg);
+}
+.billboardItem_5_on {
+	animation-name: billboardItem_5_on; -webkit-animation-name: billboardItem_5_on; -moz-animation-name: billboardItem_5_on; -o-animation-name: billboardItem_5_on;
+}
+.billboardItem_5_on_reverse {
+	animation-name: billboardItem_5_on_reverse; -webkit-animation-name: billboardItem_5_on_reverse; -moz-animation-name: billboardItem_5_on_reverse; -o-animation-name: billboardItem_5_on_reverse;
+}
+.billboardItem_5_off {
+	animation-name: billboardItem_5_off; -webkit-animation-name: billboardItem_5_off; -moz-animation-name: billboardItem_5_off; -o-animation-name: billboardItem_5_off;
+}
+.billboardItem_5_off_reverse {
+	animation-name: billboardItem_5_off_reverse; -webkit-animation-name: billboardItem_5_off_reverse; -moz-animation-name: billboardItem_5_off_reverse; -o-animation-name: billboardItem_5_off_reverse;
+}
+.billboard6 * {
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d;
+}
+.billboardItem_6 {
+	transform: rotateX(90deg); -webkit-transform: rotateX(90deg); -moz-transform: rotateX(90deg); -o-transform: rotateX(90deg);
+}
+.billboardItem_6 * {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.billboardItem_6_start {
+	transform: rotateX(0deg); -webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); -o-transform: rotateX(0deg);
+}
+.billboardItem_6_on {
+	animation-name: billboardItem_6_on; -webkit-animation-name: billboardItem_6_on; -moz-animation-name: billboardItem_6_on; -o-animation-name: billboardItem_6_on;
+}
+.billboardItem_6_on_reverse {
+	animation-name: billboardItem_6_on_reverse; -webkit-animation-name: billboardItem_6_on_reverse; -moz-animation-name: billboardItem_6_on_reverse; -o-animation-name: billboardItem_6_on_reverse;
+}
+.billboardItem_6_off {
+	animation-name: billboardItem_6_off; -webkit-animation-name: billboardItem_6_off; -moz-animation-name: billboardItem_6_off; -o-animation-name: billboardItem_6_off;
+}
+.billboardItem_6_off_reverse {
+	animation-name: billboardItem_6_off_reverse; -webkit-animation-name: billboardItem_6_off_reverse; -moz-animation-name: billboardItem_6_off_reverse; -o-animation-name: billboardItem_6_off_reverse;
+}
+.billboardItem_7 {
+	opacity: 0;
+}
+.billboardItem_7_start {
+	opacity: 1;
+}
+.billboardItem_7_on {
+	animation-name: billboardItem_7_on; -webkit-animation-name: billboardItem_7_on; -moz-animation-name: billboardItem_7_on; -o-animation-name: billboardItem_7_on;
+}
+.billboardItem_7_off {
+	animation-name: billboardItem_7_off; -webkit-animation-name: billboardItem_7_off; -moz-animation-name: billboardItem_7_off; -o-animation-name: billboardItem_7_off;
+}
+.billboardItem_8 {
+	opacity: 0;
+}
+.billboardItem_8_start {
+	opacity: 1;
+}
+.billboardItem_8_on {
+	animation-name: billboardItem_8_on; -webkit-animation-name: billboardItem_8_on; -moz-animation-name: billboardItem_8_on; -o-animation-name: billboardItem_8_on;
+}
+.billboardItem_8_off {
+	animation-name: billboardItem_8_off; -webkit-animation-name: billboardItem_8_off; -moz-animation-name: billboardItem_8_off; -o-animation-name: billboardItem_8_off;
+}
+.billboard9 {
+	-webkit-perspective: none;
+}
+.billboard9 * {
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d;
+}
+.billboardItem_9 {
+	width: 100%; height: 100%;
+}
+.billboardItem_9 * {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.billboardItem_9 .billboardImgInner {
+	width: 100% !important;
+}
+.billboardItem_9 .billboardTile {
+	left: 0px; width: 100%; height: 33.33%; overflow: hidden; position: absolute;
+}
+.billboardItem_9_start .billboardTile {
+	visibility: visible;
+}
+.billboardItem_9_off .billboardTile {
+	visibility: visible;
+}
+.billboardItem_9_on .billboardTile {
+	visibility: visible;
+}
+.billboardItem_9 .billboardTile_1 {
+	top: 0px;
+}
+.billboardItem_9 .billboardTile_2 {
+	top: 33.33%;
+}
+.billboardItem_9 .billboardTile_3 {
+	top: 66.55%;
+}
+.billboardItem_9 .billboardImg {
+	left: 0px; width: 100%; height: 300%; position: absolute;
+}
+.billboardItem_9 .billboardTile_1 .billboardImg {
+	top: 0px;
+}
+.billboardItem_9 .billboardTile_2 .billboardImg {
+	top: -100%;
+}
+.billboardItem_9 .billboardTile_3 .billboardImg {
+	top: -200%;
+}
+.billboardItem_9_on .billboardTile_1 {
+	animation-name: billboardItem_9_on_1; -webkit-animation-name: billboardItem_9_on_1; -moz-animation-name: billboardItem_9_on_1; -o-animation-name: billboardItem_9_on_1;
+}
+.billboardItem_9_on_reverse .billboardTile_1 {
+	animation-name: billboardItem_9_on_reverse_1; -webkit-animation-name: billboardItem_9_on_reverse_1; -moz-animation-name: billboardItem_9_on_reverse_1; -o-animation-name: billboardItem_9_on_reverse_1;
+}
+.billboardItem_9_on .billboardTile_2 {
+	animation-name: billboardItem_9_on_2; -webkit-animation-name: billboardItem_9_on_2; -moz-animation-name: billboardItem_9_on_2; -o-animation-name: billboardItem_9_on_2;
+}
+.billboardItem_9_on_reverse .billboardTile_2 {
+	animation-name: billboardItem_9_on_reverse_2; -webkit-animation-name: billboardItem_9_on_reverse_2; -moz-animation-name: billboardItem_9_on_reverse_2; -o-animation-name: billboardItem_9_on_reverse_2;
+}
+.billboardItem_9_on .billboardTile_3 {
+	animation-name: billboardItem_9_on_3; -webkit-animation-name: billboardItem_9_on_3; -moz-animation-name: billboardItem_9_on_3; -o-animation-name: billboardItem_9_on_3;
+}
+.billboardItem_9_on_reverse .billboardTile_3 {
+	animation-name: billboardItem_9_on_reverse_3; -webkit-animation-name: billboardItem_9_on_reverse_3; -moz-animation-name: billboardItem_9_on_reverse_3; -o-animation-name: billboardItem_9_on_reverse_3;
+}
+.billboardItem_9_off .billboardTile_1 {
+	animation-name: billboardItem_9_off_1; -webkit-animation-name: billboardItem_9_off_1; -moz-animation-name: billboardItem_9_off_1; -o-animation-name: billboardItem_9_off_1;
+}
+.billboardItem_9_off_reverse .billboardTile_1 {
+	animation-name: billboardItem_9_off_reverse_1; -webkit-animation-name: billboardItem_9_off_reverse_1; -moz-animation-name: billboardItem_9_off_reverse_1; -o-animation-name: billboardItem_9_off_reverse_1;
+}
+.billboardItem_9_off .billboardTile_2 {
+	animation-name: billboardItem_9_off_2; -webkit-animation-name: billboardItem_9_off_2; -moz-animation-name: billboardItem_9_off_2; -o-animation-name: billboardItem_9_off_2;
+}
+.billboardItem_9_off_reverse .billboardTile_2 {
+	animation-name: billboardItem_9_off_reverse_2; -webkit-animation-name: billboardItem_9_off_reverse_2; -moz-animation-name: billboardItem_9_off_reverse_2; -o-animation-name: billboardItem_9_off_reverse_2;
+}
+.billboardItem_9_off .billboardTile_3 {
+	animation-name: billboardItem_9_off_3; -webkit-animation-name: billboardItem_9_off_3; -moz-animation-name: billboardItem_9_off_3; -o-animation-name: billboardItem_9_off_3;
+}
+.billboardItem_9_off_reverse .billboardTile_3 {
+	animation-name: billboardItem_9_off_reverse_3; -webkit-animation-name: billboardItem_9_off_reverse_3; -moz-animation-name: billboardItem_9_off_reverse_3; -o-animation-name: billboardItem_9_off_reverse_3;
+}
+.billboard10 {
+	-webkit-perspective: none;
+}
+.billboard10 * {
+	transform-style: preserve-3d; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d;
+}
+.billboardItem_10 {
+	width: 100%; height: 100%;
+}
+.billboardItem_10 * {
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.billboardItem_10 .billboardImgInner {
+	width: 100% !important;
+}
+.billboardItem_10 .billboardTile {
+	top: 0px; width: 33.43%; height: 100%; overflow: hidden; position: absolute;
+}
+.billboardItem_10_start .billboardTile {
+	visibility: visible;
+}
+.billboardItem_10_off .billboardTile {
+	visibility: visible;
+}
+.billboardItem_10_on .billboardTile {
+	visibility: visible;
+}
+.billboardItem_10 .billboardTile_1 {
+	left: 0px;
+}
+.billboardItem_10 .billboardTile_2 {
+	left: 33.33%;
+}
+.billboardItem_10 .billboardTile_3 {
+	left: 66.65%;
+}
+.billboardItem_10 .billboardImg {
+	left: 0px; width: 300%; height: 100%; position: absolute;
+}
+.billboardItem_10 .billboardTile_1 .billboardImg {
+	left: 0px;
+}
+.billboardItem_10 .billboardTile_2 .billboardImg {
+	left: -100%;
+}
+.billboardItem_10 .billboardTile_3 .billboardImg {
+	left: -200%;
+}
+.billboardItem_10_on .billboardTile_1 {
+	animation-name: billboardItem_10_on_1; -webkit-animation-name: billboardItem_10_on_1; -moz-animation-name: billboardItem_10_on_1; -o-animation-name: billboardItem_10_on_1;
+}
+.billboardItem_10_on_reverse .billboardTile_1 {
+	animation-name: billboardItem_10_on_reverse_1; -webkit-animation-name: billboardItem_10_on_reverse_1; -moz-animation-name: billboardItem_10_on_reverse_1; -o-animation-name: billboardItem_10_on_reverse_1;
+}
+.billboardItem_10_on .billboardTile_2 {
+	animation-name: billboardItem_10_on_2; -webkit-animation-name: billboardItem_10_on_2; -moz-animation-name: billboardItem_10_on_2; -o-animation-name: billboardItem_10_on_2;
+}
+.billboardItem_10_on_reverse .billboardTile_2 {
+	animation-name: billboardItem_10_on_reverse_2; -webkit-animation-name: billboardItem_10_on_reverse_2; -moz-animation-name: billboardItem_10_on_reverse_2; -o-animation-name: billboardItem_10_on_reverse_2;
+}
+.billboardItem_10_on .billboardTile_3 {
+	animation-name: billboardItem_10_on_3; -webkit-animation-name: billboardItem_10_on_3; -moz-animation-name: billboardItem_10_on_3; -o-animation-name: billboardItem_10_on_3;
+}
+.billboardItem_10_on_reverse .billboardTile_3 {
+	animation-name: billboardItem_10_on_reverse_3; -webkit-animation-name: billboardItem_10_on_reverse_3; -moz-animation-name: billboardItem_10_on_reverse_3; -o-animation-name: billboardItem_10_on_reverse_3;
+}
+.billboardItem_10_off .billboardTile_1 {
+	animation-name: billboardItem_10_off_1; -webkit-animation-name: billboardItem_10_off_1; -moz-animation-name: billboardItem_10_off_1; -o-animation-name: billboardItem_10_off_1;
+}
+.billboardItem_10_off_reverse .billboardTile_1 {
+	animation-name: billboardItem_10_off_reverse_1; -webkit-animation-name: billboardItem_10_off_reverse_1; -moz-animation-name: billboardItem_10_off_reverse_1; -o-animation-name: billboardItem_10_off_reverse_1;
+}
+.billboardItem_10_off .billboardTile_2 {
+	animation-name: billboardItem_10_off_2; -webkit-animation-name: billboardItem_10_off_2; -moz-animation-name: billboardItem_10_off_2; -o-animation-name: billboardItem_10_off_2;
+}
+.billboardItem_10_off_reverse .billboardTile_2 {
+	animation-name: billboardItem_10_off_reverse_2; -webkit-animation-name: billboardItem_10_off_reverse_2; -moz-animation-name: billboardItem_10_off_reverse_2; -o-animation-name: billboardItem_10_off_reverse_2;
+}
+.billboardItem_10_off .billboardTile_3 {
+	animation-name: billboardItem_10_off_3; -webkit-animation-name: billboardItem_10_off_3; -moz-animation-name: billboardItem_10_off_3; -o-animation-name: billboardItem_10_off_3;
+}
+.billboardItem_10_off_reverse .billboardTile_3 {
+	animation-name: billboardItem_10_off_reverse_3; -webkit-animation-name: billboardItem_10_off_reverse_3; -moz-animation-name: billboardItem_10_off_reverse_3; -o-animation-name: billboardItem_10_off_reverse_3;
+}
+.billboardItem_11 .billboardImgInner {
+	width: 100% !important;
+}
+.billboardItem_11 .billboardTile {
+	width: 50%; height: 50%; overflow: hidden; position: absolute;
+}
+.billboardItem_11 .billboardTile_1 {
+	left: 0px; top: 0px;
+}
+.billboardItem_11 .billboardTile_2 {
+	top: 0px; right: 0px;
+}
+.billboardItem_11 .billboardTile_3 {
+	left: 0px; bottom: 0px;
+}
+.billboardItem_11 .billboardTile_4 {
+	right: 0px; bottom: 0px;
+}
+.billboardItem_11 .billboardTileImg {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.billboardItem_11 .billboardTile_1 .billboardTileImg {
+	transform-origin: 100% 100%; -webkit-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; -o-transform-origin: 100% 100%;
+}
+.billboardItem_11 .billboardTile_2 .billboardTileImg {
+	transform-origin: 0% 100%; -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -o-transform-origin: 0 100%;
+}
+.billboardItem_11 .billboardTile_3 .billboardTileImg {
+	transform-origin: 100% 0%; -webkit-transform-origin: 100% 0; -moz-transform-origin: 100% 0; -o-transform-origin: 100% 0;
+}
+.billboardItem_11 .billboardTile_4 .billboardTileImg {
+	transform-origin: 0% 0%; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -o-transform-origin: 0 0;
+}
+.billboardItem_11 .billboardImg {
+	width: 200%; height: 200%; position: absolute;
+}
+.billboardItem_11 .billboardTile_1 .billboardImg {
+	left: 0px; top: 0px;
+}
+.billboardItem_11 .billboardTile_2 .billboardImg {
+	top: 0px; right: 0px;
+}
+.billboardItem_11 .billboardTile_3 .billboardImg {
+	left: 0px; bottom: 0px;
+}
+.billboardItem_11 .billboardTile_4 .billboardImg {
+	right: 0px; bottom: 0px;
+}
+.billboardItem_11_on .billboardTileImg {
+	animation-name: billboardItem_11_on; -webkit-animation-name: billboardItem_11_on; -moz-animation-name: billboardItem_11_on; -o-animation-name: billboardItem_11_on;
+}
+.billboardItem_11_off .billboardTile_1 .billboardTileImg {
+	animation-name: billboard_11_off_1; -webkit-animation-name: billboard_11_off_1; -moz-animation-name: billboard_11_off_1; -o-animation-name: billboard_11_off_1;
+}
+.billboardItem_11_off .billboardTile_2 .billboardTileImg {
+	animation-name: billboard_11_off_2; -webkit-animation-name: billboard_11_off_2; -moz-animation-name: billboard_11_off_2; -o-animation-name: billboard_11_off_2;
+}
+.billboardItem_11_off .billboardTile_3 .billboardTileImg {
+	animation-name: billboard_11_off_3; -webkit-animation-name: billboard_11_off_3; -moz-animation-name: billboard_11_off_3; -o-animation-name: billboard_11_off_3;
+}
+.billboardItem_11_off .billboardTile_4 .billboardTileImg {
+	animation-name: billboard_11_off_4; -webkit-animation-name: billboard_11_off_4; -moz-animation-name: billboard_11_off_4; -o-animation-name: billboard_11_off_4;
+}
+.billboardItem_12 .billboardImgInner {
+	width: 100% !important;
+}
+.billboardItem_12 .billboardTile {
+	width: 50%; height: 50%; overflow: hidden; position: absolute;
+}
+.billboardItem_12 .billboardTile_1 {
+	left: 0px; top: 0px;
+}
+.billboardItem_12 .billboardTile_2 {
+	top: 0px; right: 0px;
+}
+.billboardItem_12 .billboardTile_3 {
+	left: 0px; bottom: 0px;
+}
+.billboardItem_12 .billboardTile_4 {
+	right: 0px; bottom: 0px;
+}
+.billboardItem_12 .billboardTileImg {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute;
+}
+.billboardItem_12 .billboardTile_1 .billboardTileImg {
+	transform-origin: 100% 100%; -webkit-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; -o-transform-origin: 100% 100%;
+}
+.billboardItem_12 .billboardTile_2 .billboardTileImg {
+	transform-origin: 0% 100%; -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -o-transform-origin: 0 100%;
+}
+.billboardItem_12 .billboardTile_3 .billboardTileImg {
+	transform-origin: 100% 0%; -webkit-transform-origin: 100% 0; -moz-transform-origin: 100% 0; -o-transform-origin: 100% 0;
+}
+.billboardItem_12 .billboardTile_4 .billboardTileImg {
+	transform-origin: 0% 0%; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -o-transform-origin: 0 0;
+}
+.billboardItem_12 .billboardImg {
+	width: 200%; height: 200%; position: absolute;
+}
+.billboardItem_12 .billboardTile_1 .billboardImg {
+	left: 0px; top: 0px;
+}
+.billboardItem_12 .billboardTile_2 .billboardImg {
+	top: 0px; right: 0px;
+}
+.billboardItem_12 .billboardTile_3 .billboardImg {
+	left: 0px; bottom: 0px;
+}
+.billboardItem_12 .billboardTile_4 .billboardImg {
+	right: 0px; bottom: 0px;
+}
+.billboardItem_12_on .billboardTileImg {
+	animation-name: billboardItem_12_on; -webkit-animation-name: billboardItem_12_on; -moz-animation-name: billboardItem_12_on; -o-animation-name: billboardItem_12_on;
+}
+.billboardItem_12_off .billboardTile_1 .billboardTileImg {
+	animation-name: billboard_12_off_1; -webkit-animation-name: billboard_12_off_1; -moz-animation-name: billboard_12_off_1; -o-animation-name: billboard_12_off_1;
+}
+.billboardItem_12_off .billboardTile_2 .billboardTileImg {
+	animation-name: billboard_12_off_2; -webkit-animation-name: billboard_12_off_2; -moz-animation-name: billboard_12_off_2; -o-animation-name: billboard_12_off_2;
+}
+.billboardItem_12_off .billboardTile_3 .billboardTileImg {
+	animation-name: billboard_12_off_3; -webkit-animation-name: billboard_12_off_3; -moz-animation-name: billboard_12_off_3; -o-animation-name: billboard_12_off_3;
+}
+.billboardItem_12_off .billboardTile_4 .billboardTileImg {
+	animation-name: billboard_12_off_4; -webkit-animation-name: billboard_12_off_4; -moz-animation-name: billboard_12_off_4; -o-animation-name: billboard_12_off_4;
+}
+.billboardItem_13 .billboardImgInner {
+	width: 100% !important;
+}
+.billboardItem_13 .billboardTile {
+	top: 0px; width: 25.1%; height: 100%; overflow: hidden; position: absolute;
+}
+.billboardItem_13 .billboardTile_1 {
+	left: 0px;
+}
+.billboardItem_13 .billboardTile_2 {
+	left: 25%;
+}
+.billboardItem_13 .billboardTile_3 {
+	left: 50%;
+}
+.billboardItem_13 .billboardTile_4 {
+	left: 75%;
+}
+.billboardItem_13 .billboardTileImg {
+	width: 100%; height: 100%; overflow: hidden; position: relative; opacity: 0;
+}
+.billboardItem_13 .billboardImg {
+	top: 0px; width: 400%; height: 100%; position: absolute;
+}
+.billboardItem_13 .billboardTile_1 .billboardImg {
+	left: 0px;
+}
+.billboardItem_13 .billboardTile_2 .billboardImg {
+	left: -100%;
+}
+.billboardItem_13 .billboardTile_3 .billboardImg {
+	left: -200%;
+}
+.billboardItem_13 .billboardTile_4 .billboardImg {
+	left: -300%;
+}
+.billboardItem_13_start .billboardTileImg {
+	opacity: 1;
+}
+.billboardItem_13_off .billboardTileImg {
+	animation-name: billboardItem_13_off; -webkit-animation-name: billboardItem_13_off; -moz-animation-name: billboardItem_13_off; -o-animation-name: billboardItem_13_off;
+}
+.billboardItem_13_on .billboardTileImg {
+	animation-name: billboardItem_13_on; -webkit-animation-name: billboardItem_13_on; -moz-animation-name: billboardItem_13_on; -o-animation-name: billboardItem_13_on;
+}

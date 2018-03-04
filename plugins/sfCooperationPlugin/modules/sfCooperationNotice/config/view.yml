@@ -1,0 +1,6 @@
+# apps/frontend/modules/notice/config/view.yml
+indexSuccess:
+  stylesheets: [notices.css]
+ 
+showSuccess:
+  stylesheets: [notice.css]

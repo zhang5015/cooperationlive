@@ -1,0 +1,831 @@
+.fk-newSearchBox {
+	border: 0px currentColor; border-image: none; height: 40px; overflow: hidden; font-size: 0px; float: left;
+}
+.fk-newSearchBox div {
+	display: inline-block;
+}
+.fk-newSearchBoxContainer {
+	width: 236px; height: 36px; overflow: hidden; float: left; position: relative;
+}
+.fk-newSearchSelectWrap {
+	line-height: 0; font-size: 0px;
+}
+.fk-newSearchSelect {
+	line-height: 0; font-size: 0px;
+}
+.fk-newSearchBoxContainer .fk-newSearchInput {
+	background: 0px; padding: 0px 0px 0px 14px; outline: 0px; border: 0px currentColor; border-image: none; width: 100%; height: 100%; color: rgb(102, 102, 102); font-family: Î¢ÈíÑÅºÚ; font-size: 14px; float: left;
+}
+.fk-newSearchBoxContainer :-ms-input-placeholder.fk-newSearchInput {
+	color: rgb(204, 204, 204);
+}
+.containerFormsLeft .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding-left: 10px;
+}
+.containerFormsRight .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding-left: 10px;
+}
+.middleLeftForms .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding-left: 10px;
+}
+.middleRightForms .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding-left: 10px;
+}
+.fk-searchBoxBtn {
+	width: 80px; height: 40px; text-align: center; color: rgb(255, 255, 255); font-size: 14px; float: right; cursor: pointer; background-color: red;
+}
+.fk-useFontIconBtn .fk-searchBoxBtn {
+	
+}
+.fk-newSearchBox3 .fk-searchBoxBtn {
+	width: 75px;
+}
+.fk-searchBoxBtn span {
+	text-align: center; line-height: 40px; font-size: 14px; vertical-align: middle;
+}
+.fk-newSearchSelectMenu {
+	width: 86px; height: 100%; line-height: 100%; font-size: 14px; border-right-color: rgba(255, 255, 255, 0.2); border-right-width: 1px; border-right-style: solid; float: left; position: relative; cursor: pointer;
+}
+.fk-newSearchSelectMenu .fk-searchMenuWord {
+	font: 14px/36px "Î¢ÈíÑÅºÚ"; color: rgb(127, 127, 127); margin-left: 20px; font-size-adjust: none; font-stretch: normal;
+}
+.g_locale1033 .fk-newSearchSelectMenu .fk-searchMenuWord {
+	margin-left: 10px;
+}
+.g_locale1033 .fk-newSearchSelectMenuShow .fk-searchMenuKeyWord {
+	padding-left: 10px;
+}
+.g_locale1033 .fk-dynamicSearch .fk-searchMenuWord {
+	padding-left: 10px; margin-left: 0px;
+}
+.fk-newSearchSelectMenu .fk-searchSelectMenuImg {
+	margin: auto 12px auto auto; padding: 4px; left: 0px; top: 0px; width: 8px; height: 10px; right: 0px; bottom: 0px; display: inline-block; position: absolute; cursor: pointer;
+}
+.fk-openSearchMenu.fk-newSearchBox4 .fk-searchSelectMenuRightBorder {
+	margin: auto 1px auto auto; left: 0px; top: 0px; width: 0px; height: 10px; right: 0px; bottom: 0px; border-right-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; display: inline-block; position: absolute;
+}
+.fk-openSearchMenu.fk-newSearchBox6 .fk-searchSelectMenuRightBorder {
+	margin: auto 1px auto auto; left: 0px; top: 0px; width: 0px; height: 10px; right: 0px; bottom: 0px; border-right-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; display: inline-block; position: absolute;
+}
+.fk-newSearchSelectMenu .fk-searchMenuImgArrow {
+	background: url("/image/v2/vbg01.png?v=201801311332") no-repeat -637px -1168px; transition:0.3s; width: 8px; height: 10px; float: left; display: inline-block; transform: rotate(180deg);
+}
+.fk-newSearchSelectMenu .fk-searchMenuFold {
+	transform: rotate(180deg);
+}
+.fk-newSearchSelectMenu .fk-searchMenuUnfold {
+	transform: rotate(0deg);
+}
+.fk-openSearchMenu .fk-newSearchBoxContainer {
+	width: 156px;
+}
+.fk-openSearchMenu.fk-useFontIconBtn .fk-newSearchBoxContainer {
+	width: 184px;
+}
+.fk-openSearchMenu.fk-dynamicSearch .fk-newSearchBoxContainer {
+	width: 180px; border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+div.fk-fixRecommandKeyBox {
+	clear: both; display: inline-block;
+}
+.containerFormsLeft .fk-newSearchBoxContainer {
+	width: 94px;
+}
+.containerFormsRight .fk-newSearchBoxContainer {
+	width: 94px;
+}
+.containerFormsLeft .fk-searchBoxBtn {
+	width: 70px;
+}
+.containerFormsRight .fk-searchBoxBtn {
+	width: 70px;
+}
+.containerFormsLeft div.fk-newSearchSelectMenu {
+	width: 68px;
+}
+.containerFormsRight div.fk-newSearchSelectMenu {
+	width: 68px;
+}
+.containerFormsLeft .fk-searchMenuWord {
+	line-height: 36px; margin-left: 12px;
+}
+.containerFormsRight .fk-searchMenuWord {
+	line-height: 36px; margin-left: 12px;
+}
+.containerFormsLeft .fk-openSearchMenu div.fk-newSearchBoxContainer {
+	width: 45px;
+}
+.containerFormsRight .fk-openSearchMenu div.fk-newSearchBoxContainer {
+	width: 45px;
+}
+.containerFormsLeft .fk-openSearchMenu .fk-newSearchInput {
+	padding-left: 10px;
+}
+.containerFormsRight .fk-openSearchMenu .fk-newSearchInput {
+	padding-left: 10px;
+}
+.containerFormsLeft .fk-newSearchSelectMenu .fk-searchSelectMenuImg {
+	margin-right: 6px;
+}
+.containerFormsRight .fk-newSearchSelectMenu .fk-searchSelectMenuImg {
+	margin-right: 6px;
+}
+.containerFormsLeft .fk-newSearchBox3 .fk-searchBoxBtn {
+	width: 66px;
+}
+.containerFormsRight .fk-newSearchBox3 .fk-searchBoxBtn {
+	width: 66px;
+}
+.middleLeftForms .fk-newSearchBoxContainer {
+	width: 114px;
+}
+.middleRightForms .fk-newSearchBoxContainer {
+	width: 114px;
+}
+.middleLeftForms .fk-searchBoxBtn {
+	width: 70px;
+}
+.middleRightForms .fk-searchBoxBtn {
+	width: 70px;
+}
+.middleLeftForms div.fk-newSearchSelectMenu {
+	width: 68px;
+}
+.middleRightForms div.fk-newSearchSelectMenu {
+	width: 68px;
+}
+.middleLeftForms .fk-searchMenuWord {
+	line-height: 36px; margin-left: 12px;
+}
+.middleRightForms .fk-searchMenuWord {
+	line-height: 36px; margin-left: 12px;
+}
+.middleLeftForms .fk-openSearchMenu div.fk-newSearchBoxContainer {
+	width: 45px;
+}
+.middleRightForms .fk-openSearchMenu div.fk-newSearchBoxContainer {
+	width: 45px;
+}
+.middleLeftForms .fk-openSearchMenu .fk-newSearchInput {
+	padding-left: 10px;
+}
+.middleRightForms .fk-openSearchMenu .fk-newSearchInput {
+	padding-left: 10px;
+}
+.middleLeftForms .fk-newSearchSelectMenu .fk-searchSelectMenuImg {
+	margin-right: 6px;
+}
+.middleRightForms .fk-newSearchSelectMenu .fk-searchSelectMenuImg {
+	margin-right: 6px;
+}
+.middleLeftForms .fk-newSearchBox3 .fk-searchBoxBtn {
+	width: 66px;
+}
+.middleRightForms .fk-newSearchBox3 .fk-searchBoxBtn {
+	width: 66px;
+}
+.fk-newSearchBox .faisco-icons-newSearch1 {
+	font-size: 30px;
+}
+.fk-newSearchSelectMenuShow {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(221, 221, 221) rgb(221, 221, 221); border-image: none; width: 85px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgb(255, 255, 255);
+}
+.fk-newSearchSelectMenuShow.fk-newSearchPanel4 {
+	border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.fk-newSearchSelectMenuShow.fk-newSearchPanel6 {
+	border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;
+}
+.fk-newSearchPanel1 {
+	border-radius: 0px;
+}
+.fk-newSearchPanel3 {
+	border-radius: 0px;
+}
+.fk-newSearchPanel5 {
+	border-radius: 0px;
+}
+.fk-newSearchPanel8 {
+	border-radius: 0px;
+}
+.fk-newSearchPanel1 {
+	border-width: 2px;
+}
+.fk-searchMenuBlock {
+	width: 65px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.fk-dynamicSearch .fk-searchMenuBlock {
+	overflow: visible;
+}
+.fk-newSearchSelectMenuShow .fk-searchMenuKeyWord {
+	font: 14px/36px "Î¢ÈíÑÅºÚ"; height: 36px; color: rgb(127, 127, 127); overflow: hidden; padding-left: 20px; display: block; cursor: pointer; font-size-adjust: none; font-stretch: normal;
+}
+.fk-newSearchSelectMenu {
+	line-height: 0; font-size: 0px;
+}
+.fk-dynamicSearch .fk-newSearchSelectWrap {
+	overflow: hidden;
+}
+.fk-dynamicSearch .fk-newSearchSelect {
+	overflow: hidden; float: left; opacity: 0;
+}
+.fk-dynamicSearch .fk-newSearchSelectMenu {
+	border: 0px currentColor; border-image: none; width: 100px; overflow: hidden; visibility: hidden;
+}
+.fk-dynamicSearch .fk-newSearchBoxContainer {
+	float: none; visibility: hidden;
+}
+.fk-dynamicSearch .fk-searchMenuWord {
+	margin: 0px; padding-left: 24px; border-left-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid;
+}
+.fk-dynamicSearch .fk-newSearchBoxContainer input.fk-newSearchInput {
+	padding-left: 10px; float: none;
+}
+.fk-dynamicSearch .fk-searchBoxBtn {
+	position: relative;
+}
+.containerFormsLeft .fk-newSearchSelectMenuShow .fk-searchMenuKeyWord {
+	padding-left: 10px;
+}
+.containerFormsRight .fk-newSearchSelectMenuShow .fk-searchMenuKeyWord {
+	padding-left: 10px;
+}
+.middleLeftForms .fk-newSearchSelectMenuShow .fk-searchMenuKeyWord {
+	padding-left: 10px;
+}
+.middleRightForms .fk-newSearchSelectMenuShow .fk-searchMenuKeyWord {
+	padding-left: 10px;
+}
+.fk-newSearchBox4.fk-dynamicSearch .fk-newSearchSelect {
+	border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.fk-newSearchBox6.fk-dynamicSearch .fk-newSearchSelect {
+	border-left-color: rgb(221, 221, 221); border-left-width: 1px; border-left-style: solid; opacity: 1;
+}
+.fk-dynamicSearch.fk-newSearchBox6 .fk-searchMenuWord {
+	border-left-color: currentColor; border-left-width: medium; border-left-style: none;
+}
+.fk-openSearchMenu.fk-newSearchBox6.fk-useFontIconBtn .fk-newSearchBoxContainer {
+	width: 160px;
+}
+.fk-newSearchBox1 .fk-newSearchSelectWrap {
+	border-width: 2px 0px 2px 2px; border-style: solid none solid solid; border-color: red currentColor red red; border-image: none;
+}
+.fk-newSearchBox1 .fk-searchBoxBtn {
+	width: 82px;
+}
+.fk-openSearchMenu.fk-newSearchBox1 .fk-newSearchBoxContainer {
+	width: 149px;
+}
+.fk-newSearchBox1 span {
+	font-family: Î¢ÈíÑÅºÚ; margin-left: 2px;
+}
+div.fk-newSearchBox3 {
+	border: 0px currentColor; border-image: none; height: 40px;
+}
+.fk-newSearchBox3 .fk-newSearchBoxContainer {
+	border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(221, 221, 221) currentColor rgb(221, 221, 221) rgb(221, 221, 221); border-image: none; width: 244px; height: 38px;
+}
+.fk-newSearchBox3 span.fk-searchMenuWord {
+	line-height: 38px;
+}
+#fk-newSearchFontIcon3 {
+	height: 40px;
+}
+#fk-newSearchFontIcon3 span {
+	line-height: 40px;
+}
+.fk-openSearchMenu.fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 157px;
+}
+.fk-openSearchMenu.fk-newSearchBox3 .fk-newSearchSelectMenu {
+	border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgba(255, 255, 255, 0.2) rgb(221, 221, 221) rgb(221, 221, 221); border-image: none; height: 100%;
+}
+.fk-openSearchMenu.fk-newSearchBox3 .fk-newSearchBoxContainer {
+	border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: medium; border-right-style: none; border-left-style: none;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 42px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 42px;
+}
+.containerFormsLeft .fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 113px;
+}
+.containerFormsRight .fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 113px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 52px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 52px;
+}
+.middleLeftForms .fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 121px;
+}
+.middleRightForms .fk-newSearchBox3 div.fk-newSearchBoxContainer {
+	width: 121px;
+}
+div.fk-newSearchBox5 {
+	border: 1px solid rgb(221, 221, 221); border-image: none; height: 38px;
+}
+#fk-newSearchFontIcon5 {
+	width: 44px; height: 100%; padding-right: 3px; background-color: transparent;
+}
+.fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 271px; height: 38px;
+}
+.fk-newSearchBox5 span.fk-searchMenuWord {
+	line-height: 38px;
+}
+.containerFormsLeft .fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 131px;
+}
+.containerFormsRight .fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 131px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 60px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 60px;
+}
+.middleLeftForms .fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 139px;
+}
+.middleRightForms .fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 139px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 70px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox5 .fk-newSearchBoxContainer {
+	width: 70px;
+}
+.fk-newSearchBox5 .faisco-icons-newSearch3 {
+	line-height: 38px; font-size: 30px;
+}
+div.fk-newSearchBox2 {
+	border-radius: 38px; border: 1px solid rgb(221, 221, 221); border-image: none; height: 38px; overflow: hidden;
+}
+.fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 271px;
+}
+.fk-newSearchBox2 .fk-newSearchBoxContainer {
+	height: 38px;
+}
+.fk-newSearchBox2 .fk-searchMenuWord {
+	line-height: 38px;
+}
+.fk-newSearchBox2 .faisco-icons-newSearch5 {
+	line-height: 38px;
+}
+#fk-newSearchFontIcon2 {
+	width: 44px; height: 38px; padding-right: 3px; background-color: transparent;
+}
+.fk-newSearchBox2 .faisco-icons-newSearch5 {
+	font-size: 28px;
+}
+.containerFormsLeft .fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 131px;
+}
+.containerFormsRight .fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 131px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 60px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 60px;
+}
+.middleLeftForms .fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 139px;
+}
+.middleRightForms .fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 139px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 70px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox2 .fk-newSearchBoxContainer {
+	width: 70px;
+}
+div.fk-newSearchBox4 {
+	border: 0px currentColor; border-image: none; height: 40px;
+}
+.fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 280px; height: 39px;
+}
+.fk-newSearchBox4 span.fk-searchMenuWord {
+	line-height: 39px;
+}
+.fk-newSearchBox4 .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding: 0px; float: right;
+}
+#fk-newSearchFontIcon4 {
+	width: 40px; height: 39px; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; float: right; background-color: transparent;
+}
+.fk-newSearchBox4 .faisco-icons-newSearch3 {
+	color: rgb(194, 194, 194); font-size: 36px;
+}
+.containerFormsLeft .fk-newSearchBox4 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.containerFormsRight .fk-newSearchBox4 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.containerFormsLeft .fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 148px;
+}
+.containerFormsRight .fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 148px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 70px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 70px;
+}
+.middleLeftForms .fk-newSearchBox4 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.middleRightForms .fk-newSearchBox4 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.middleLeftForms .fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 148px;
+}
+.middleRightForms .fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 148px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 80px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox4 .fk-newSearchBoxContainer {
+	width: 80px;
+}
+div.fk-newSearchBox6 {
+	border: 0px currentColor; border-image: none; height: 40px;
+}
+.fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 260px; height: 40px;
+}
+.fk-newSearchBox6 span.fk-searchMenuWord {
+	line-height: 40px;
+}
+.fk-newSearchBox6 .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding: 0px; float: right;
+}
+#fk-newSearchFontIcon6 {
+	width: 57px; height: 40px; border-right-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; float: right; background-color: transparent;
+}
+.fk-newSearchBox6 .faisco-icons-newSearch3 {
+	color: rgb(194, 194, 194); font-size: 36px;
+}
+.containerFormsLeft .fk-newSearchBox6 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.containerFormsRight .fk-newSearchBox6 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.containerFormsLeft .fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 119px;
+}
+.containerFormsRight .fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 119px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 50px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 50px;
+}
+.middleLeftForms .fk-newSearchBox6 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.middleRightForms .fk-newSearchBox6 .fk-searchMenuWord {
+	padding-right: 26px; padding-left: 12px;
+}
+.middleLeftForms .fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 129px;
+}
+.middleRightForms .fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 129px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 60px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox6 .fk-newSearchBoxContainer {
+	width: 60px;
+}
+div.fk-newSearchBox7 {
+	border-radius: 40px; border: 0px currentColor; border-image: none; height: 40px;
+}
+.fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 266px; height: 38px;
+}
+.fk-newSearchBox7 span.fk-searchMenuWord {
+	line-height: 38px;
+}
+.fk-newSearchBox7 .fk-newSearchBoxContainer .fk-newSearchInput {
+	padding: 0px; float: right;
+}
+#fk-newSearchFontIcon7 {
+	width: 52px; height: 38px; float: right; background-color: transparent;
+}
+.fk-newSearchBox7 .faisco-icons-newSearch3 {
+	color: rgb(194, 194, 194); font-size: 36px;
+}
+.fk-newSearchBox7.fk-dynamicSearch.fk-openSearchMenu {
+	border-radius: 0px;
+}
+.fk-dynamicSearch.fk-newSearchBox7 .fk-searchMenuWord {
+	padding: 0px 0px 0px 18px; border: 0px currentColor; border-image: none;
+}
+.fk-dynamicSearch.fk-newSearchBox7 .fk-newSearchSelect {
+	border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(221, 221, 221) currentColor rgb(221, 221, 221) rgb(221, 221, 221); border-image: none; border-top-left-radius: 40px; border-bottom-left-radius: 40px;
+}
+.fk-dynamicSearch.fk-newSearchBox7 .fk-newSearchSelectMenu {
+	width: 85px; border-right-color: rgba(255, 255, 255, 0.2); border-right-width: 1px; border-right-style: solid;
+}
+.fk-dynamicSearch.fk-newSearchBox7 .fk-newSearchBoxContainer input.fk-newSearchInput {
+	padding-left: 18px;
+}
+.fk-dynamicSearch #fk-newSearchFontIcon7 {
+	border-width: 1px 1px 1px medium; border-style: solid solid solid none; border-color: transparent transparent transparent currentColor; border-image: none; border-top-right-radius: 40px; border-bottom-right-radius: 40px;
+}
+.containerFormsLeft .fk-newSearchBox7 .fk-searchMenuWord {
+	padding-left: 12px;
+}
+.containerFormsRight .fk-newSearchBox7 .fk-searchMenuWord {
+	padding-left: 12px;
+}
+.containerFormsLeft .fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 124px;
+}
+.containerFormsRight .fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 124px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchSelectMenu {
+	width: 69px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchSelectMenu {
+	width: 69px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 54px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 54px;
+}
+.middleLeftForms .fk-newSearchBox7 .fk-searchMenuWord {
+	padding-left: 12px;
+}
+.middleRightForms .fk-newSearchBox7 .fk-searchMenuWord {
+	padding-left: 12px;
+}
+.middleLeftForms .fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 134px;
+}
+.middleRightForms .fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 134px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchSelectMenu {
+	width: 69px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchSelectMenu {
+	width: 69px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 64px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox7 .fk-newSearchBoxContainer {
+	width: 64px;
+}
+div.fk-newSearchBox9 {
+	border-radius: 5px; border: 1px solid rgb(221, 221, 221); border-image: none; height: 38px; overflow: hidden;
+}
+.fk-newSearchBox9 .fk-newSearchSelectMenu {
+	height: 100%;
+}
+.fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 274px; height: 38px;
+}
+.fk-openSearchMenu.fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 187px;
+}
+.fk-newSearchBox9 .fk-searchMenuWord {
+	line-height: 38px;
+}
+.fk-newSearchBox9 .faisco-icons-newSearch5 {
+	line-height: 38px;
+}
+#fk-newSearchFontIcon9 {
+	width: 44px; height: 38px; background-color: transparent;
+}
+.fk-newSearchBox9 .faisco-icons-newSearch5 {
+	font-size: 28px;
+}
+.containerFormsLeft #fk-newSearchFontIcon9 {
+	margin-right: -3px;
+}
+.containerFormsRight #fk-newSearchFontIcon9 {
+	margin-right: -3px;
+}
+.containerFormsLeft .fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 137px;
+}
+.containerFormsRight .fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 137px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 66px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 66px;
+}
+.middleLeftForms #fk-newSearchFontIcon9 {
+	margin-right: -3px;
+}
+.middleRightForms #fk-newSearchFontIcon9 {
+	margin-right: -3px;
+}
+.middleLeftForms .fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 145px;
+}
+.middleRightForms .fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 145px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 76px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox9 .fk-newSearchBoxContainer {
+	width: 76px;
+}
+div.fk-newSearchBox10 {
+	border-radius: 5px; border: 1px solid rgb(221, 221, 221); border-image: none; height: 38px; overflow: hidden;
+}
+.fk-newSearchBox10 .fk-newSearchSelectMenu {
+	border: 0px currentColor; border-image: none; float: right;
+}
+.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	border: 0px currentColor; border-image: none; float: right;
+}
+.fk-newSearchBox10 .fk-newSearchSelectMenu {
+	height: 100%;
+}
+.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 279px; height: 38px; border-right-color: rgba(255, 255, 255, 0.2); border-right-width: 1px; border-right-style: solid;
+}
+.fk-openSearchMenu.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 194px;
+}
+.fk-newSearchBox10 .fk-newSearchInput {
+	padding-left: 5px;
+}
+.fk-newSearchBox10 .fk-searchMenuWord {
+	line-height: 38px;
+}
+.fk-newSearchBox10 .faisco-icons-newSearch5 {
+	line-height: 38px;
+}
+#fk-newSearchFontIcon10 {
+	width: 38px; height: 38px; float: left; background-color: transparent;
+}
+.fk-newSearchBox10 .faisco-icons-newSearch5 {
+	font-size: 28px;
+}
+.containerFormsLeft #fk-newSearchFontIcon10 {
+	margin-right: -3px;
+}
+.containerFormsRight #fk-newSearchFontIcon10 {
+	margin-right: -3px;
+}
+.containerFormsLeft .fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 142px;
+}
+.containerFormsRight .fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 142px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 72px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 72px;
+}
+.middleLeftForms #fk-newSearchFontIcon10 {
+	margin-right: -3px;
+}
+.middleRightForms #fk-newSearchFontIcon10 {
+	margin-right: -3px;
+}
+.middleLeftForms .fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 151px;
+}
+.middleRightForms .fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 151px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 82px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox10 .fk-newSearchBoxContainer {
+	width: 82px;
+}
+div.fk-newSearchBox8 {
+	border: 0px currentColor; border-image: none; height: 40px;
+}
+.fk-newSearchBox8 .fk-newSearchBoxContainer {
+	border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(221, 221, 221) currentColor rgb(221, 221, 221) rgb(221, 221, 221); border-image: none; width: 239px; height: 38px;
+}
+.fk-newSearchBox8 .fk-searchBoxBtn {
+	height: 40px;
+}
+.fk-newSearchBox8 .fk-searchBoxBtn span {
+	line-height: 40px; font-family: Î¢ÈíÑÅºÚ;
+}
+.fk-openSearchMenu.fk-newSearchBox8 .fk-newSearchSelectMenu {
+	border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgba(255, 255, 255, 0.2) rgb(221, 221, 221) rgb(221, 221, 221); border-image: none;
+}
+.fk-openSearchMenu.fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 152px; border-right-color: currentColor; border-left-color: currentColor; border-right-width: 0px; border-left-width: medium; border-right-style: none; border-left-style: none;
+}
+.fk-newSearchBox8 .fk-searchMenuWord {
+	line-height: 38px;
+}
+.containerFormsLeft .fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 109px;
+}
+.containerFormsRight .fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 109px;
+}
+.containerFormsLeft .fk-openSearchMenu.fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 38px;
+}
+.containerFormsRight .fk-openSearchMenu.fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 38px;
+}
+.middleLeftForms .fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 117px;
+}
+.middleRightForms .fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 117px;
+}
+.middleLeftForms .fk-openSearchMenu.fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 48px;
+}
+.middleRightForms .fk-openSearchMenu.fk-newSearchBox8 .fk-newSearchBoxContainer {
+	width: 48px;
+}
+.fk-newSearchPanel4 {
+	border-radius: 0px; box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+.fk-newSearchPanel6 {
+	border-radius: 0px; box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+.fk-searchMenuSplitLine {
+	margin: auto auto auto 0px; left: 0px; top: 0px; width: 0px; height: 100%; right: 0px; bottom: 0px; border-left-color: rgba(0, 0, 0, 0.15); border-left-width: 1px; border-left-style: solid; display: inline-block; position: absolute;
+}
+.fk-newSearchBox7 .fk-newSearchSelectMenu {
+	transition:background-color 0.4s; -moz-transition: background-color .4s; -webkit-transition: background-color .4s; -o-transition: background-color .4s;
+}
+.fk-newSearchBox7 .fk-newSearchInput {
+	transition:background-color 0.4s; -moz-transition: background-color .4s; -webkit-transition: background-color .4s; -o-transition: background-color .4s;
+}
+.fk-newSearchBox7 .fk-searchBoxBtn {
+	transition:background-color 0.4s, border-color 0.35s; -moz-transition: background-color .4s, border-color .35s; -webkit-transition: background-color .4s, border-color .35s; -o-transition: background-color .4s, border-color .35s;
+}
+.fk-newSearchBox7 .fk-newSearchSelect {
+	transition:border-color 0.3s; -moz-transition: border-color .3s; -webkit-transition: border-color .3s; -o-transition: border-color .3s;
+}
+.fk-newSearchBox7 .fk-searchBoxBtn span {
+	transition:color 0.5s; -moz-transition: color .5s; -webkit-transition: color .5s; -o-transition: color .5s;
+}
+.fk-newSearchBox4 .fk-searchBoxBtn {
+	transition:background-color 0.5s, border-color 0.2s; -moz-transition: background-color .5s, border-color .2s; -webkit-transition: background-color .5s, border-color .2s; -o-transition: background-color .5s, border-color .2s;
+}
+.fk-newSearchBox6 .fk-searchBoxBtn {
+	transition:background-color 0.5s, border-color 0.2s; -moz-transition: background-color .5s, border-color .2s; -webkit-transition: background-color .5s, border-color .2s; -o-transition: background-color .5s, border-color .2s;
+}
+.fk-newSearchBox4 .fk-newSearchSelect {
+	transition:border-color 0.2s; -moz-transition: border-color .2s; -webkit-transition: border-color .2s; -o-transition: border-color .2s;
+}
+.fk-newSearchBox6 .fk-newSearchSelect {
+	transition:border-color 0.2s; -moz-transition: border-color .2s; -webkit-transition: border-color .2s; -o-transition: border-color .2s;
+}
+.fk-newSearchBox4 .fk-newSearchSelectMenu {
+	transition:background-color 0.5s; -moz-transition: background-color .5s; -webkit-transition: background-color .5s; -o-transition: background-color .5s;
+}
+.fk-newSearchBox6 .fk-newSearchSelectMenu {
+	transition:background-color 0.5s; -moz-transition: background-color .5s; -webkit-transition: background-color .5s; -o-transition: background-color .5s;
+}
+.fk-newSearchBox4 .fk-newSearchInput {
+	transition:background-color 0.5s; -moz-transition: background-color .5s; -webkit-transition: background-color .5s; -o-transition: background-color .5s;
+}
+.fk-newSearchBox6 .fk-newSearchInput {
+	transition:background-color 0.5s; -moz-transition: background-color .5s; -webkit-transition: background-color .5s; -o-transition: background-color .5s;
+}
+.fk-newSearchBox .fk_lowIEPlaceholderStyle {
+	font-size: 14px; display: none;
+}

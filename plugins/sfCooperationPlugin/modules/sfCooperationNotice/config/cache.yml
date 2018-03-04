@@ -1,0 +1,10 @@
+# plugins/sfCooperationPlugin/modules/sfCooperationNotice/config/cache.yml
+new:
+  enabled:     true
+
+index:
+  enabled:  true
+  lifetime: 600
+
+all:
+  with_layout: false
