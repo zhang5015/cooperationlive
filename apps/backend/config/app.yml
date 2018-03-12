@@ -2,4 +2,12 @@
 # http://www.symfony-project.org/reference/1_4/en/11-App
 
 # default values
-#all:
+all:
+  sf_guard_plugin:
+    routes_register:              false
+    algorithm_callable:           [MyCryptoClass, MyCryptoMethod]
+    remember_key_expiration_age:  2592000   # 30 days in seconds
+    remember_cookie_name:         myAppRememberMe
+    allow_login_with_email:       true
+    #success_signin_url:           @my_route?param=value # the plugin use the referer as default
+    #success_signout_url:          module/action         # the plugin use the referer as default

@@ -3,5 +3,5 @@
 
 # apps/backend/config/security.yml
 default:
-  is_secure:   false
+  is_secure:   true
   credentials: admin

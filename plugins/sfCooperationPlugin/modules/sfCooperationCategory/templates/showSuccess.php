@@ -1,5 +1,4 @@
-<?php use_stylesheet('notices.css') ?>
- 
+
 <?php slot('title', sprintf('Notices in the %s category', $category->getName())) ?>
  
 <div class="category">
@@ -42,9 +41,6 @@
 <div class="pagination_desc">
   <strong><?php echo count($pager) ?></strong> notices in this category
  
-<!--  <?php if ($pager->haveToPaginate()): ?>
-    - page <strong><?php echo $pager->getPage() ?>/<?php echo $pager->getLastPage() ?></strong>
-  <?php endif; ?>-->
   <?php echo format_number_choice(
     '[0]No notice in this category|[1]One notice in this category|(1,+Inf]%count% notices in this category',
     array('%count%' => '<strong>'.count($pager).'</strong>'),

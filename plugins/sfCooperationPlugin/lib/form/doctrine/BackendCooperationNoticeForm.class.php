@@ -5,6 +5,8 @@ class BackendCooperationNoticeForm extends CooperationNoticeForm
     public function configure()
     {
         parent::configure();
+        
+        $this->removeFields();
 
         $this->widgetSchema['logo'] = new sfWidgetFormInputFileEditable(array(
       'label'     => 'Company logo',

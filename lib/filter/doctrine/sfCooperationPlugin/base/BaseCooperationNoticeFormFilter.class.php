@@ -1,14 +1,14 @@
 <?php
 
 /**
- * CooperationJob filter form base class.
+ * CooperationNotice filter form base class.
  *
  * @package    cooperation
  * @subpackage filter
  * @author     Your name here
  * @version    1.0
  */
-abstract class BaseCooperationJobFormFilter extends BaseFormFilterDoctrine
+abstract class BaseCooperationNoticeFormFilter extends BaseFormFilterDoctrine
 {
   public function setup()
   {
@@ -61,7 +61,7 @@ abstract class BaseCooperationJobFormFilter extends BaseFormFilterDoctrine
 
   public function getModelName()
   {
-    return 'CooperationJob';
+    return 'CooperationNotice';
   }
 
   public function getFields()

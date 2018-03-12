@@ -11,19 +11,19 @@
 	<meta name="renderer" content="webkit" /> 
 	<meta content="http://www.cooperationlive.com/" property="og:url" /> 
 	<script type="text/javascript">
-		(function() {
-				var fs = document.createElement("script");
-				fs.src = "js/hawkEye.min.js?v=201712051200";
-				window.FAI_HAWK_EYE = {};
-				window.FAI_HAWK_EYE.jssdk_report_url = "//report.faisco.cn/js/report";
-				window.FAI_HAWK_EYE.jssdk_appid = 3002;
-				window.FAI_HAWK_EYE.fai_aid = 16194071;
-				window.FAI_HAWK_EYE.fai_bs_aid = 16194071;
-				window.FAI_HAWK_EYE.fai_bs_id = 0;
-				window.FAI_HAWK_EYE.fai_bs_wid = 0;
-				var s = document.getElementsByTagName("script")[0];
-				s.parentNode.insertBefore(fs, s);
-		})();
+//		(function() {
+//				var fs = document.createElement("script");
+//				fs.src = "js/hawkEye.min.js?v=201712051200";
+//				window.FAI_HAWK_EYE = {};
+//				window.FAI_HAWK_EYE.jssdk_report_url = "//report.faisco.cn/js/report";
+//				window.FAI_HAWK_EYE.jssdk_appid = 3002;
+//				window.FAI_HAWK_EYE.fai_aid = 16194071;
+//				window.FAI_HAWK_EYE.fai_bs_aid = 16194071;
+//				window.FAI_HAWK_EYE.fai_bs_id = 0;
+//				window.FAI_HAWK_EYE.fai_bs_wid = 0;
+//				var s = document.getElementsByTagName("script")[0];
+//				s.parentNode.insertBefore(fs, s);
+//		})();
 </script> 
 	<meta name="mobile-agent" content="format=html5;url=http://m.nz15518796.icoc.bz/" /> 
 	<meta name="keywords" content="" /> 

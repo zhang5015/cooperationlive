@@ -1,5 +1,4 @@
 <!-- apps/frontend/modules/notice/templates/showSuccess.php -->
-<?php use_stylesheet('notice.css') ?>
 <?php use_helper('Text') ?>
 <?php slot(
   'title',

@@ -54,7 +54,7 @@ abstract class BaseCooperationNoticeForm extends BaseFormDoctrine
       'updated_at'   => new sfValidatorDateTime(),
     ));
 
-    $this->widgetSchema->setNameFormat('jobeeet_job[%s]');
+    $this->widgetSchema->setNameFormat('cooperation_notice[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
 

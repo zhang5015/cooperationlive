@@ -18,12 +18,20 @@ abstract class BaseCooperationCategoryForm extends BaseFormDoctrine
       'id'         => new sfWidgetFormInputHidden(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
+      //CooperationCategoryTranslationForm
+//      'name' => new sfWidgetFormInputText(),
+//      'lang' => new sfWidgetFormInputHidden(),
+//      'slug' => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
+      //CooperationCategoryTranslationForm 
+//      'name' => new sfValidatorString(array('max_length' => 255)),
+//      'lang' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('lang')), 'empty_value' => $this->getObject()->get('lang'), 'required' => false)),
+//      'slug' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('cooperation_category[%s]');

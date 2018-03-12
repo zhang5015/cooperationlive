@@ -8,21 +8,21 @@ class myUser extends sfBasicSecurityUser
 //        $this->getAttributeHolder()->remove('notice_history');
 //    }
 //
-//    public function getNoticeHistory()
-//    {
-//        $ids = $this->getAttribute('notice_history', array());
-//
-//        if (!empty($ids))
-//        {
-//            return Doctrine_Core::getTable('CooperationNotice')
-//            ->createQuery('a')
-//            ->whereIn('a.id', $ids)
-//            ->execute()
-//            ;
-//        }
-//
-//        return array();
-//    }
+    public function getNoticeHistory()
+    {
+        $ids = $this->getAttribute('notice_history', array());
+
+        if (!empty($ids))
+        {
+            return Doctrine_Core::getTable('CooperationNotice')
+            ->createQuery('a')
+            ->whereIn('a.id', $ids)
+            ->execute()
+            ;
+        }
+
+        return array();
+    }
 //
 //    public function addNoticeToHistory(CooperationNotice $notice)
 //    {

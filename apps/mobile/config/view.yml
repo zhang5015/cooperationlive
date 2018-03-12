@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [base.min.css,fontsIco.min.css,bannerAnimation.min.css,1027_3.min.css,cubeNavigation.min.css,font-awesome.min.css ]
+
+  javascripts:    [2052.js,jqmobi.min.js,jqmobi_ui.min.js,mobi.min.js]
+
+  has_layout:     true
+  layout:         layout
+

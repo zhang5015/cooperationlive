@@ -24,21 +24,7 @@ abstract class PluginCooperationNoticeForm extends BaseCooperationNoticeForm
         new sfValidatorEmail(),
         ));
 
-        //      unset(
-        //      $this['created_at'], $this['updated_at'],
-        //      $this['expires_at'], $this['is_activated']
-        //      );
-        //      $this->useFields(array('category_id', 'type', 'company', 'logo', 'url', 'position', 'location', 'description', 'how_to_apply', 'token', 'is_public', 'email'));
-        //      $this->validatorSchema['email'] = new sfValidatorAnd(array(
-        //      $this->validatorSchema['email'],
-        //      new sfValidatorEmail(),
-        //      ));
         unset($this['created_at'], $this['updated_at'], $this['cooperation_affiliates_list']);
-        //        unset(
-        //        $this['created_at'], $this['updated_at'],
-        //        $this['expires_at'], $this['is_activated'],
-        //        $this['token']
-        //        );
 
         $this->validatorSchema['email'] = new sfValidatorAnd(array(
         $this->validatorSchema['email'],
