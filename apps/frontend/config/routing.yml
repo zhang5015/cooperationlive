@@ -1,0 +1,10 @@
+# apps/frontend/config/routing.yml
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: sfCooperationMain, action: index }
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+homepage:
+  url:   /
+  param: { module: sfCooperationMain, action: index }
