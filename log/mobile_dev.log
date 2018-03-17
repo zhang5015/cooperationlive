@@ -7602,3 +7602,707 @@ Mar 17 16:01:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Fou
 Mar 17 16:01:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Mar 17 16:01:27 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
 Mar 17 16:01:27 symfony [info] {sfWebDebugLogger} Factories 32.88 ms (1)
+Mar 17 16:22:55 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 16:22:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 16:22:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 16:22:55 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 16:22:55, 1)
+Mar 17 16:22:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 16:22:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 16:22:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 16:22:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 16:22:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:22:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:22:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 16:22:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 16:22:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 16:22:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 16:22:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 16:22:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:22:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:22:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 16:22:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 16:22:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 16:22:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:22:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:22:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 16:22:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 16:22:55 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:22:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Configuration 18.02 ms (11)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Factories 18.01 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 56.32 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.03 ms (8)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 24.41 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.54 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.83 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 3.87 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.38 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 2.84 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.85 ms (1)
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send content (170343 o)
+Mar 17 16:22:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/js/hawkEye.min.js" (/).
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Factories 24.06 ms (1)
+Mar 17 16:22:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:22:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Configuration 0.33 ms (5)
+Mar 17 16:22:55 symfony [info] {sfWebDebugLogger} Factories 35.62 ms (1)
+Mar 17 16:25:41 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 16:25:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 16:25:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 16:25:41 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 16:25:41, 1)
+Mar 17 16:25:41 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 16:25:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 16:25:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 16:25:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 16:25:41 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:25:41 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:25:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 16:25:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 16:25:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 16:25:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 16:25:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 16:25:41 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:25:41 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:25:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 16:25:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 16:25:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 16:25:41 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:25:41 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:25:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 16:25:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 16:25:41 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:25:41 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Configuration 18.74 ms (11)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Factories 19.26 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 60.02 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.29 ms (8)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 29.81 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.59 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.20 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 5.18 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 5.90 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 3.29 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 2.18 ms (1)
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send content (170348 o)
+Mar 17 16:25:41 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/js/hawkEye.min.js" (/).
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Configuration 0.51 ms (5)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Factories 20.55 ms (1)
+Mar 17 16:25:41 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:25:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Configuration 0.34 ms (5)
+Mar 17 16:25:41 symfony [info] {sfWebDebugLogger} Factories 38.54 ms (1)
+Mar 17 16:31:04 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 16:31:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 16:31:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 16:31:04 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 16:31:04, 1)
+Mar 17 16:31:04 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 16:31:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 16:31:04 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 16:31:04 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 16:31:04 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:31:04 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:31:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 16:31:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 16:31:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 16:31:04 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 16:31:04 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 16:31:04 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:31:04 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:31:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 16:31:04 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 16:31:04 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 16:31:04 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:31:04 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:31:04 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 16:31:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 16:31:04 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:31:04 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Configuration 21.40 ms (11)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Factories 27.90 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 67.42 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.28 ms (8)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 25.23 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.49 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.10 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 4.54 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.75 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 3.34 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.66 ms (1)
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send content (170213 o)
+Mar 17 16:31:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/js/hawkEye.min.js" (/).
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Configuration 0.48 ms (5)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Factories 18.58 ms (1)
+Mar 17 16:31:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:31:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 17 16:31:04 symfony [info] {sfWebDebugLogger} Factories 29.68 ms (1)
+Mar 17 16:32:59 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 16:32:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 16:32:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 16:32:59 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 16:32:59, 1)
+Mar 17 16:32:59 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 16:32:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 16:32:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 16:32:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 16:32:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:32:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:32:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 16:32:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 16:32:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 16:32:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 16:32:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 16:32:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:32:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:32:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 16:32:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 16:32:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 16:32:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 16:32:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 16:32:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 16:32:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 16:32:59 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:32:59 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 16:32:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 16:32:59 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 16:32:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Configuration 20.77 ms (11)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Factories 21.54 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 62.20 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.61 ms (8)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 25.07 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 5.26 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.07 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.07 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 2.94 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 4.74 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.66 ms (1)
+Mar 17 16:32:59 symfony [info] {sfWebResponse} Send content (170233 o)
+Mar 17 16:32:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 16:32:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 16:32:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Configuration 0.36 ms (5)
+Mar 17 16:32:59 symfony [info] {sfWebDebugLogger} Factories 39.36 ms (1)
+Mar 17 22:19:50 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:19:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:19:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:19:50 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:19:50, 1)
+Mar 17 22:19:50 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:19:50 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:19:50 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:50 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:50 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:50 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:50 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:19:50 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:19:50 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:19:50 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:50 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:50 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:50 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:50 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:19:50 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:19:50 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:19:50 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:50 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:50 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:19:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:19:50 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:50 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:19:50 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:19:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Configuration 51.50 ms (10)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Factories 36.42 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 46.94 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.16 ms (8)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 26.08 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.71 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 4.85 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.25 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.07 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 3.11 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.69 ms (1)
+Mar 17 22:19:50 symfony [info] {sfWebResponse} Send content (170201 o)
+Mar 17 22:19:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:19:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:19:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:51 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 17 22:19:51 symfony [info] {sfWebDebugLogger} Factories 28.59 ms (1)
+Mar 17 22:19:53 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:19:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:19:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:19:53 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:19:53, 1)
+Mar 17 22:19:53 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:19:53 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:19:53 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:53 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:53 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:53 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:53 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:19:53 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:19:53 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:19:53 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:53 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:53 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:53 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:53 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:19:53 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:19:53 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:19:53 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:53 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:53 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:19:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:19:53 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:53 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:19:53 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:19:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Configuration 17.73 ms (11)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Factories 17.23 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 51.32 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.93 ms (8)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 27.79 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.01 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.07 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.21 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 6.19 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 5.75 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.54 ms (1)
+Mar 17 22:19:53 symfony [info] {sfWebResponse} Send content (170233 o)
+Mar 17 22:19:54 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:19:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:19:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:54 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 17 22:19:54 symfony [info] {sfWebDebugLogger} Factories 30.37 ms (1)
+Mar 17 22:19:55 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:19:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:19:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:19:55 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:19:55, 1)
+Mar 17 22:19:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:19:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:19:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:19:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:19:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:19:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:19:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:19:55 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:19:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:55 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:55 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:19:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:19:55 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:55 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:19:55 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:19:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Configuration 18.42 ms (11)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Factories 16.18 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 51.99 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.21 ms (8)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 21.75 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.49 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.01 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.96 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 4.12 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 3.39 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.58 ms (1)
+Mar 17 22:19:55 symfony [info] {sfWebResponse} Send content (170232 o)
+Mar 17 22:19:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:19:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:19:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Configuration 0.30 ms (5)
+Mar 17 22:19:55 symfony [info] {sfWebDebugLogger} Factories 31.85 ms (1)
+Mar 17 22:19:57 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:19:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:19:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:19:57 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:19:57, 1)
+Mar 17 22:19:57 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:19:57 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:19:57 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:57 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:57 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:57 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:57 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:19:57 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:19:57 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:19:57 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:57 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:57 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:57 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:57 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:19:57 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:19:57 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:19:57 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:57 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:57 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:19:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:19:57 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:57 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:19:57 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:19:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Configuration 17.28 ms (11)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Factories 20.75 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 47.44 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.48 ms (8)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 22.33 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.80 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.45 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.00 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.61 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 3.34 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.74 ms (1)
+Mar 17 22:19:57 symfony [info] {sfWebResponse} Send content (170233 o)
+Mar 17 22:19:57 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:19:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:19:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Configuration 0.35 ms (5)
+Mar 17 22:19:57 symfony [info] {sfWebDebugLogger} Factories 34.09 ms (1)
+Mar 17 22:19:58 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:19:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:19:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:19:58 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:19:58, 1)
+Mar 17 22:19:58 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:19:58 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:19:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:58 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:58 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:58 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:19:58 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:19:58 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:19:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:58 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:58 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:58 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:19:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:19:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:19:58 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:58 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:58 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:19:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:19:58 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:58 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:19:58 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:19:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Configuration 17.33 ms (11)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Factories 17.05 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 58.63 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.60 ms (8)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 27.23 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.83 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.01 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.10 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.05 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 7.89 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 2.62 ms (1)
+Mar 17 22:19:58 symfony [info] {sfWebResponse} Send content (170233 o)
+Mar 17 22:19:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:19:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:19:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Configuration 2.97 ms (5)
+Mar 17 22:19:58 symfony [info] {sfWebDebugLogger} Factories 28.26 ms (1)
+Mar 17 22:19:59 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:19:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:19:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:19:59 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:19:59, 1)
+Mar 17 22:19:59 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:19:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:19:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:19:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:19:59 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:59 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:19:59 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:19:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:19:59 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:59 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:19:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:19:59 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:19:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Configuration 16.79 ms (11)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Factories 15.28 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 40.95 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.51 ms (8)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 24.29 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 8.21 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.13 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.96 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.23 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 2.71 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.45 ms (1)
+Mar 17 22:19:59 symfony [info] {sfWebResponse} Send content (170233 o)
+Mar 17 22:19:59 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:19:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:19:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 17 22:19:59 symfony [info] {sfWebDebugLogger} Factories 34.55 ms (1)
+Mar 17 22:20:00 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:20:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:20:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:20:00 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:20:00, 1)
+Mar 17 22:20:00 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:20:00 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:20:00 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:20:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:20:00 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:20:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Configuration 17.97 ms (11)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Factories 32.67 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 53.01 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.12 ms (8)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 26.54 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 5.34 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.20 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.41 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 4.98 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 4.87 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.63 ms (1)
+Mar 17 22:20:00 symfony [info] {sfWebResponse} Send content (170233 o)
+Mar 17 22:20:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:20:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:20:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Configuration 0.40 ms (5)
+Mar 17 22:20:00 symfony [info] {sfWebDebugLogger} Factories 33.43 ms (1)
+Mar 17 22:20:00 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:20:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:20:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:20:00 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:20:00, 1)
+Mar 17 22:20:00 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:20:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:00 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:20:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:20:01 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:20:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:20:01 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:20:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:20:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:20:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:20:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:01 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:20:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:20:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:20:01 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:20:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:01 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:01 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:20:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:20:01 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:20:01 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:20:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:20:01 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:20:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Configuration 32.60 ms (11)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Factories 37.97 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 83.11 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 16.84 ms (8)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 41.74 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 6.43 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 5.18 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 4.81 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 5.20 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 6.44 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 5.39 ms (1)
+Mar 17 22:20:01 symfony [info] {sfWebResponse} Send content (170234 o)
+Mar 17 22:20:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:20:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:20:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Configuration 0.36 ms (5)
+Mar 17 22:20:01 symfony [info] {sfWebDebugLogger} Factories 50.10 ms (1)
+Mar 17 22:20:08 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Mar 17 22:20:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 17 22:20:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 17 22:20:08 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-03-17 22:20:08, 1)
+Mar 17 22:20:08 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Mar 17 22:20:08 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Mar 17 22:20:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: count)
+Mar 17 22:20:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php on line 48 (Undefined variable: category)
+Mar 17 22:20:08 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:08 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:08 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Mar 17 22:20:08 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Mar 17 22:20:08 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Mar 17 22:20:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: count)
+Mar 17 22:20:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php on line 48 (Undefined variable: category)
+Mar 17 22:20:08 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:08 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:08 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Mar 17 22:20:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: count)
+Mar 17 22:20:08 symfony [notice] {sfWebDebugLogger}  Notice at /home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php on line 108 (Undefined variable: category)
+Mar 17 22:20:08 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 25 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:08 symfony [warning] {sfWebDebugLogger}  Warning at /home/sfprojects/cooperationlive/lib/vendor/symfony/lib/helper/UrlHelper.php on line 90 (array_merge(): Argument #2 is not an array)
+Mar 17 22:20:08 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Mar 17 22:20:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Mar 17 22:20:08 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:20:08 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/mobile/templates/layout.php"
+Mar 17 22:20:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 17 22:20:08 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 17 22:20:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Configuration 16.07 ms (11)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Factories 16.78 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 41.08 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.82 ms (8)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 24.90 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 3.81 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.06 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 2.03 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 2.88 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 2.78 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 6.31 ms (1)
+Mar 17 22:20:08 symfony [info] {sfWebResponse} Send content (170201 o)
+Mar 17 22:20:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/ajax/logJsErr.php" (/).
+Mar 17 22:20:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Mar 17 22:20:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 17 22:20:09 symfony [info] {sfWebDebugLogger} Configuration 0.31 ms (5)
+Mar 17 22:20:09 symfony [info] {sfWebDebugLogger} Factories 36.08 ms (1)

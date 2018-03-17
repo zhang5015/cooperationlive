@@ -666,19 +666,19 @@
 </head>
 <body class="g_locale2052 mobiCol3" id="g_body" faiscomobi="true">
 <script type="text/javascript">
-(function() {
-    var fs = document.createElement("script");
-    fs.src = "js/hawkEye.min.js?v=201712051200";
-    window.FAI_HAWK_EYE = {};
-    window.FAI_HAWK_EYE.jssdk_report_url = "//report.faisco.cn/js/report";
-    window.FAI_HAWK_EYE.jssdk_appid = 3003;
-    window.FAI_HAWK_EYE.fai_aid = 16194071;
-    window.FAI_HAWK_EYE.fai_bs_aid = 16194071;
-    window.FAI_HAWK_EYE.fai_bs_id = 0;
-    window.FAI_HAWK_EYE.fai_bs_wid = 0;
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(fs, s);
-})();
+//(function() {
+//    var fs = document.createElement("script");
+//    fs.src = "js/hawkEye.min.js?v=201712051200";
+//    window.FAI_HAWK_EYE = {};
+//    window.FAI_HAWK_EYE.jssdk_report_url = "//report.faisco.cn/js/report";
+//    window.FAI_HAWK_EYE.jssdk_appid = 3003;
+//    window.FAI_HAWK_EYE.fai_aid = 16194071;
+//    window.FAI_HAWK_EYE.fai_bs_aid = 16194071;
+//    window.FAI_HAWK_EYE.fai_bs_id = 0;
+//    window.FAI_HAWK_EYE.fai_bs_wid = 0;
+//    var s = document.getElementsByTagName("script")[0];
+//    s.parentNode.insertBefore(fs, s);
+//})();
 </script>
 <script type="text/javascript">
     //html root的字体计算应该放在最前面，这样计算就不会有误差了/
@@ -758,16 +758,14 @@
 <div class="headerSiteMaskWhiteBg" id="headerWhiteBg"></div>
 <div class="headerSiteMaskBg" id="headerBg"></div>
 <div class="webHeader webHeaderBg " id="webHeader">
-<div class="header-forLogo header " id="header" style="padding: 0px;"><span
-	class="pageLogo" id="pageLogo"
-	style="display: none; visibility: hidden;" ph="160" pw="160" sid="0"><a
-	href="http://m.cooperationlive.com/">
-<div class="logoImg " id="pageLogoImg"
-	style="background-position: center; background-image: url(&quot;images/no-pic.jpg&quot;); background-repeat: no-repeat; background-size: contain;"></div>
-</a></span> <span class="pageTitle" id="pageTitle">
-<h1
-	style="font-size: inherit; font-weight: normal; display: inline-block;">Cooperation
-Live</h1>
+<div class="header-forLogo header " id="header" style="padding: 0px;">
+<span class="pageLogo" id="pageLogo" style="display: none; visibility: hidden;" ph="160" pw="160" sid="0">
+<a href="http://m.cooperationlive.com/">
+<div class="logoImg " id="pageLogoImg" style="background-position: center; background-image: url(&quot;images/no-pic.jpg&quot;); background-repeat: no-repeat; background-size: contain;"></div>
+</a>
+</span>
+<span class="pageTitle" id="pageTitle">
+<h1 style="font-size: inherit; font-weight: normal; display: inline-block;">Cooperation Live</h1>
 </span></div>
 </div>
 </div>
@@ -782,13 +780,11 @@ Live</h1>
 <div class="footer mallThemeFooter" id="footer">
 <div class="bottomdiv">
 <div class="bottom">
-<div class="backtop"
-	onclick="Mobi.scrollToTop(&quot;webContainerBox&quot;)">top <b></b></div>
+<div class="backtop" onclick="Mobi.scrollToTop(&quot;webContainerBox&quot;)">top <b></b></div>
 </div>
 </div>
 <div class="technical">
-<div class="technicalSupport footerInfo"><font face="Arial">&copy;</font>2018
-- 版权所有</div>
+<div class="technicalSupport footerInfo"><font face="Arial">&copy;</font>2018 - 版权所有</div>
 <div class="technicalSupport"><a class="fa fa-laptop before"
 	hidefocus="true" href="http://www.cooperationlive.com/" target="_blank">电脑版</a>
 </div>
@@ -796,73 +792,23 @@ Live</h1>
 </div>
 </div>
 <style id="mobiStyleService" type="text/css">
-.open .navItem:nth-child (2) {
-	transition-delay: 160ms;
-}
-
-#svebar_1 .icon-serItemIcon:before {
-	content: '\e62c';
-	content: '\e62c';
-}
-
-#svebar_1 .icon-serItemIcon {
-	background-image: none;
-}
-
-.open .navItem:nth-child (4) {
-	transition-delay: 240ms;
-}
-
-#svebar_2 .icon-serItemIcon:before {
-	content: '\e6a0';
-	content: '\e6a0';
-}
-
-#svebar_2 .icon-serItemIcon {
-	background-image: none;
-}
-
-.open .navItem:nth-child (6) {
-	transition-delay: 320ms;
-}
-
-#svebar_5 .icon-serItemIcon:before {
-	content: '\e6ca';
-	content: '\e6ca';
-}
-
-#svebar_5 .icon-serItemIcon {
-	background-image: none;
-}
-
-.open .navItem:nth-child (8) {
-	transition-delay: 400ms;
-}
-
-#svebar_3 .icon-serItemIcon:before {
-	content: '\e67c';
-	content: '\e67c';
-}
-
-#svebar_3 .icon-serItemIcon {
-	background-image: none;
-}
-
-.open .navItem:nth-child (10) {
-	transition-delay: 480ms;
-}
-
-#svebar_4 .icon-serItemIcon:before {
-	content: '\e6b2';
-	content: '\e6b2';
-}
-
-#svebar_4 .icon-serItemIcon {
-	background-image: none;
-}
+.open .navItem:nth-child(2) {transition-delay: 160ms;} 
+#svebar_1 .icon-serItemIcon:before{content:'\e62c';content:'\e62c';} 
+#svebar_1 .icon-serItemIcon{background-image:none;} 
+.open .navItem:nth-child(4) {transition-delay: 240ms;} 
+#svebar_2 .icon-serItemIcon:before{content:'\e6a0';content:'\e6a0';} 
+#svebar_2 .icon-serItemIcon{background-image:none;} 
+.open .navItem:nth-child(6) {transition-delay: 320ms;} 
+#svebar_5 .icon-serItemIcon:before{content:'\e6ca';content:'\e6ca';} 
+#svebar_5 .icon-serItemIcon{background-image:none;} 
+.open .navItem:nth-child(8) {transition-delay: 400ms;} 
+#svebar_3 .icon-serItemIcon:before{content:'\e67c';content:'\e67c';} 
+#svebar_3 .icon-serItemIcon{background-image:none;} 
+.open .navItem:nth-child(10) {transition-delay: 480ms;} 
+#svebar_4 .icon-serItemIcon:before{content:'\e6b2';content:'\e6b2';} 
+#svebar_4 .icon-serItemIcon{background-image:none;} 
 </style>
-<div class="webCustomerServiceBox" id="webCustomerServiceBox"
-	style="display: block;">
+<div class="webCustomerServiceBox" id="webCustomerServiceBox" style="display: block;">
 <div class="customerServiceDiv" id="customerServiceDiv">
 <div class="customServiceLine" id="customServiceLine_1"></div>
 <div class="service serviceClass_1" id="customerServiceType_1">
@@ -1485,7 +1431,7 @@ Live</h1>
                                         function() {
                                             // 当前模块
                                             // start
-                                            // Mobi.initSwipe('bannerSwipe',{"showType":0,"bn":2,"b":[{"i":"AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI","t":1,"lt":0,"u":"","ide":"","col":0,"aj":"","du":"http://12289556.s61i.faiusr.com/0/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI?f=AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI.jpg&v=","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI!640x640.jpg","tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI!100x100.jpg","w":640,"h":300},{"i":"AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI","t":1,"lt":0,"u":"","ide":"","col":0,"aj":"","du":"http://12289556.s61i.faiusr.com/0/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI?f=AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI.jpg&v=","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI!640x640.jpg","tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI!100x100.jpg","w":640,"h":300}],"c":[{"i":"AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI.jpg","t":1,"tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI!100x100.jpg","w":640,"h":300},{"i":"AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI.jpg","t":1,"tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI!100x100.jpg","w":640,"h":300}],"h":false,"st":6,"et":1});
+                                            Mobi.initSwipe('bannerSwipe',{"showType":0,"bn":2,"b":[{"i":"AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI","t":1,"lt":0,"u":"","ide":"","col":0,"aj":"","du":"http://12289556.s61i.faiusr.com/0/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI?f=AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI.jpg&v=","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI!640x640.jpg","tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI!100x100.jpg","w":640,"h":300},{"i":"AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI","t":1,"lt":0,"u":"","ide":"","col":0,"aj":"","du":"http://12289556.s61i.faiusr.com/0/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI?f=AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI.jpg&v=","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI!640x640.jpg","tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI!100x100.jpg","w":640,"h":300}],"c":[{"i":"AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI.jpg","t":1,"tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg1-_XywUogOHuogYwgAU4rAI!100x100.jpg","w":640,"h":300},{"i":"AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI","p":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI.jpg","t":1,"tp":"http://12289556.s61i.faiusr.com/2/AD0IlIzuBRACGAAg0v_XywUo_OijhgIwgAU4rAI!100x100.jpg","w":640,"h":300}],"h":false,"st":6,"et":1});
                                             if (!Mobi.bannerAnimate
                                                     .init({
                                                         "showType" : 0,
@@ -1664,19 +1610,19 @@ Live</h1>
                                 .initMobiPage({
                                     "id" : 1027,
                                     "createTime" : "2017-07-09",
-                                    "preview" : "images/template/1027/1027.jpg",
-                                    "previewGif" : "images/template/1027/1027.gif",
+                                    "preview" : "/images/template/1027/1027.jpg",
+                                    "previewGif" : "/images/template/1027/1027.gif",
                                     "color" : 0,
                                     "style" : [
-                                            "css/template/1027_1.min.css?v=201711201610",
-                                            "css/template/1027_2.min.css?v=201711201610",
-                                            "css/template/1027_3.min.css?v=201711201610",
-                                            "css/template/1027_4.min.css?v=201711201610",
-                                            "css/template/1027_5.min.css?v=201711201610",
-                                            "css/template/1027_6.min.css?v=201711201610",
-                                            "css/template/1027_7.min.css?v=201711201610",
-                                            "css/template/1027_8.min.css?v=201711201610",
-                                            "css/template/1027_9.min.css?v=201711201610" ],
+                                            "/css/template/1027_1.min.css?v=201711201610",
+                                            "/css/template/1027_2.min.css?v=201711201610",
+                                            "/css/template/1027_3.min.css?v=201711201610",
+                                            "/css/template/1027_4.min.css?v=201711201610",
+                                            "/css/template/1027_5.min.css?v=201711201610",
+                                            "/css/template/1027_6.min.css?v=201711201610",
+                                            "/css/template/1027_7.min.css?v=201711201610",
+                                            "/css/template/1027_8.min.css?v=201711201610",
+                                            "/css/template/1027_9.min.css?v=201711201610" ],
                                     "type" : 0,
                                     "moduleStyle" : 0,
                                     "designType" : 1,

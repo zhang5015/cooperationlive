@@ -1,13 +1,17 @@
 dev:
   doctrine:
     class: sfDoctrineDatabase
-all:
+    param:
+      dsn: 'mysql:host=localhost;dbname=cooperation'
+      username: root
+      password: '123456'
+prod:
   doctrine:
     class: sfDoctrineDatabase
     param:
       dsn: 'mysql:host=localhost;dbname=cooperation'
       username: root
-      password: '123456'
+      password: '5E92c33bdd42'
 test:
   doctrine:
     class: sfDoctrineDatabase
