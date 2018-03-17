@@ -1,4 +1,6 @@
-<?php $newArticles =  Doctrine_Core::getTable('CooperationArticle')->getNewList();?>
+<?php
+	$newArticles =  Doctrine_Core::getTable('CooperationArticle')->getNewList();
+?>
 
 <div class="form Handle	formStyle2 " id="module314" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
 		 <div class="formBannerTitle formBannerTitle314" _bannerautoheight="1"> 
@@ -43,11 +45,9 @@
 				 文章列表
 				</div> 
 			 </div> 
-			 <div class="formBannerMore formBannerMore315">
-				<!--<a class="titleMoreLink titleMoreLink315" href="http://m.cooperationlive.com"><span class="titleMoreIcon icon-titleMore titleMoreIcon315">&nbsp;</span><span class="titleMore titleMore315">更多</span></a>-->
-				and <?php echo link_to($count, 'category', $category) ?>
-				more...
-			 </div> 
+					<div class="formBannerMore formBannerMore315">
+						<?php echo link_to('更多', 'category_article', $newArticles) ?>
+					</div> 
 			</div> 
 			<div class="titleRight titleRight315"></div> 
 		 </div> 
@@ -79,18 +79,3 @@
 			<div class="middleRight middleRight315"></div> 
 		 </div> 
 		</div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

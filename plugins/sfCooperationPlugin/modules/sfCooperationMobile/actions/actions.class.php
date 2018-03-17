@@ -60,7 +60,7 @@ class sfCooperationMobileActions extends sfActions
 				return $this->renderText('No results.');
 			}
 
-			return $this->renderPartial('sfCooperationMobile/list', array('articles' => $this->articles));
+			return $this->renderPartial('sfCooperationArticle/list', array('articles' => $this->articles));
 		}
 	}
 

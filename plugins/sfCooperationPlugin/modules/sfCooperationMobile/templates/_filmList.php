@@ -1,4 +1,4 @@
-<?php $films =  Doctrine_Core::getTable('CooperationArticle')->getFilmList(); ?>
+<?php $filmList =  Doctrine_Core::getTable('CooperationArticle')->getFilmList(); ?>
 
 <div class="form Handle	formStyle2 " id="module316" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
 	<div class="formBannerTitle formBannerTitle316" _bannerautoheight="1"> 
@@ -59,11 +59,11 @@
 					<a hidefocus="true">
 					<div class="imgClass_160" id="CrossedSlideSecImgAD0I0amXBhACGAAggq7PxQUorN2lPTDZATjFAQmodule324">
 						<span class="imageMiddle"></span>
-						<?php if($films[0]->getImage()): ?>
-							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAggq7PxQUorN2lPTDZATjFAQ" alt="<?php echo $films[0]->getTitle() ?>" src="/uploads/articles/<?php echo $films[0]->getImage() ?>"  />
+						<?php if($filmList[0]->getImage()): ?>
+							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAggq7PxQUorN2lPTDZATjFAQ" alt="<?php echo $filmList[0]->getTitle() ?>" src="/uploads/articles/<?php echo $filmList[0]->getImage() ?>"  />
 						<?php else: ?>
 							<img class="style2Img photoListImg " src="/images/sample.jpg" />
-						<?php endif ?>
+						<?php endif; ?>
 					</div>
 					</a>
 				</div>
@@ -71,11 +71,11 @@
 					<a hidefocus="true">
 					<div class="imgClass_160" id="CrossedSlideSecImgAD0I0amXBhACGAAghK7PxQUo-JnT0wIw9wE4xQEmodule324">
 						<span class="imageMiddle"></span>
-						<?php if($films[1]->getImage()): ?>
-							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAghK7PxQUo-JnT0wIw9wE4xQE" alt="<?php echo $films[1]->getTitle() ?>" src="/uploads/articles/<?php echo $films[1]->getImage() ?>"  />
+						<?php if($filmList[1]->getImage()): ?>
+							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAghK7PxQUo-JnT0wIw9wE4xQE" alt="<?php echo $filmList[1]->getTitle() ?>" src="/uploads/articles/<?php echo $filmList[1]->getImage() ?>"  />
 						<?php else: ?>
 							<img class="style2Img photoListImg " src="/images/sample.jpg" />
-						<?php endif ?>
+						<?php endif; ?>
 					</div>
 					</a>
 				</div>
@@ -83,11 +83,11 @@
 					<a hidefocus="true">
 					<div class="imgClass_160" id="CrossedSlideSecImgAD0I0amXBhACGAAgr8-PxQUowt7q6gUw9wE4xQEmodule324">
 						<span class="imageMiddle"></span>
-						<?php if($films[2]->getImage()): ?>
-							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAgr8-PxQUowt7q6gUw9wE4xQE" alt="<?php echo $films[2]->getTitle() ?>" src="/uploads/articles/<?php echo $films[2]->getImage() ?>"  />
+						<?php if($filmList[2]->getImage()): ?>
+							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAgr8-PxQUowt7q6gUw9wE4xQE" alt="<?php echo $filmList[2]->getTitle() ?>" src="/uploads/articles/<?php echo $filmList[2]->getImage() ?>"  />
 						<?php else: ?>
 							<img class="style2Img photoListImg " src="/images/sample.jpg" />
-						<?php endif ?>
+						<?php endif; ?>
 					</div>
 					</a>
 				</div>

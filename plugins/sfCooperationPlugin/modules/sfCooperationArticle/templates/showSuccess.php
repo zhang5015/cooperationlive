@@ -14,7 +14,7 @@ sprintf('%s is looking for a %s', $article->getTitle(), $article->getAuthor()))
 <div class="logo"><a href="<?php echo $article->getLink() ?>"> <img
 	src="/uploads/articles/<?php echo $article->getImage() ?>"
 	alt="<?php echo $article->getTitle() ?> logo" /> </a></div>
-<?php endif ?>
+<?php endif; ?>
 
 <div class="description"><?php echo simple_format_text($article->getBody()) ?>
 </div>

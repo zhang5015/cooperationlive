@@ -25,5 +25,5 @@ Cooperation
 
 <?php foreach ($categories as $category): ?>
 <?php include_partial('sfCooperationArticle/list', array('articles' => $category->getActiveArticles(sfConfig::get('app_max_articles_on_homepage')))) ?>
-<?php endforeach ?>
+<?php endforeach; ?>
 </feed>

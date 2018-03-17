@@ -15,7 +15,7 @@
                alt="<?php echo $article->getTitle() ?>" />
            </a>
          </div>
-       <?php endif ?>
+       <?php endif; ?>
  
        <div>
          <?php echo simple_format_text($article->getBody()) ?>
@@ -27,4 +27,4 @@
       <name><?php echo $article->getAuthor() ?></name>
     </author>
   </entry>
-<?php endforeach ?>
+<?php endforeach; ?>

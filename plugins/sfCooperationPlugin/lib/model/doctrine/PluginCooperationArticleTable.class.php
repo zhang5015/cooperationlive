@@ -52,21 +52,36 @@ class PluginCooperationArticleTable extends Doctrine_Table
 		return $q->fetchOne();
 	}
 
-	public function getNewList()
+	public function countArticleList($categoryId)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
 		$this->addActiveArticlesQuery($q);
 
+		$q->andWhere('j.category_id = ?', $categoryId);
+
+		return $q->execute()->count();
+	}
+	
+	public function getNewList($max = 3)
+	{
+		$q = Doctrine_Query::create()->from('CooperationArticle j');
+
+		$this->addActiveArticlesQuery($q);
+//		$q->leftJoin('j.CooperationCategory c')
+//        ->leftJoin('c.Translation t')
+//        ->andWhere('t.lang = ?', 'en');
+//        ->andWhere('t.slug = ?', $slug);
+
 
 		$q->andWhere('j.category_id = ?', 4);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('3');
+		$q->limit($max);
 
 		return $q->execute();
 	}
 
-	public function getFilmList()
+	public function getFilmList($max = 4)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
@@ -75,12 +90,12 @@ class PluginCooperationArticleTable extends Doctrine_Table
 
 		$q->andWhere('j.category_id = ?', 1);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('4');
+		$q->limit($max);
 
 		return $q->execute();
 	}
 
-	public function getBrandList()
+	public function getBrandList($max = 2)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
@@ -89,12 +104,12 @@ class PluginCooperationArticleTable extends Doctrine_Table
 
 		$q->andWhere('j.category_id = ?', 2);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('2');
+		$q->limit($max);
 
 		return $q->execute();
 	}
 
-	public function getTopicList()
+	public function getTopicList($max=5)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
@@ -103,11 +118,11 @@ class PluginCooperationArticleTable extends Doctrine_Table
 
 		$q->andWhere('j.category_id = ?', 3);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('5');
+		$q->limit($max);
 
 		return $q->execute();
 	}
-	public function getNoticeList()
+	public function getNoticeList($max=4)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
@@ -116,12 +131,12 @@ class PluginCooperationArticleTable extends Doctrine_Table
 
 		$q->andWhere('j.category_id = ?', 5);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('4');
+		$q->limit($max);
 
 		return $q->execute();
 	}
 
-	public function getCaseList()
+	public function getCaseList($max=9)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
@@ -130,12 +145,12 @@ class PluginCooperationArticleTable extends Doctrine_Table
 
 		$q->andWhere('j.category_id = ?', 6);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('9');
+		$q->limit($max);
 
 		return $q->execute();
 	}
 
-	public function getSampleList()
+	public function getSampleList($max=4)
 	{
 		$q = Doctrine_Query::create()->from('CooperationArticle j');
 
@@ -144,7 +159,7 @@ class PluginCooperationArticleTable extends Doctrine_Table
 
 		$q->andWhere('j.category_id = ?', 7);
 		$q->addOrderBy('j.created_at desc ');
-		$q->limit('4');
+		$q->limit($max);
 
 		return $q->execute();
 	}

@@ -18,7 +18,7 @@
 					<?php else: ?>
 					<img src="/images/sample.jpg" alt="Sample" class="sample" />
 					</a>
-					<?php endif ?>
+					<?php endif; ?>
 				</DIV>
 				<DIV class="mixNewsStyleTitleContainer">
 				<DIV class="J_mixNewsStyleTitle fk-newsListTitle mixNewsStyleTitle	pic-mixNewsStyleTitle">

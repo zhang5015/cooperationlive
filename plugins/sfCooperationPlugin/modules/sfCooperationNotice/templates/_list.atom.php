@@ -15,7 +15,7 @@
                alt="<?php echo $notice->getCompany() ?> logo" />
            </a>
          </div>
-       <?php endif ?>
+       <?php endif; ?>
  
        <div>
          <?php echo simple_format_text($notice->getDescription()) ?>
@@ -30,4 +30,4 @@
       <name><?php echo $notice->getCompany() ?></name>
     </author>
   </entry>
-<?php endforeach ?>
+<?php endforeach; ?>

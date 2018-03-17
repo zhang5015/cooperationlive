@@ -7,7 +7,7 @@
 <<?php echo $key ?>>
 <?php echo $value ?>
 </<?php echo $key ?>>
-<?php endforeach ?>
+<?php endforeach; ?>
 </notice>
-<?php endforeach ?>
+<?php endforeach; ?>
 </notices>

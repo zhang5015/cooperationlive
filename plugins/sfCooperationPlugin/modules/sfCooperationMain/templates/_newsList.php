@@ -25,7 +25,7 @@
 					class="J_newsListPic newsPic newsListNewPic"
 					style="width: 136px; height: 87px;" 
 					src="/images/sample.jpg" alt="Sample" class="sample" />
-					<?php endif ?>
+					<?php endif; ?>
 				</A>
 				</DIV>
 			<DIV class="mixNewsStyleTitleContainer">
@@ -42,7 +42,7 @@
 	</TBODY>
 </TABLE>
 </DIV>
-<?php endif ?>
+<?php endif; ?>
 <?php if ($newArticles[1]): ?>
 <DIV
 	class="J_separatorLine separatorLine g_separator	pic-separatorLine "></DIV>
@@ -70,7 +70,7 @@
 					class="J_newsListPic newsPic newsListNewPic"
 					style="width: 136px; height: 87px;" 
 					src="/images/sample.jpg" alt="Sample" class="sample" />
-					<?php endif ?>
+					<?php endif; ?>
 				</A>
 				</DIV>
 			<DIV class="mixNewsStyleTitleContainer">
@@ -87,7 +87,7 @@
 	</TBODY>
 </TABLE>
 </DIV>
-<?php endif ?>
+<?php endif; ?>
 <?php if ($newArticles[2]): ?>
 <DIV
 	class="J_separatorLine separatorLine g_separator	pic-separatorLine "></DIV>
@@ -115,7 +115,7 @@
 					class="J_newsListPic newsPic newsListNewPic"
 					style="width: 136px; height: 87px;" 
 					src="/images/sample.jpg" alt="Sample" class="sample" />
-					<?php endif ?>
+					<?php endif; ?>
 				</A>
 				</DIV>
 			<DIV class="mixNewsStyleTitleContainer">
@@ -132,7 +132,7 @@
 	</TBODY>
 </TABLE>
 </DIV>
-<?php endif ?>
+<?php endif; ?>
 <div
 	class="J_separatorLine separatorLine g_separator	newsListSeparatorLine "></div>
 <div class="clearfloat"></div>

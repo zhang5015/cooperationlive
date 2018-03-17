@@ -11,7 +11,7 @@
 								alt="Sample" />
 					<?php else: ?>
 						<img class="image" src="/images/sample.jpg" alt="Sample"/>
-					<?php endif ?>
+					<?php endif; ?>
 				</A>
 				<?php echo link_to($article->getTitle(), 'article_show_user', $article) ?>
 				</div>

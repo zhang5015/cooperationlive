@@ -25,5 +25,5 @@ Cooperation
 
 <?php foreach ($categories as $category): ?>
 <?php include_partial('sfCooperationNotice/list', array('notices' => $category->getActiveNotices(sfConfig::get('app_max_notices_on_homepage')))) ?>
-<?php endforeach ?>
+<?php endforeach; ?>
 </feed>

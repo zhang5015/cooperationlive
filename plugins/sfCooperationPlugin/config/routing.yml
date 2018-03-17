@@ -34,7 +34,7 @@ category:
     sf_culture: (?:fr|en)
  
 notice_search:
-  url:   /:sf_culture/search
+  url:   /:sf_culture/notice_search
   param: { module: sfCooperationNotice, action: search }
   requirements:
     sf_culture: (?:fr|en)
@@ -65,7 +65,7 @@ notice_show_user:
     sf_culture: (?:fr|en)
 
 article_search:
-  url:   /:sf_culture/search
+  url:   /:sf_culture/article_search
   param: { module: sfCooperationArticle, action: search }
   requirements:
     sf_culture: (?:fr|en)
@@ -94,9 +94,9 @@ article_show_user:
     sf_culture: (?:fr|en)
 
 category_article:
-  url:     /:sf_culture/category/:slug.:sf_format
+  url:     /:sf_culture/category_article/:slug.:sf_format
   class:   sfDoctrineRoute
-  param:   { module: sfCooperationCategory, action: ariticle, sf_format: html }
+  param:   { module: sfCooperationCategory, action: article, sf_format: html }
   options: { model: CooperationCategory, type: object, method: doSelectForSlug }
   requirements:
     sf_format: (?:html|atom)

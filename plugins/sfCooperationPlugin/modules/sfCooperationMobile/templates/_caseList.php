@@ -1,4 +1,4 @@
-<?php $cases =  Doctrine_Core::getTable('CooperationArticle')->getCaseList(); ?>
+<?php $caseList =  Doctrine_Core::getTable('CooperationArticle')->getCaseList(); ?>
 	<div class="form Handle	formStyle2 " id="module323" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
 		<div class="formBannerTitle formBannerTitle323" _bannerautoheight="1"> 
 		<div class="titleLeft titleLeft323"></div> 
@@ -52,7 +52,7 @@
 		<div class="middleCenter middleCenter308"> 
 			<div class="formMiddleContent formMiddleContent308 moduleContent" _innertype="0"> 
 			<div class="photoModule styleForm1">
-				<?php foreach ($cases as $i => $case): ?>
+				<?php foreach ($caseList as $i => $case): ?>
 				<div class="g_background photoDiv " id="AD0IlIzuBRACGAAgl4DJwgUop-OVrAQwtQI4vQE">
 					<a hidefocus="true">
 					<div class="imgClass_160">

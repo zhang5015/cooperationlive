@@ -11,8 +11,7 @@
 
 		<?php if (($count = $category->countActiveArticles() - sfConfig::get('app_max_articles_on_homepage')) > 0): ?>
 		<div class="more_articles">
-		and <?php echo link_to($count, 'category', $category) ?>
-		more...
+			<?php echo link_to('更多', 'category_article', $category) ?>
 		</div>
 		<?php endif; ?>
 	</div>

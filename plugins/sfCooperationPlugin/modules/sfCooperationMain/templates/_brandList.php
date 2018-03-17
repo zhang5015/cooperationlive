@@ -1,4 +1,4 @@
-<?php $brands =  Doctrine_Core::getTable('CooperationArticle')->getBrandList();?>
+<?php $brandList =  Doctrine_Core::getTable('CooperationArticle')->getBrandList();?>
 <div class="mulMColList" id="mulMCol320_cid_2"> 
 	<div title="" class="form form335 formStyle1 formInMulMCol" id="module335" _independent="false" _global="false" _autoheight="1" _inpopupzone="0" _inpack="0" _infullmeasure="0" _inmulmcol="320" _intab="0" _side="0" _banid="" _sys="0" _moduleid="335" _modulestyle="1" _moduletype="1" _indexclass=""> 
 		<table class="formTop formTop335" cellspacing="0" cellpadding="0"> 
@@ -54,36 +54,40 @@
 				<div class="formMiddleContent formMiddleContent338 fk-formContentOtherPadding" tabstyle="0"> 
 				<div> 
 					<div class="newsList J_newsList	newsNewModuleStyle_one" id="newsList338" newslisttype="3" scroll="0" _showsetting="0"> 
-					<div class="J_newsListLine line noHover g_item fk-newsLineHeight" newsname="<?php echo $brands[0] -> getTitle() ?>" newsid="9" topswitch="on" topclassname="top1"> 
+					<?php if($brandList[0]):?>
+					<div class="J_newsListLine line noHover g_item fk-newsLineHeight" newsname="<?php echo $brandList[0] -> getTitle() ?>" newsid="9" topswitch="on" topclassname="top1"> 
 						<div class="J_lineBody lineBody newsListLineBody1" id="lineBody9"> 
 						<div class="J_titleLine fk-titleLine"> 
 							<div class="J_newsTitle newsTitle J_noChangeStyle newsListNewsTitle3"> 
 							<div class="J_newsListTopFlag"></div> 
-								<?php echo link_to($brands[0]->getTitle(), 'article_show_user', $brands[0]) ?>
+								<?php echo link_to($brandList[0]->getTitle(), 'article_show_user', $brandList[0]) ?>
 							</div> 
 							<div class="clearfloat"></div> 
 						</div> 
 						<div> 
-							<p class="pic-mixNewsStyleSummary fk-newsListSummary"><?php echo $brands[0]->getAbstract()?></p> 
+							<p class="pic-mixNewsStyleSummary fk-newsListSummary"><?php echo $brandList[0]->getAbstract()?></p> 
 						</div> 
 						</div> 
 					</div> 
 					<div class="J_separatorLine separatorLine g_separator"></div> 
-					<div class="J_newsListLine line noHover g_item fk-newsLineHeight" newsname="<?php echo $brands[1] -> getTitle() ?>" newsid="9" topswitch="on" topclassname="top1"> 
+					<?php endif; ?>
+					<?php if($brandList[1]):?>
+					<div class="J_newsListLine line noHover g_item fk-newsLineHeight" newsname="<?php echo $brandList[1] -> getTitle() ?>" newsid="9" topswitch="on" topclassname="top1"> 
 						<div class="J_lineBody lineBody newsListLineBody1" id="lineBody9"> 
 						<div class="J_titleLine fk-titleLine"> 
 							<div class="J_newsTitle newsTitle J_noChangeStyle newsListNewsTitle3"> 
 							<div class="J_newsListTopFlag"></div> 
-								<?php echo link_to($brands[1]->getTitle(), 'article_show_user', $brands[1]) ?>
+								<?php echo link_to($brandList[1]->getTitle(), 'article_show_user', $brandList[1]) ?>
 							</div> 
 							<div class="clearfloat"></div> 
 						</div> 
 						<div> 
-							<p class="pic-mixNewsStyleSummary fk-newsListSummary"><?php echo $brands[1]->getAbstract()?></p> 
+							<p class="pic-mixNewsStyleSummary fk-newsListSummary"><?php echo $brandList[1]->getAbstract()?></p> 
 						</div> 
 						</div> 
 					</div>  
 					<div class="J_separatorLine separatorLine g_separator newsListSeparatorLine"></div> 
+					<?php endif; ?>
 					<div class="clearfloat"></div> 
 					</div> 
 				</div> 

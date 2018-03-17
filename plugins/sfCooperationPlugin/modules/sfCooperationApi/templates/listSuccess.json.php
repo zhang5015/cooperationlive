@@ -6,8 +6,8 @@
 <?php $nb1 = count($notice); $j = 0; foreach ($notice as $key => $value): ++$j ?>
   "<?php echo $key ?>": <?php echo json_encode($value).($nb1 == $j ? '' : ',') ?>
  
-<?php endforeach ?>
+<?php endforeach; ?>
 }<?php echo $nb == $i ? '' : ',' ?>
  
-<?php endforeach ?>
+<?php endforeach; ?>
 ]

@@ -87,7 +87,7 @@
 																<div class="fk-newSearchSelectWrap" style="">
 																	<div class="fk-newSearchSelect" style="">
 																		<div class="fk-newSearchBoxContainer" style="height: 26px;">
-																			<form id="search_form" action="<?php echo url_for('notice_search') ?>" method="get">
+																			<form id="search_form" action="<?php echo url_for('article_search') ?>" method="get">
 																			<input class="fk-newSearchInput" maxlength="100" placeholder="" _nsl="[]" type="text" name="query" value="<?php echo $sf_request->getParameter('query') ?>" id="search_keywords">
 																			<span style="position: absolute; left: 0px; top: 0px; height: 26px; line-height: 26; padding-left: 8px; padding-top: 6px;" class="fk_lowIEPlaceholderStyle"></span>
 																			</form>
@@ -375,9 +375,9 @@
         // 各个模块inc吐出脚本
 
         Site.initCorpTitleJump();
-        Site.initModuleSiteSearch('423');
-        Site.fixCusWidthSearchBox('423');
-        Site.bindSearchBtnEvent('423');
+//        Site.initModuleSiteSearch('423');
+//        Site.fixCusWidthSearchBox('423');
+//        Site.bindSearchBtnEvent('423');
         Site.initModulePhotoSwitch(
                         319,
                         {

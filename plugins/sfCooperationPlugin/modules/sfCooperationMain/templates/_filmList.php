@@ -82,7 +82,7 @@
 							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[0]->getImage() ?>" picsca="2" iheight="152" iwidth="190" /> 
 						<?php else: ?>
 							<img  class="J_photoImg photoImg" picsca="2" iheight="152" iwidth="190" src="/images/sample.jpg" />
-						<?php endif ?>
+						<?php endif; ?>
 						</a>
 						</div>
 						</td>
@@ -128,7 +128,7 @@
 							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[2]->getImage() ?>" picsca="2" iheight="152" iwidth="190" />
 						<?php else: ?>
 							<img  class="J_photoImg photoImg" picsca="2" iheight="152" iwidth="190" src="/images/sample.jpg" />
-						<?php endif ?>
+						<?php endif; ?>
 						</a>
 						</div>
 						</td>
@@ -157,7 +157,7 @@
 							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[3]->getImage() ?>" picsca="2" iheight="152" iwidth="190" />
 						<?php else: ?>
 							<img  class="J_photoImg photoImg" picsca="2" iheight="152" iwidth="190" src="/images/sample.jpg" />
-						<?php endif ?>
+						<?php endif; ?>
 						</a>
 						</div>
 						</td>

@@ -50,7 +50,7 @@ class sfCooperationMainActions extends sfActions
 
 	public function executeSearch(sfWebRequest $request)
 	{
-		$this->forwardUnless($query = $request->getParameter('query'), 'sfCooperationMain', 'index');
+		$this->forwardUnless($query = $request->getParameter('query'), 'sfCooperationArticle', 'index');
 
 		$this->articles = Doctrine_Core::getTable('CooperationArticle') ->getForLuceneQuery($query);
 
@@ -61,7 +61,7 @@ class sfCooperationMainActions extends sfActions
 				return $this->renderText('No results.');
 			}
 
-			return $this->renderPartial('sfCooperationMain/list', array('articles' => $this->articles));
+			return $this->renderPartial('sfCooperationArticle/list', array('articles' => $this->articles));
 		}
 	}
 

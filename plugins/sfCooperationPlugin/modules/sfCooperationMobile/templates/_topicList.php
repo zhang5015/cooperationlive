@@ -1,5 +1,4 @@
-<?php $topics =  Doctrine_Core::getTable('CooperationArticle')->getTopicList(); ?>
-
+<?php $topicList =  Doctrine_Core::getTable('CooperationArticle')->getTopicList(); ?>
 <div class="form Handle	formStyle2 " id="module319" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
 	<div class="formBannerTitle formBannerTitle319" _bannerautoheight="1"> 
 	<div class="titleLeft titleLeft319"></div> 
@@ -45,8 +44,7 @@
 		</div> 
 		</div> 
 		<div class="formBannerMore formBannerMore320">
-				and <?php echo link_to($count, 'category', $category) ?>
-				more...
+				<?php echo link_to('更多', 'category_article', $topicList) ?>
 		</div> 
 	</div> 
 	<div class="titleRight titleRight320"></div> 
@@ -56,7 +54,7 @@
 	<div class="middleCenter middleCenter320"> 
 		<div class="formMiddleContent formMiddleContent320 moduleContent" _innertype="0"> 
 		<div class="newsList " id="newsList320">
-		<?php foreach ($topics as $i => $article): ?>
+		<?php foreach ($topicList as $i => $article): ?>
 			<div class="newsLine line icon-gline firstClass	wholeLine J_lineH j-lineH" id="newsLine11" newsname="<?php echo $article->getTitle() ?>" newsid="11" topswitch="on" topclassname="top1">
 				<div class="lineBody lineBodyTable" id="lineBody11">
 				<div class="linkTableCell">

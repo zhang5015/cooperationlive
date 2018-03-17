@@ -59,7 +59,7 @@
 	<div class="middleRight middleRight325"></div> 
 	</div> 
 </div> 
-<?php $notices =  Doctrine_Core::getTable('CooperationArticle')->getNoticeList();?>
+<?php $noticeList =  Doctrine_Core::getTable('CooperationArticle')->getNoticeList();?>
 
 <div class="form Handle	formStyle2 " id="module321" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
 	<div class="formBannerTitle formBannerTitle321" _bannerautoheight="1"> 
@@ -104,10 +104,9 @@
 				 文章列表
 		</div> 
 		</div> 
-		<div class="formBannerMore formBannerMore322">
-			 	and <?php echo link_to($count, 'category', $category) ?>
-				more...
-		</div> 
+			<div class="formBannerMore formBannerMore315">
+				<?php echo link_to('更多', 'category_article', $topics) ?>
+			</div> 
 	</div> 
 	<div class="titleRight titleRight322"></div> 
 	</div> 
@@ -116,7 +115,7 @@
 	<div class="middleCenter middleCenter322"> 
 		<div class="formMiddleContent formMiddleContent322 moduleContent" _innertype="0"> 
 		<div class="newsList " id="newsList322">
-			<?php foreach ($notices as $i => $article): ?>
+			<?php foreach ($noticeList as $i => $article): ?>
 			<div class="newsLine line icon-gline One	firstClass	J_picNum " id="newsLine9" picnum="2" newsname="<?php echo $article->getTitle() ?>" newsid="9" topswitch="on" topclassname="top1">
 				<div class="lineBody lineBodyPic" id="lineBody9">
 					<div class="fontTableCell">
