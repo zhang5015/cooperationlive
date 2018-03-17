@@ -18,5 +18,10 @@ Options +FollowSymLinks +ExecCGI
   RewriteCond %{REQUEST_FILENAME} !-f
 
   # no, so we redirect to our front web controller
+  #RewriteRule ^(.*)$ index.php [QSA,L]
+  RewriteCond %{http_host} ^m.cooperationlive.com
+  RewriteRule ^(.*)$ mobile.php [QSA,L]
+
+  RewriteCond %{http_host} ^www.cooperationlive.com
   RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
