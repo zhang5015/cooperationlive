@@ -950,7 +950,8 @@ Live</h1>
 <div class="middleCenter middleCenter315">
 <div class="formMiddleContent formMiddleContent315 moduleContent"
 	_innertype="0">
-<div class="newsList " id="newsList315"><?php echo $sf_content ?> <!--<div class="newsLine line icon-gline One	firstClass	J_picNum " id="newsLine14" picnum="2" newsname="首届“陵水杯”民族文学奖评选启动" newsid="14" topswitch="on" topclassname="top1">
+<div class="newsList " id="newsList315"><?php echo $sf_content ?> 
+<!--<div class="newsLine line icon-gline One	firstClass	J_picNum " id="newsLine14" picnum="2" newsname="首届“陵水杯”民族文学奖评选启动" newsid="14" topswitch="on" topclassname="top1">
 						<a class="lineBodyLink" style="width: auto;" hidefocus="true" href="http://m.cooperationlive.com" target="_self">
 						<div class="lineBody lineBodyPic" id="lineBody14">
 							<div class="fontTableCell">

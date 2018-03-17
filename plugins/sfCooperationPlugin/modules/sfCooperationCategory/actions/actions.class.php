@@ -30,4 +30,20 @@ class sfCooperationCategoryActions extends sfActions
         $this->pager->setPage($request->getParameter('page', 1));
         $this->pager->init();
     }
+    /**
+     * Executes index action
+     *
+     * @param sfRequest $request A request object
+     */
+    public function executeArticle(sfWebRequest $request)
+    {
+        $this->category = $this->getRoute()->getObject();
+
+        $this->pager = new sfDoctrinePager('CooperationArticle',
+        sfConfig::get('app_max_articles_on_category')
+        );
+        $this->pager->setQuery($this->category->getActiveArticlesQuery());
+        $this->pager->setPage($request->getParameter('page', 1));
+        $this->pager->init();
+    }
 }

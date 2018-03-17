@@ -45,6 +45,8 @@ all:
       - sfCooperationCategory
       - sfCooperationNotice
       - sfCooperationLanguage
+      - sfCooperationArticle
+      - sfCooperationMain
       - sfGuardAuth
   .actions:
     login_module: default

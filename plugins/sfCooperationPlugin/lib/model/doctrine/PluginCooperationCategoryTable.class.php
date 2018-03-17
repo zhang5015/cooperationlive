@@ -29,6 +29,18 @@ class PluginCooperationCategoryTable extends Doctrine_Table
 
     }
 
+    public function getWithArticles()
+    {
+        $q = $this->createQuery('c')
+        ->leftJoin('c.CooperationArticle j')
+        ->where('j.expires_at > ?', date('Y-m-d H:i:s', time()));
+
+        $q->andWhere('j.is_activated = ?', 1);
+
+        return $q->execute();
+
+    }
+
     //    //Since Doctrine provides some magic finders for all columns in a model, we need to simply create the findOneBySlug() method so that we override the default magic functionality Doctrine provides.
     //    public function findOneBySlug($slug)
     //    {
@@ -38,6 +50,7 @@ class PluginCooperationCategoryTable extends Doctrine_Table
     //        ->andWhere('t.slug = ?', $slug);
     //        return $q->fetchOne();
     //    }
+
     public function doSelectForSlug($parameters)
     {
         return $this->findOneBySlugAndCulture($parameters['slug'], $parameters['sf_culture']);

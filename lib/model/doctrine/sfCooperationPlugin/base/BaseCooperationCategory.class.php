@@ -13,6 +13,7 @@ Doctrine_Manager::getInstance()->bindComponent('CooperationCategory', 'doctrine'
  * @property timestamp $updated_at
  * @property Doctrine_Collection $CooperationCategoryAffiliate
  * @property Doctrine_Collection $CooperationNotice
+ * @property Doctrine_Collection $CooperationArticle
  * 
  * @method integer             getId()                           Returns the current record's "id" value
  * @method string              getName()                         Returns the current record's "name" value
@@ -20,12 +21,14 @@ Doctrine_Manager::getInstance()->bindComponent('CooperationCategory', 'doctrine'
  * @method timestamp           getUpdatedAt()                    Returns the current record's "updated_at" value
  * @method Doctrine_Collection getCooperationCategoryAffiliate() Returns the current record's "CooperationCategoryAffiliate" collection
  * @method Doctrine_Collection getCooperationNotice()            Returns the current record's "CooperationNotice" collection
+ * @method Doctrine_Collection getCooperationArticle()           Returns the current record's "CooperationArticle" collection
  * @method CooperationCategory setId()                           Sets the current record's "id" value
  * @method CooperationCategory setName()                         Sets the current record's "name" value
  * @method CooperationCategory setCreatedAt()                    Sets the current record's "created_at" value
  * @method CooperationCategory setUpdatedAt()                    Sets the current record's "updated_at" value
  * @method CooperationCategory setCooperationCategoryAffiliate() Sets the current record's "CooperationCategoryAffiliate" collection
  * @method CooperationCategory setCooperationNotice()            Sets the current record's "CooperationNotice" collection
+ * @method CooperationCategory setCooperationArticle()           Sets the current record's "CooperationArticle" collection
  * 
  * @package    cooperation
  * @subpackage model
@@ -82,6 +85,10 @@ abstract class BaseCooperationCategory extends sfDoctrineRecord
              'foreign' => 'category_id'));
 
         $this->hasMany('CooperationNotice', array(
+             'local' => 'id',
+             'foreign' => 'category_id'));
+
+        $this->hasMany('CooperationArticle', array(
              'local' => 'id',
              'foreign' => 'category_id'));
 

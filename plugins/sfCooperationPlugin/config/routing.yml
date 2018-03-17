@@ -63,17 +63,55 @@ notice_show_user:
     id:        \d+
     sf_method: GET
     sf_culture: (?:fr|en)
+
+article_search:
+  url:   /:sf_culture/search
+  param: { module: sfCooperationArticle, action: search }
+  requirements:
+    sf_culture: (?:fr|en)
  
+article:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:          CooperationArticle
+    object_actions: { publish: PUT, extend: PUT }
+    prefix_path:    /:sf_culture/article
+    module:         sfCooperationArticle
+  requirements:
+    sf_culture: (?:fr|en)
+ 
+article_show_user:
+  url:     /:sf_culture/article/:title_slug/:id/:author_slug
+  class:   sfDoctrineRoute
+  options:
+    model: CooperationArticle
+    type: object
+    method_for_query: retrieveActiveArticle
+  param:   { module: sfCooperationArticle, action: show }
+  requirements:
+    id:        \d+
+    sf_method: GET
+    sf_culture: (?:fr|en)
+
+category_article:
+  url:     /:sf_culture/category/:slug.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: sfCooperationCategory, action: ariticle, sf_format: html }
+  options: { model: CooperationCategory, type: object, method: doSelectForSlug }
+  requirements:
+    sf_format: (?:html|atom)
+    sf_culture: (?:fr|en)
+
 change_language:
   url:   /change_language
   param: { module: sfCooperationLanguage, action: changeLanguage }
  
 localized_homepage:
   url:   /:sf_culture/
-  param: { module: sfCooperationNotice, action: index }
+  param: { module: sfCooperationMain, action: index }
   requirements:
     sf_culture: (?:fr|en)
  
 homepage:
   url:   /
-  param: { module: sfCooperationNotice, action: index }
+  param: { module: sfCooperationMain, action: index }
