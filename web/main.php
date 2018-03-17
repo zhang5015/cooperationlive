@@ -11,19 +11,19 @@
 	<meta name="renderer" content="webkit" /> 
 	<meta content="http://www.cooperationlive.com/" property="og:url" /> 
 	<script type="text/javascript">
-//		(function() {
-//				var fs = document.createElement("script");
-//				fs.src = "js/hawkEye.min.js?v=201712051200";
-//				window.FAI_HAWK_EYE = {};
-//				window.FAI_HAWK_EYE.jssdk_report_url = "//report.faisco.cn/js/report";
-//				window.FAI_HAWK_EYE.jssdk_appid = 3002;
-//				window.FAI_HAWK_EYE.fai_aid = 16194071;
-//				window.FAI_HAWK_EYE.fai_bs_aid = 16194071;
-//				window.FAI_HAWK_EYE.fai_bs_id = 0;
-//				window.FAI_HAWK_EYE.fai_bs_wid = 0;
-//				var s = document.getElementsByTagName("script")[0];
-//				s.parentNode.insertBefore(fs, s);
-//		})();
+		(function() {
+				var fs = document.createElement("script");
+				fs.src = "js/hawkEye.min.js?v=201712051200";
+				window.FAI_HAWK_EYE = {};
+				window.FAI_HAWK_EYE.jssdk_report_url = "//report.faisco.cn/js/report";
+				window.FAI_HAWK_EYE.jssdk_appid = 3002;
+				window.FAI_HAWK_EYE.fai_aid = 16194071;
+				window.FAI_HAWK_EYE.fai_bs_aid = 16194071;
+				window.FAI_HAWK_EYE.fai_bs_id = 0;
+				window.FAI_HAWK_EYE.fai_bs_wid = 0;
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(fs, s);
+		})();
 </script> 
 	<meta name="mobile-agent" content="format=html5;url=http://m.nz15518796.icoc.bz/" /> 
 	<meta name="keywords" content="" /> 
@@ -2041,8 +2041,7 @@
         Site.initModuleSiteSearch('423');
         Site.fixCusWidthSearchBox('423');
         Site.bindSearchBtnEvent('423');
-        Site
-                .initModulePhotoSwitch(
+        Site.initModulePhotoSwitch(
                         319,
                         {
                             "data" : [
@@ -2050,7 +2049,7 @@
                                         "name" : "",
                                         "href" : "",
                                         "target" : "_blank",
-                                        "src" : "images/ABUIABACGAAgtLzI1AUomoG_vQYwwAc42AQ!800x800.jpg",
+                                        "src" : "/images/ABUIABACGAAgtLzI1AUomoG_vQYwwAc42AQ!800x800.jpg",
                                         "width" : 720,
                                         "height" : 450,
                                         "widthOr" : 720,
@@ -2061,7 +2060,7 @@
                                         "name" : "",
                                         "href" : "",
                                         "target" : "_blank",
-                                        "src" : "images/ABUIABACGAAgvLzI1AUotJqkvwIwqAg4wwU!700x700.jpg",
+                                        "src" : "/images/ABUIABACGAAgvLzI1AUotJqkvwIwqAg4wwU!700x700.jpg",
                                         "width" : 677,
                                         "height" : 450,
                                         "widthOr" : 677,
@@ -2072,7 +2071,7 @@
                                         "name" : "",
                                         "href" : "",
                                         "target" : "_blank",
-                                        "src" : "images/ABUIABACGAAgm73I1AUomujQ1wYwoAY42AQ!600x600.jpg",
+                                        "src" : "/images/ABUIABACGAAgm73I1AUomujQ1wYwoAY42AQ!600x600.jpg",
                                         "width" : 600,
                                         "height" : 450,
                                         "widthOr" : 600,
@@ -2145,7 +2144,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgp4vIwgUo-KP7RzC_ATiYAQ",
-                        "picPath" : "images/AD0IlIzuBRACGAAgp4vIwgUo-KP7RzC_ATiYAQ.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgp4vIwgUo-KP7RzC_ATiYAQ.jpg",
                         "picWidth" : 190,
                         "picHeight" : 152
                     },
@@ -2154,7 +2153,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgr4vIwgUolIWZ0wMwvgE4mAE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgr4vIwgUolIWZ0wMwvgE4mAE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgr4vIwgUolIWZ0wMwvgE4mAE.jpg",
                         "picWidth" : 190,
                         "picHeight" : 152
                     },
@@ -2163,7 +2162,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgx4vIwgUovJey9gcwvgE4mAE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgx4vIwgUovJey9gcwvgE4mAE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgx4vIwgUovJey9gcwvgE4mAE.jpg",
                         "picWidth" : 190,
                         "picHeight" : 152
                     },
@@ -2172,7 +2171,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgzYvIwgUo9vH09wQwvgE4mAE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgzYvIwgUo9vH09wQwvgE4mAE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgzYvIwgUo9vH09wQwvgE4mAE.jpg",
                         "picWidth" : 190,
                         "picHeight" : 152
                     } ],
@@ -2256,7 +2255,7 @@
                                         "name" : "",
                                         "href" : "",
                                         "target" : "_blank",
-                                        "src" : "images/AD0IlIzuBRACGAAg_arIwgUopujupwIwvAI4swM.jpg",
+                                        "src" : "/images/AD0IlIzuBRACGAAg_arIwgUopujupwIwvAI4swM.jpg",
                                         "width" : 316,
                                         "height" : 435,
                                         "widthOr" : 316,
@@ -2267,7 +2266,7 @@
                                         "name" : "",
                                         "href" : "",
                                         "target" : "_blank",
-                                        "src" : "images/AD0IlIzuBRACGAAgyKvIwgUo5qbHBzC8AjizAw.jpg",
+                                        "src" : "/images/AD0IlIzuBRACGAAgyKvIwgUo5qbHBzC8AjizAw.jpg",
                                         "width" : 316,
                                         "height" : 435,
                                         "widthOr" : 316,
@@ -2278,7 +2277,7 @@
                                         "name" : "",
                                         "href" : "",
                                         "target" : "_blank",
-                                        "src" : "images/AD0IlIzuBRACGAAgkavIwgUo9PjgzwEwvAI4swM.jpg",
+                                        "src" : "/images/AD0IlIzuBRACGAAgkavIwgUo9PjgzwEwvAI4swM.jpg",
                                         "width" : 316,
                                         "height" : 435,
                                         "widthOr" : 316,
@@ -2337,7 +2336,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAggt7IwgUo2NipKzCpAjjKAQ",
-                        "picPath" : "images/AD0IlIzuBRACGAAggt7IwgUo2NipKzCpAjjKAQ.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAggt7IwgUo2NipKzCpAjjKAQ.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2346,7 +2345,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAg-N-IwgUovMOQhQUwqQI4ygE",
-                        "picPath" : "images/AD0IlIzuBRACGAAg-N-IwgUovMOQhQUwqQI4ygE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAg-N-IwgUovMOQhQUwqQI4ygE.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2355,7 +2354,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgg_DIwgUoieeZkgEwqQI4ygE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgg_DIwgUoieeZkgEwqQI4ygE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgg_DIwgUoieeZkgEwqQI4ygE.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2364,7 +2363,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgh_DIwgUowIme9QIwqQI4ygE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgh_DIwgUowIme9QIwqQI4ygE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgh_DIwgUowIme9QIwqQI4ygE.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2373,7 +2372,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgkuDIwgUooJ3jlwUwqQI4ygE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgkuDIwgUooJ3jlwUwqQI4ygE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgkuDIwgUooJ3jlwUwqQI4ygE.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2382,7 +2381,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgluDIwgUooMWN2gUwqQI4ygE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgluDIwgUooMWN2gUwqQI4ygE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgluDIwgUooMWN2gUwqQI4ygE.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2391,7 +2390,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgmeDIwgUosJ5DMKkCOMoB",
-                        "picPath" : "images/AD0IlIzuBRACGAAgmeDIwgUosJ5DMKkCOMoB.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgmeDIwgUosJ5DMKkCOMoB.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     },
@@ -2400,7 +2399,7 @@
                         "name" : "",
                         "basic" : "",
                         "pic" : "AD0IlIzuBRACGAAgnODIwgUo_7yyqQQwqQI4ygE",
-                        "picPath" : "images/AD0IlIzuBRACGAAgnODIwgUo_7yyqQQwqQI4ygE.jpg",
+                        "picPath" : "/images/AD0IlIzuBRACGAAgnODIwgUo_7yyqQQwqQI4ygE.jpg",
                         "picWidth" : 297,
                         "picHeight" : 202
                     } ],

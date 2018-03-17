@@ -32,55 +32,6 @@ class sfCooperationMainActions extends sfActions
 		$this->categories = Doctrine_Core::getTable('CooperationCategory')->getWithArticles();
 	}
 
-	public function save(Doctrine_Connection $conn = null)
-	{
-		if ($this->isNew() && !$this->getExpiresAt())
-		{
-			$this->setCreatedAt(time());
-			$now = $this->getCreatedAt() ? $this->getDateTimeObject('created_at')->format('U') : time();
-			$this->setExpiresAt(date('Y-m-d H:i:s', $now + 86400 * sfConfig::get('app_active_days')));
-		}
-
-		return parent::save($conn);
-	}
-
-	public function executeShow(sfWebRequest $request)
-	{
-		$this->article = $this->getRoute()->getObject();
-		$this->category = $this->article -> getCooperationCategory();
-
-		$this->getUser()->addArticleToHistory($this->article);
-	}
-
-	public function executeNew(sfWebRequest $request)
-	{
-		$article = new CooperationArticle();
-
-		$this->form = new CooperationArticleForm($article);
-	}
-
-	public function executeCreate(sfWebRequest $request)
-	{
-		$this->form = new CooperationArticleForm();
-		$this->processForm($request, $this->form);
-		$this->setTemplate('new');
-	}
-
-	public function executeEdit(sfWebRequest $request)
-	{
-		$article = $this->getRoute()->getObject();
-
-
-		$this->form = new CooperationArticleForm($article);
-	}
-
-	public function executeUpdate(sfWebRequest $request)
-	{
-		$this->form = new CooperationArticleForm($this->getRoute()->getObject());
-		$this->processForm($request, $this->form);
-		$this->setTemplate('edit');
-	}
-
 
 	protected function processForm(sfWebRequest $request, sfForm $form)
 	{
@@ -95,35 +46,6 @@ class sfCooperationMainActions extends sfActions
 
 			$this->redirect('article_show', $article);
 		}
-	}
-	public function executePublish(sfWebRequest $request)
-	{
-		$request->checkCSRFProtection();
-
-		$article = $this->getRoute()->getObject();
-		$article->publish();
-
-		if ($cache = $this->getContext()->getViewCacheManager())
-		{
-			$cache->remove('sfCooperationMain/index?sf_culture=*');
-			$cache->remove('sfCooperationCategory/show?id='.$article->getCooperationCategory()->getId());
-		}
-
-		$this->getUser()->setFlash('article', sprintf('Your article is now online for %s days.', sfConfig::get('app_active_days')));
-
-		$this->redirect($this->generateUrl('article_show_user', $article));
-	}
-
-	public function executeExtend(sfWebRequest $request)
-	{
-		$request->checkCSRFProtection();
-
-		$article = $this->getRoute()->getObject();
-		$this->forward404Unless($article->extend());
-
-		$this->getUser()->setFlash('article', sprintf('Your article validity has been extended until %s.', $article->getDateTimeObject('expires_at')->format('m/d/Y')));
-
-		$this->redirect($this->generateUrl('article_show_user', $article));
 	}
 
 	public function executeSearch(sfWebRequest $request)
@@ -141,16 +63,6 @@ class sfCooperationMainActions extends sfActions
 
 			return $this->renderPartial('sfCooperationMain/list', array('articles' => $this->articles));
 		}
-	}
-
-	public function executeDelete(sfWebRequest $request)
-	{
-		$request->checkCSRFProtection();
-
-		$cooperation_article = $this->getRoute()->getObject();
-		$cooperation_article->delete();
-
-		$this->redirect('sfCooperationMain/index');
 	}
 
 }

@@ -12,7 +12,7 @@
 				<TD class="J_newsTitle newsTitle mixNewsTitle" valign="top">
 				<DIV class="J_articlePhotoBox articlePhotoBox " newsflag="2" newid="4">
 					<?php if ($article->getImage()): ?>
-					<a href="<?php echo $article->getLink() ?>">
+					<a href="<?php echo url_for('article_show_user', $article, true) ?>">
 					<img title="<?php echo $article->getTitle() ?>" class="J_newsListPic newsPic newsListNewPic"
 					style="width: 136px; height: 87px;" alt="文章附图" src="/uploads/articles/<?php echo $article->getImage() ?>" />
 					<?php else: ?>

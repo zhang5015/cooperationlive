@@ -12,7 +12,7 @@
 				<TD class="J_newsTitle newsTitle mixNewsTitle" valign="top">
 				<DIV class="J_articlePhotoBox articlePhotoBox " newsflag="2" newid="4">
 					<A class="J_articlePicHref articlePicLink2" style="width: 146px; height: 87px;"
-					href="<?php echo link_to($article->getTitle(), 'article_show_user', $article) ?>"
+					href="<?php echo url_for('article_show_user', $article, true) ?>"
 					target="_blank">
 					<?php if ($article->getImage()): ?>
 					<img title="<?php echo $article->getTitle() ?>"

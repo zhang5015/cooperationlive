@@ -12,7 +12,7 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [base2.css,fkTheme.css,detail2.css,newSearchBoxStyle.css,poshytipAndmCustomScrollbar.css,jzcusstyle.css,video-js.css,video.css,datepicker.css,faiFloatPanel.css,fontsIco.css]
+  stylesheets:    [articles.css,article.css,base2.css,fkTheme.css,detail2.css,newSearchBoxStyle.css,poshytipAndmCustomScrollbar.css,jzcusstyle.css,video-js.css,video.css,datepicker.css,faiFloatPanel.css,fontsIco.css]
 
   javascripts:    [2052.js,faiFloatPanel_bindEvent.js,faiFloatPanel.js,imageEffect.js,photoSlide.js,bookingSubmitPanel.js,video.js,hawkEye.js,jzUtils.js,jquery-1.4.2.min.js,search.js,jquery-core.js,jquery-mousewheel.js,fai.js,jquery-ui-core.js,site.js]
 

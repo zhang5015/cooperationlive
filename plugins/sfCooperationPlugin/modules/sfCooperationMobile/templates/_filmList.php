@@ -1,192 +1,101 @@
 <?php $films =  Doctrine_Core::getTable('CooperationArticle')->getFilmList(); ?>
-<div class="mulMColList" id="mulMCol320_cid_1">
-<div title="" class="form form334 formStyle1 formInMulMCol "
-	id="module334" _independent="false" _global="false" _autoheight="1"
-	_inpopupzone="0" _inpack="0" _infullmeasure="0" _inmulmcol="320"
-	_intab="0" _side="0" _banid="" _sys="0" _moduleid="334"
-	_modulestyle="1" _moduletype="1" _indexclass="">
-<table class="formTop formTop334" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td class="left"></td>
-			<td class="center"></td>
-			<td class="right"></td>
-		</tr>
-	</tbody>
-</table>
-<table class="formMiddle formMiddle334" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td class="formMiddleLeft formMiddleLeft334"></td>
-			<td class="formMiddleCenter formMiddleCenter334 " valign="top">
-			<div class="formMiddleContent formMiddleContent334 fk-formContentOtherPadding" tabstyle="0">
-			<div class="richContent richContent0">
-			<p style="text-align: center; line-height: normal;">
-				<strong><span style="color: rgb(255, 255, 255); font-family: 微软雅黑; font-size: 30px;">影视</span></strong>
-			</p>
-			<p style="text-align: center; line-height: normal;">
-				<strong><span style="color: rgb(255, 255, 255); font-family: Arial; font-size: 18px;">Film &amp; TV</span></strong>
-			</p>
-			</div>
-			</div>
-			</td>
-			<td class="formMiddleRight formMiddleRight334"></td>
-		</tr>
-	</tbody>
-</table>
-<table class="formBottom formBottom334" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td class="left left334"></td>
-			<td class="center center334"></td>
-			<td class="right right334"></td>
-		</tr>
-	</tbody>
-</table>
-<div class="clearfloat clearfloat334"></div>
-</div>
-<div title="" class="form form337 formStyle88 formInMulMCol "
-	id="module337" _independent="false" _global="false" _autoheight="1"
-	_inpopupzone="0" _inpack="0" _infullmeasure="0" _inmulmcol="320"
-	_intab="0" _side="0" _banid="" _sys="0" _moduleid="337"
-	_modulestyle="88" _moduletype="1" _indexclass="">
-<table class="formTop formTop337" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td class="left"></td>
-			<td class="center"></td>
-			<td class="right"></td>
-		</tr>
-	</tbody>
-</table>
-<table class=" formMiddle formMiddle337" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td class="formMiddleLeft formMiddleLeft337"></td>
-			<td class="formMiddleCenter formMiddleCenter337 " valign="top">
-			<div class="formMiddleContent formMiddleContent337 fk-formContentOtherPadding" tabstyle="0">
-			<div class="listPhotosList">
-			<div class="clearfloat"></div>
-			<div class="J_photoForms photoForms" id="photoForms337" style="overflow: hidden;" picheight="152" picwidth="190">
-			<div class="J_photoForm photoForm" style="margin: 5px; padding: 0px; width: 190px;" faiheight="152" faiwidth="190" photodisc="" photoname="" photoid="0">
-			<div class="J_sortDiv">
-			<div class="J_listPhotoImg imgDiv" id="photoListAD0IlIzuBRACGAAgp4vIwgUo-KP7RzC_ATiYAQ"
-				style="width: 190px; height: 152px;" photodisc="" photoname="" _lide="" tmppic="AD0IlIzuBRACGAAgp4vIwgUo-KP7RzC_ATiYAQ" check="3">
-			<table cellspacing="0" cellpadding="0">
-				<tbody>
-					<tr>
-						<td>
-						<div class="J_photoImgPanel">
-						<a hidefocus="true" onclick="Site.photoSlide.Func.open(337, 0);return false;" href="javascript:;">
-						<?php if($films[0]->getImage()):?>
-							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[0]->getImage() ?>" picsca="2" iheight="152" iwidth="190" /> 
+
+<div class="form Handle	formStyle2 " id="module316" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
+	<div class="formBannerTitle formBannerTitle316" _bannerautoheight="1"> 
+	<div class="titleLeft titleLeft316"></div> 
+	<div class="titleCenter titleCenter316"> 
+		<div class="titleText titleText316"> 
+		<div class="titleTextIcon icon-titleText">
+				 &nbsp;
+		</div> 
+		<div class="textContent">
+				 图文展示
+		</div> 
+		</div> 
+		<div class="formBannerMore formBannerMore316"></div> 
+	</div> 
+	<div class="titleRight titleRight316"></div> 
+	</div> 
+	<div class="formMiddle formMiddle316"> 
+	<div class="middleLeft middleLeft316"></div> 
+	<div class="middleCenter middleCenter316"> 
+		<div class="formMiddleContent formMiddleContent316 moduleContent" _innertype="0"> 
+		<div class="J_richContentPanel316 f-contentPanel"> 
+			<div class="richContent richContent0 richContent316"> 
+			<p style="text-align: center; line-height: 1.75em;"><strong><span style="color: rgb(255, 255, 255); font-family: 微软雅黑; font-size: 1rem;">影视</span></strong><br /> </p> 
+			<p style="text-align: center; line-height: 1.75em;"><strong><span style="color: rgb(255, 255, 255); font-family: 微软雅黑; font-size: 1rem;">Film &amp; TV</span></strong></p> 
+			</div> 
+			<div class="clear"></div> 
+		</div> 
+		</div> 
+	</div> 
+	<div class="middleRight middleRight316"></div> 
+	</div> 
+</div> 
+<div class="form Handle	formStyle41 " id="module324" _height="0" _intab="0" _bheight="0" _autowidth="1" _width="0" _autoheight="1"> 
+	<div class="formBannerTitle formBannerTitle324" _bannerautoheight="1"> 
+	<div class="titleLeft titleLeft324"></div> 
+	<div class="titleCenter titleCenter324"> 
+		<div class="titleText titleText324"> 
+		<div class="titleTextIcon icon-titleText">
+				 &nbsp;
+		</div> 
+		<div class="textContent">
+				 列表多图
+		</div> 
+		</div> 
+		<div class="formBannerMore formBannerMore324"></div> 
+	</div> 
+	<div class="titleRight titleRight324"></div> 
+	</div> 
+	<div class="formMiddle formMiddle324"> 
+	<div class="middleLeft middleLeft324"></div> 
+	<div class="middleCenter middleCenter324"> 
+		<div class="formMiddleContent formMiddleContent324 moduleContent" _innertype="0"> 
+		<div class="mPhotoList" id="mMultiPhotoList324"> 
+			<div class="photoSlide" id="photoSlide324"> 
+			<div class="photoSlideList" id="photoSlideList324">
+				<div class="photoCrossedSlideSec" photoid="AD0I0amXBhACGAAggq7PxQUorN2lPTDZATjFAQ">
+					<a hidefocus="true">
+					<div class="imgClass_160" id="CrossedSlideSecImgAD0I0amXBhACGAAggq7PxQUorN2lPTDZATjFAQmodule324">
+						<span class="imageMiddle"></span>
+						<?php if($films[0]->getImage()): ?>
+							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAggq7PxQUorN2lPTDZATjFAQ" alt="<?php echo $films[0]->getTitle() ?>" src="/uploads/articles/<?php echo $films[0]->getImage() ?>"  />
 						<?php else: ?>
-							<img  class="J_photoImg photoImg" picsca="2" iheight="152" iwidth="190" src="/images/sample.jpg" />
+							<img class="style2Img photoListImg " src="/images/sample.jpg" />
 						<?php endif ?>
-						</a>
-						</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<div class="parametersDiv" style="display: none;";=""></div>
-			</div>
-			</div>
-			<div class="J_photoForm photoForm" style="margin: 5px; padding: 0px; width: 190px;" faiheight="152" faiwidth="190" photodisc="" photoname="" photoid="1">
-			<div class="J_sortDiv">
-			<div class="J_listPhotoImg imgDiv" id="photoListAD0IlIzuBRACGAAgr4vIwgUolIWZ0wMwvgE4mAE"
-				style="width: 190px; height: 152px;" photodisc="" photoname="" _lide="" tmppic="AD0IlIzuBRACGAAgr4vIwgUolIWZ0wMwvgE4mAE" check="3">
-			<table cellspacing="0" cellpadding="0">
-				<tbody>
-					<tr>
-						<td>
-						<div class="J_photoImgPanel">
-						<a hidefocus="true" onclick="Site.photoSlide.Func.open(337, 1);return false;" href="javascript:;">
-							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[1]->getImage() ?>" picsca="2" iheight="152" iwidth="190" />
-						</a>
-						</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<div class="parametersDiv" style="display: none;";=""></div>
-			</div>
-			</div>
-			<div class="J_photoForm photoForm" style="margin: 5px; padding: 0px; width: 190px;" faiheight="152" faiwidth="190" photodisc="" photoname="" photoid="2">
-			<div class="J_sortDiv">
-			<div class="J_listPhotoImg imgDiv" id="photoListAD0IlIzuBRACGAAgx4vIwgUovJey9gcwvgE4mAE"
-				style="width: 190px; height: 152px;" photodisc="" photoname="" _lide="" tmppic="AD0IlIzuBRACGAAgx4vIwgUovJey9gcwvgE4mAE" check="3">
-			<table cellspacing="0" cellpadding="0">
-				<tbody>
-					<tr>
-						<td>
-						<div class="J_photoImgPanel">
-						<a hidefocus="true" onclick="Site.photoSlide.Func.open(337, 2);return false;" href="javascript:;">
+					</div>
+					</a>
+				</div>
+				<div class="photoCrossedSlideSec" photoid="AD0I0amXBhACGAAghK7PxQUo-JnT0wIw9wE4xQE">
+					<a hidefocus="true">
+					<div class="imgClass_160" id="CrossedSlideSecImgAD0I0amXBhACGAAghK7PxQUo-JnT0wIw9wE4xQEmodule324">
+						<span class="imageMiddle"></span>
+						<?php if($films[1]->getImage()): ?>
+							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAghK7PxQUo-JnT0wIw9wE4xQE" alt="<?php echo $films[1]->getTitle() ?>" src="/uploads/articles/<?php echo $films[1]->getImage() ?>"  />
+						<?php else: ?>
+							<img class="style2Img photoListImg " src="/images/sample.jpg" />
+						<?php endif ?>
+					</div>
+					</a>
+				</div>
+				<div class="photoCrossedSlideSec" style="display: none;" photoid="AD0I0amXBhACGAAgr8-PxQUowt7q6gUw9wE4xQE">
+					<a hidefocus="true">
+					<div class="imgClass_160" id="CrossedSlideSecImgAD0I0amXBhACGAAgr8-PxQUowt7q6gUw9wE4xQEmodule324">
+						<span class="imageMiddle"></span>
 						<?php if($films[2]->getImage()): ?>
-							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[2]->getImage() ?>" picsca="2" iheight="152" iwidth="190" />
+							<img class="style2Img photoListImg " id="AD0I0amXBhACGAAgr8-PxQUowt7q6gUw9wE4xQE" alt="<?php echo $films[2]->getTitle() ?>" src="/uploads/articles/<?php echo $films[2]->getImage() ?>"  />
 						<?php else: ?>
-							<img  class="J_photoImg photoImg" picsca="2" iheight="152" iwidth="190" src="/images/sample.jpg" />
+							<img class="style2Img photoListImg " src="/images/sample.jpg" />
 						<?php endif ?>
-						</a>
-						</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<div class="parametersDiv" style="display: none;";=""></div>
-			</div>
-			</div>
-			<div class="J_photoForm photoForm"
-				style="margin: 5px; padding: 0px; width: 190px;" faiheight="152"
-				faiwidth="190" photodisc="" photoname="" photoid="3">
-			<div class="J_sortDiv">
-			<div class="J_listPhotoImg imgDiv"
-				id="photoListAD0IlIzuBRACGAAgzYvIwgUo9vH09wQwvgE4mAE"
-				style="width: 190px; height: 152px;" photodisc="" photoname=""
-				_lide="" tmppic="AD0IlIzuBRACGAAgzYvIwgUo9vH09wQwvgE4mAE" check="3">
-			<table cellspacing="0" cellpadding="0">
-				<tbody>
-					<tr>
-						<td>
-						<div class="J_photoImgPanel">
-						<a hidefocus="true" onclick="Site.photoSlide.Func.open(337, 3);return false;" href="javascript:;">
-						<?php if($films[3]->getImage()): ?>
-							<img class="J_photoImg photoImg" alt="" src="/uploads/articles/<?php echo $films[3]->getImage() ?>" picsca="2" iheight="152" iwidth="190" />
-						<?php else: ?>
-							<img  class="J_photoImg photoImg" picsca="2" iheight="152" iwidth="190" src="/images/sample.jpg" />
-						<?php endif ?>
-						</a>
-						</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</div>
-			<div class="parametersDiv" style="display: none;";=""></div>
-			</div>
-			</div>
-			</div>
-			<div class="clearfloat"></div>
-			</div>
-			</div>
-			</td>
-			<td class="formMiddleRight formMiddleRight337"></td>
-		</tr>
-	</tbody>
-</table>
-<table class="formBottom formBottom337" cellspacing="0" cellpadding="0">
-	<tbody>
-		<tr>
-			<td class="left left337"></td>
-			<td class="center center337"></td>
-			<td class="right right337"></td>
-		</tr>
-	</tbody>
-</table>
-<div class="clearfloat clearfloat337"></div>
-</div>
-</div>
-<div class="mulModuleColStyleLine"></div>
+					</div>
+					</a>
+				</div>
+			</div> 
+			</div> 
+		</div> 
+		</div> 
+	</div> 
+	<div class="middleRight middleRight324"></div> 
+	</div> 
+</div> 

@@ -10,7 +10,7 @@
      <div xmlns="http://www.w3.org/1999/xhtml">
        <?php if ($article->getImage()): ?>
          <div>
-           <a href="<?php echo $article->getLink() ?>">
+           <a href="<?php echo url_for('article_show_user', $article, true) ?>">
              <img src="http://<?php echo $sf_request->getHost().'/uploads/articles/'.$article->getImage() ?>"
                alt="<?php echo $article->getTitle() ?>" />
            </a>

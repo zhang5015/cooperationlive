@@ -12,7 +12,7 @@
 			<DIV class="J_articlePhotoBox articlePhotoBox " newsflag="2"
 				newid="5">
 				<A class="J_articlePicHref articlePicLink2" style="width: 146px; height: 87px;"
-					href="<?php echo $newArticles[0]->getLink() ?>"
+					href="<?php echo url_for('article_show_user', $newArticles[0], true) ?>"
 					target="_blank">
 					<?php if ($newArticles[0]->getImage()): ?>
 					<img title="<?php echo $newArticles[0]->getTitle() ?>"
@@ -57,7 +57,7 @@
 			<DIV class="J_articlePhotoBox articlePhotoBox " newsflag="2"
 				newid="5">
 				<A class="J_articlePicHref articlePicLink2" style="width: 146px; height: 87px;"
-					href="<?php echo $newArticles[1]->getLink() ?>"
+					href="<?php echo url_for('article_show_user', $newArticles[1], true) ?>"
 					target="_blank">
 					<?php if ($newArticles[1]->getImage()): ?>
 					<img title="<?php echo $newArticles[1]->getTitle() ?>"
@@ -102,7 +102,7 @@
 			<DIV class="J_articlePhotoBox articlePhotoBox " newsflag="2"
 				newid="5">
 				<A class="J_articlePicHref articlePicLink2" style="width: 146px; height: 87px;"
-					href="<?php echo $newArticles[2]->getLink() ?>"
+					href="<?php echo url_for('article_show_user', $newArticles[2], true) ?>"
 					target="_blank">
 					<?php if ($newArticles[2]->getImage()): ?>
 					<img title="<?php echo $newArticles[2]->getTitle() ?>"

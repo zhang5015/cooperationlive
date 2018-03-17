@@ -121,6 +121,34 @@ class PluginCooperationArticleTable extends Doctrine_Table
 		return $q->execute();
 	}
 
+	public function getCaseList()
+	{
+		$q = Doctrine_Query::create()->from('CooperationArticle j');
+
+		$this->addActiveArticlesQuery($q);
+
+
+		$q->andWhere('j.category_id = ?', 6);
+		$q->addOrderBy('j.created_at desc ');
+		$q->limit('9');
+
+		return $q->execute();
+	}
+
+	public function getSampleList()
+	{
+		$q = Doctrine_Query::create()->from('CooperationArticle j');
+
+		$this->addActiveArticlesQuery($q);
+
+
+		$q->andWhere('j.category_id = ?', 7);
+		$q->addOrderBy('j.created_at desc ');
+		$q->limit('4');
+
+		return $q->execute();
+	}
+
 	public function retrieveActiveArticle(Doctrine_Query $q)
 	{
 		return $this->addActiveArticlesQuery($q)->fetchOne();
