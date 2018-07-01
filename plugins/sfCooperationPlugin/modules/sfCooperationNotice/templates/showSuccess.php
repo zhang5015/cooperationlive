@@ -22,7 +22,7 @@
           alt="<?php echo $notice->getCompany() ?> logo" />
       </a>
     </div>
-  <?php endif ?>
+  <?php endif; ?>
  
   <div class="description">
     <?php echo simple_format_text($notice->getDescription()) ?>
@@ -42,4 +42,4 @@
 </div>
 <?php if ($sf_request->getParameter('token') == $notice->getToken()): ?>
   <?php include_partial('sfCooperationNotice/admin', array('notice' => $notice)) ?>
-<?php endif ?>
+<?php endif; ?>

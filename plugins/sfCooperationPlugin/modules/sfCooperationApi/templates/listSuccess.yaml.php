@@ -8,5 +8,5 @@
 :
 <?php echo sfYaml::dump($value) ?>
 
-<?php endforeach ?>
-<?php endforeach ?>
+<?php endforeach; ?>
+<?php endforeach; ?>

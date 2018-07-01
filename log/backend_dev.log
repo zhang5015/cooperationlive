@@ -12945,3 +12945,555 @@ Mar 16 00:31:19 symfony [info] {sfWebDebugLogger} Partial "notice/_list_batch_ac
 Mar 16 00:31:19 symfony [info] {sfWebDebugLogger} Partial "notice/_list_actions" 0.44 ms (1)
 Mar 16 00:31:19 symfony [info] {sfWebDebugLogger} Partial "notice/_list_footer" 0.12 ms (1)
 Mar 16 00:31:19 symfony [info] {sfWebResponse} Send content (181330 o)
+Mar 22 22:34:15 symfony [info] {sfPatternRouting} Match route "cooperation_category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Mar 22 22:34:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:15 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Mar 22 22:34:15 symfony [info] {sfBasicSecurityFilter} Action "category/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Mar 22 22:34:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 22 22:34:15 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Mar 22 22:34:15 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Mar 22 22:34:15 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:15 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Mar 22 22:34:15 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 22 22:34:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:15 symfony [info] {sfWebDebugLogger} Configuration 110.30 ms (15)
+Mar 22 22:34:15 symfony [info] {sfWebDebugLogger} Factories 52.68 ms (1)
+Mar 22 22:34:15 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.60 ms (1)
+Mar 22 22:34:15 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 8.69 ms (1)
+Mar 22 22:34:15 symfony [info] {sfWebResponse} Send content (32770 o)
+Mar 22 22:34:26 symfony [info] {sfPatternRouting} Match route "sf_guard_user" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Mar 22 22:34:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 22 22:34:26 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Mar 22 22:34:26 symfony [info] {myUser} User is authenticated
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (1)
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (1)
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.group_id AS s2__group_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_group_permission s2 ON s.id = s2.permission_id WHERE (s2.group_id IN (?)) - (1)
+Mar 22 22:34:26 symfony [info] {myUser} Add credential(s) "admin"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2018-03-22 22:34:26, 2018-03-22 22:34:26, 1)
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (1)
+Mar 22 22:34:26 symfony [info] {sfFrontWebController} Redirect to "http://live.cooperationlive.com:8080/backend_dev.php/category"
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send header "Location: http://live.cooperationlive.com:8080/backend_dev.php/category"
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Configuration 0.51 ms (8)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Factories 36.36 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 84.99 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 16.73 ms (7)
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send content (132 o)
+Mar 22 22:34:26 symfony [info] {sfPatternRouting} Match route "cooperation_category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Mar 22 22:34:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:26 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Mar 22 22:34:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 22 22:34:26 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM cooperation_category c - ()
+Mar 22 22:34:26 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_th_tabular.php"
+Mar 22 22:34:26 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:26 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:26 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:26 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c LIMIT 20 - ()
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (1)
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (2)
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (3)
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (4)
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (5)
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Mar 22 22:34:26 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Mar 22 22:34:26 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:26 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM cooperation_affiliate c WHERE c.is_active = ? - (0)
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Configuration 19.28 ms (13)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Factories 34.48 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 11.64 ms (10)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Action "category/index" 24.73 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 32.73 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.24 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.16 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.16 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list" 13.65 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list_th_tabular" 0.28 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list_td_tabular" 11.52 ms (5)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 0.14 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 0.19 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.14 ms (1)
+Mar 22 22:34:26 symfony [info] {sfWebResponse} Send content (65417 o)
+Mar 22 22:34:34 symfony [info] {sfPatternRouting} Match route "cooperation_affiliate" (/affiliate.:sf_format) for /affiliate with parameters array (  'module' => 'affiliate',  'action' => 'index',  'sf_format' => 'html',)
+Mar 22 22:34:34 symfony [err] {sfParseException} Configuration file "/home/sfprojects/cooperationlive/apps/backend/modules/affiliate/config/generator.yml" must specify a generator section.
+Mar 22 22:34:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Mar 22 22:34:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:34 symfony [info] {sfWebDebugLogger} Configuration 0.36 ms (6)
+Mar 22 22:34:34 symfony [info] {sfWebDebugLogger} Factories 23.78 ms (1)
+Mar 22 22:34:38 symfony [info] {sfPatternRouting} Match route "cooperation_category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Mar 22 22:34:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:38 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Mar 22 22:34:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 22 22:34:38 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM cooperation_category c - ()
+Mar 22 22:34:38 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_th_tabular.php"
+Mar 22 22:34:38 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:38 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:38 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:38 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c LIMIT 20 - ()
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (1)
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (2)
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (3)
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (4)
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (5)
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Mar 22 22:34:38 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Mar 22 22:34:38 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:38 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM cooperation_affiliate c WHERE c.is_active = ? - (0)
+Mar 22 22:34:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 22 22:34:38 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 22 22:34:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Configuration 20.47 ms (13)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Factories 24.22 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.61 ms (10)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Action "category/index" 27.37 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 24.24 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.18 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.15 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.11 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list" 16.73 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list_th_tabular" 0.40 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list_td_tabular" 14.39 ms (5)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 0.14 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 0.26 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.12 ms (1)
+Mar 22 22:34:38 symfony [info] {sfWebResponse} Send content (65418 o)
+Mar 22 22:34:41 symfony [info] {sfPatternRouting} Match route "cooperation_category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+Mar 22 22:34:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:41 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Mar 22 22:34:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 22 22:34:41 symfony [info] {categoryActions} Call "categoryActions->executeIndex()"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM cooperation_category c - ()
+Mar 22 22:34:41 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/indexSuccess.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_assets.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_flashes.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_header.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_th_tabular.php"
+Mar 22 22:34:41 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:41 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:41 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:41 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c LIMIT 20 - ()
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (1)
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (2)
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (3)
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (4)
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_td_tabular.php"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (5)
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_batch_actions.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_actions.php"
+Mar 22 22:34:41 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoCategory/templates/_list_footer.php"
+Mar 22 22:34:41 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:41 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM cooperation_affiliate c WHERE c.is_active = ? - (0)
+Mar 22 22:34:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 22 22:34:41 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 22 22:34:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Configuration 17.05 ms (13)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Factories 15.46 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.54 ms (10)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Action "category/index" 23.77 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} View "Success" for "category/index" 20.45 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_assets" 0.16 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_flashes" 0.15 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list_header" 0.26 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list" 13.36 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list_th_tabular" 0.27 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list_td_tabular" 11.44 ms (5)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list_batch_actions" 0.12 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list_actions" 0.19 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebDebugLogger} Partial "category/_list_footer" 0.12 ms (1)
+Mar 22 22:34:41 symfony [info] {sfWebResponse} Send content (65417 o)
+Mar 22 22:34:43 symfony [info] {sfPatternRouting} Match route "cooperation_notice" (/notice.:sf_format) for /notice with parameters array (  'module' => 'notice',  'action' => 'index',  'sf_format' => 'html',)
+Mar 22 22:34:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 22 22:34:43 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Mar 22 22:34:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 22 22:34:43 symfony [info] {noticeActions} Call "noticeActions->executeIndex()"
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM (SELECT c.id FROM cooperation_notice c LEFT JOIN cooperation_category c2 ON c.category_id = c2.id GROUP BY c.id) dctrn_count_query - ()
+Mar 22 22:34:43 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/indexSuccess.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_assets.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_flashes.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_header.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c - ()
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (1)
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (2)
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (3)
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (4)
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (5)
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_th_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_th_tabular.php"
+Mar 22 22:34:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Set slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {main} Get slot "sf_admin.current_header"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_pagination.php"
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.category_id AS c__category_id, c.type AS c__type, c.company AS c__company, c.logo AS c__logo, c.url AS c__url, c.position AS c__position, c.location AS c__location, c.description AS c__description, c.how_to_apply AS c__how_to_apply, c.token AS c__token, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.email AS c__email, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_notice c LEFT JOIN cooperation_category c2 ON c.category_id = c2.id ORDER BY c.expires_at desc LIMIT 10 - ()
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_batch_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_actions.php"
+Mar 22 22:34:43 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_footer.php"
+Mar 22 22:34:43 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:43 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Mar 22 22:34:43 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM cooperation_affiliate c WHERE c.is_active = ? - (0)
+Mar 22 22:34:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 22 22:34:43 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Mar 22 22:34:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Configuration 43.04 ms (13)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Factories 16.73 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.99 ms (11)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Action "notice/index" 13.48 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} View "Success" for "notice/index" 59.43 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_assets" 0.17 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_flashes" 0.15 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_header" 2.99 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_filters" 15.93 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_filters_field" 13.60 ms (8)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list" 29.20 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_th_stacked" 5.38 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_th_tabular" 5.20 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_pagination" 0.43 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_td_batch_actions" 2.05 ms (10)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_td_stacked" 4.59 ms (10)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_td_actions" 9.33 ms (10)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_batch_actions" 0.27 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_actions" 0.43 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebDebugLogger} Partial "notice/_list_footer" 0.14 ms (1)
+Mar 22 22:34:43 symfony [info] {sfWebResponse} Send content (181288 o)
+Apr 22 14:22:30 symfony [info] {sfPatternRouting} Match route "cooperation_notice" (/notice.:sf_format) for /notice with parameters array (  'module' => 'notice',  'action' => 'index',  'sf_format' => 'html',)
+Apr 22 14:22:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 14:22:30 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 22 14:22:30 symfony [info] {sfBasicSecurityFilter} Action "notice/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Apr 22 14:22:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 14:22:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 14:22:30 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Apr 22 14:22:31 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Apr 22 14:22:31 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 22 14:22:31 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 22 14:22:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Apr 22 14:22:31 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Apr 22 14:22:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 14:22:31 symfony [info] {sfWebDebugLogger} Configuration 154.13 ms (15)
+Apr 22 14:22:31 symfony [info] {sfWebDebugLogger} Factories 228.75 ms (1)
+Apr 22 14:22:31 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 20.04 ms (1)
+Apr 22 14:22:31 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 52.65 ms (1)
+Apr 22 14:22:31 symfony [info] {sfWebResponse} Send content (32124 o)
+Apr 22 14:22:38 symfony [info] {sfPatternRouting} Match route "sf_guard_user" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Apr 22 14:22:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 14:22:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 14:22:38 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Apr 22 14:22:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 14:22:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (addmin, 1)
+Apr 22 14:22:38 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Apr 22 14:22:38 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 22 14:22:38 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 22 14:22:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 14:22:38 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Apr 22 14:22:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 14:22:38 symfony [info] {sfWebDebugLogger} Configuration 1.52 ms (9)
+Apr 22 14:22:38 symfony [info] {sfWebDebugLogger} Factories 106.83 ms (1)
+Apr 22 14:22:38 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 77.47 ms (1)
+Apr 22 14:22:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.43 ms (2)
+Apr 22 14:22:38 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 21.28 ms (1)
+Apr 22 14:22:38 symfony [info] {sfWebResponse} Send content (35538 o)
+Apr 22 14:22:51 symfony [info] {sfPatternRouting} Match route "sf_guard_user" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Apr 22 14:22:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 14:22:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 14:22:51 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (admin, 1)
+Apr 22 14:22:51 symfony [info] {myUser} User is authenticated
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (1)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (1)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.group_id AS s2__group_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_group_permission s2 ON s.id = s2.permission_id WHERE (s2.group_id IN (?)) - (1)
+Apr 22 14:22:51 symfony [info] {myUser} Add credential(s) "admin"
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2018-04-22 14:22:51, 2018-04-22 14:22:51, 1)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (1)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM sf_guard_remember_key WHERE (created_at < ?) - (2018-03-23 14:22:51)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM sf_guard_remember_key WHERE (user_id = ?) - (1)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_remember_key (remember_key, user_id, ip_address, created_at, updated_at) VALUES (?, ?, ?, ?, ?) - (4ba95913ab9402c96d87f7c7f77f1162, 1, 127.0.0.1, 2018-04-22 14:22:51, 2018-04-22 14:22:51)
+Apr 22 14:22:51 symfony [info] {sfFrontWebController} Redirect to "http://live.cooperationlive.com:8080/backend_dev.php/notice"
+Apr 22 14:22:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 22 14:22:51 symfony [info] {sfWebResponse} Send header "Location: http://live.cooperationlive.com:8080/backend_dev.php/notice"
+Apr 22 14:22:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 14:22:51 symfony [info] {sfWebResponse} Send cookie "myAppRememberMe": "4ba95913ab9402c96d87f7c7f77f1162"
+Apr 22 14:22:51 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (8)
+Apr 22 14:22:51 symfony [info] {sfWebDebugLogger} Factories 95.57 ms (1)
+Apr 22 14:22:51 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 127.67 ms (1)
+Apr 22 14:22:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 30.48 ms (10)
+Apr 22 14:22:51 symfony [info] {sfWebResponse} Send content (130 o)
+Apr 22 14:22:51 symfony [info] {sfPatternRouting} Match route "cooperation_notice" (/notice.:sf_format) for /notice with parameters array (  'module' => 'notice',  'action' => 'index',  'sf_format' => 'html',)
+Apr 22 14:22:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 22 14:22:51 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Apr 22 14:22:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 22 14:22:51 symfony [info] {noticeActions} Call "noticeActions->executeIndex()"
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM (SELECT c.id FROM cooperation_notice c LEFT JOIN cooperation_category c2 ON c.category_id = c2.id GROUP BY c.id) dctrn_count_query - ()
+Apr 22 14:22:51 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/indexSuccess.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_assets.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_flashes.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_header.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_category c - ()
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (1)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (2)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (3)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (4)
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.name AS c__name, c.lang AS c__lang, c.slug AS c__slug FROM cooperation_category_translation c WHERE (c.id IN (?)) - (5)
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_filters_field.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_th_stacked.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_th_tabular.php"
+Apr 22 14:22:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_pagination.php"
+Apr 22 14:22:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.id AS c__id, c.category_id AS c__category_id, c.type AS c__type, c.company AS c__company, c.logo AS c__logo, c.url AS c__url, c.position AS c__position, c.location AS c__location, c.description AS c__description, c.how_to_apply AS c__how_to_apply, c.token AS c__token, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.email AS c__email, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_notice c LEFT JOIN cooperation_category c2 ON c.category_id = c2.id ORDER BY c.expires_at desc LIMIT 10 - ()
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:51 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_stacked.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_td_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_batch_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_actions.php"
+Apr 22 14:22:52 symfony [info] {sfPartialView} Render "/home/sfprojects/cooperationlive/cache/backend/dev/modules/autoNotice/templates/_list_footer.php"
+Apr 22 14:22:52 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 22 14:22:52 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 22 14:22:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM cooperation_affiliate c WHERE c.is_active = ? - (0)
+Apr 22 14:22:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 22 14:22:52 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Apr 22 14:22:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Configuration 59.13 ms (13)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Factories 51.50 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 40.57 ms (11)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Action "notice/index" 113.28 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} View "Success" for "notice/index" 172.71 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_assets" 0.65 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_flashes" 0.52 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_header" 0.34 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_filters" 53.73 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_filters_field" 44.04 ms (8)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list" 90.91 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_th_stacked" 3.18 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_th_tabular" 2.52 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_pagination" 1.19 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_td_batch_actions" 5.14 ms (10)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_td_stacked" 13.94 ms (10)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_td_actions" 31.63 ms (10)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_batch_actions" 2.06 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_actions" 1.74 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebDebugLogger} Partial "notice/_list_footer" 0.43 ms (1)
+Apr 22 14:22:52 symfony [info] {sfWebResponse} Send content (180850 o)
+Apr 24 23:25:06 symfony [info] {sfPatternRouting} Match route "cooperation_notice" (/notice.:sf_format) for /notice with parameters array (  'module' => 'notice',  'action' => 'index',  'sf_format' => 'html',)
+Apr 24 23:25:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 24 23:25:06 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 24 23:25:06 symfony [info] {sfBasicSecurityFilter} Action "notice/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Apr 24 23:25:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 24 23:25:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 24 23:25:06 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Apr 24 23:25:06 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Apr 24 23:25:06 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 24 23:25:06 symfony [info] {sfPHPView} Render "/home/sfprojects/cooperationlive/apps/backend/templates/layout.php"
+Apr 24 23:25:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Apr 24 23:25:06 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Apr 24 23:25:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 24 23:25:06 symfony [info] {sfWebDebugLogger} Configuration 3.41 ms (14)
+Apr 24 23:25:06 symfony [info] {sfWebDebugLogger} Factories 22.11 ms (1)
+Apr 24 23:25:06 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 5.35 ms (1)
+Apr 24 23:25:06 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 8.17 ms (1)
+Apr 24 23:25:06 symfony [info] {sfWebResponse} Send content (32499 o)
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\storage\sfSessionStorage.class.php on line 72 (session_name(): Cannot change session name when headers already sent)
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\storage\sfSessionStorage.class.php on line 84 (session_set_cookie_params(): Cannot change session cookie parameters when headers already sent)
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\storage\sfSessionStorage.class.php on line 93 (session_start(): Cannot start session when headers already sent)
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 257 (ini_set(): Headers already sent. You cannot change the session module's ini settings at this time)
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\exception\sfException.class.php on line 107 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:31:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/" (/).
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\exception\sfException.class.php on line 161 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:31:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 10 16:31:14 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:31:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 16:31:14 symfony [info] {sfWebDebugLogger} Configuration 195.23 ms (5)
+Jun 10 16:31:14 symfony [info] {sfWebDebugLogger} Factories 126.44 ms (1)
+Jun 10 16:31:41 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 257 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Jun 10 16:31:41 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/" (/).
+Jun 10 16:31:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 10 16:31:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 16:31:41 symfony [info] {sfWebDebugLogger} Configuration 6.23 ms (5)
+Jun 10 16:31:41 symfony [info] {sfWebDebugLogger} Factories 29.60 ms (1)
+Jun 10 16:31:49 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 257 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Jun 10 16:31:49 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/" (/).
+Jun 10 16:31:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 10 16:31:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 16:31:49 symfony [info] {sfWebDebugLogger} Configuration 5.43 ms (5)
+Jun 10 16:31:49 symfony [info] {sfWebDebugLogger} Factories 23.67 ms (1)
+Jun 10 16:33:41 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 257 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Jun 10 16:33:41 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/" (/).
+Jun 10 16:33:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 10 16:33:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 16:33:41 symfony [info] {sfWebDebugLogger} Configuration 6.49 ms (5)
+Jun 10 16:33:41 symfony [info] {sfWebDebugLogger} Factories 25.23 ms (1)
+Jun 10 16:33:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'notice',  'action' => 'index',)
+Jun 10 16:33:53 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 257 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Jun 10 16:33:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 10 16:33:54 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jun 10 16:33:54 symfony [info] {sfBasicSecurityFilter} Action "notice/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Jun 10 16:33:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 10 16:33:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 10 16:33:54 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Jun 10 16:33:54 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Jun 10 16:33:54 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\backend\templates/layout.php"
+Jun 10 16:33:54 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\backend\templates/layout.php"
+Jun 10 16:33:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:33:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Jun 10 16:33:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:33:54 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Jun 10 16:33:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Jun 10 16:33:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 16:33:54 symfony [info] {sfWebDebugLogger} Configuration 54.05 ms (15)
+Jun 10 16:33:54 symfony [info] {sfWebDebugLogger} Factories 25.14 ms (1)
+Jun 10 16:33:54 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 14.74 ms (1)
+Jun 10 16:33:54 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 20.82 ms (1)
+Jun 10 16:33:54 symfony [info] {sfWebResponse} Send content (34042 o)
+Jun 10 16:34:08 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 257 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Jun 10 16:34:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/" (/).
+Jun 10 16:34:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 10 16:34:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 10 16:34:08 symfony [info] {sfWebDebugLogger} Configuration 9.01 ms (5)
+Jun 10 16:34:08 symfony [info] {sfWebDebugLogger} Factories 47.56 ms (1)

@@ -6,3 +6,5 @@ all:
   active_days:          30
   max_notices_on_homepage: 10
   max_notices_on_category: 20
+  max_articles_on_homepage: 3
+  max_articles_on_category: 20

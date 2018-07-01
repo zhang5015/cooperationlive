@@ -46,7 +46,7 @@ cooperation_article:
 sf_guard_user:
   url:   /login
   param: { module: sfGuardAuth, action: signin }
-
+  
 sf_guard_signin:
   url:   /login
   param: { module: sfGuardAuth, action: signin }

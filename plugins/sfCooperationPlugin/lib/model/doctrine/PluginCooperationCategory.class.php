@@ -31,6 +31,14 @@ abstract class PluginCooperationCategory extends BaseCooperationCategory
 
 		return Doctrine_Core::getTable('CooperationArticle')->addActiveArticlesQuery($q);
 	}
+	public function getArticlesByCategory($id = 5)
+	{
+		$q = Doctrine_Query::create()
+		->from('CooperationArticle j')
+		->where('j.category_id = ?', $id);
+
+		return Doctrine_Core::getTable('CooperationArticle')->addActiveArticlesQuery($q);
+	}
 
 	public function getActiveNotices($max = 10)
 	{

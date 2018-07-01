@@ -25,7 +25,7 @@ abstract class PluginCooperationArticleForm extends BaseCooperationArticleForm
 		$this->validatorSchema['image'] = new sfValidatorFile(array(
       'required'   => false,
       'path'       => sfConfig::get('sf_upload_dir').'/articles',
-//      'max_size'   => '2048K',
+//      'max_size'   => '800K',
       'mime_types' => 'web_images',
 		//      'onchange'   =>'imgPreview(this)'
 		));

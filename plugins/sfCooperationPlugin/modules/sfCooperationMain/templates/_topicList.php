@@ -67,7 +67,7 @@
 										<img title="" class="J_newsListPic newsPic newsListNewPic" style="width: 152px; height: 107px;" alt="文章附图" src="/uploads/articles/<?php echo $topics[0]->getImage() ?>" /> 
 									<?php else: ?>
 										<img  title="" class="J_newsListPic newsPic newsListNewPic" style="width: 152px; height: 107px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
-									<?php endif ?>
+									<?php endif; ?>
 								</a> 
 							</div> 
 							<div class="mixNewsStyleTitleContainer"> 

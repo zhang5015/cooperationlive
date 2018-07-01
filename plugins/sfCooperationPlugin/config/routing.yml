@@ -8,13 +8,13 @@ affiliate:
     prefix_path:    /:sf_culture/affiliate
     module:         sfCooperationAffiliate
   requirements:
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
 
 affiliate_list:
   url:   /:sf_culture/affiliate
   param: { module: sfCooperationAffiliate, action: index }
   requirements:
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
 
 api_notices:
   url:     /api/:token/notices.:sf_format
@@ -31,13 +31,13 @@ category:
   options: { model: CooperationCategory, type: object, method: doSelectForSlug }
   requirements:
     sf_format: (?:html|atom)
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
  
 notice_search:
-  url:   /:sf_culture/search
+  url:   /:sf_culture/notice_search
   param: { module: sfCooperationNotice, action: search }
   requirements:
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
  
 notice:
   class:   sfDoctrineRouteCollection
@@ -49,7 +49,7 @@ notice:
     module:         sfCooperationNotice
   requirements:
     token: \w+
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
  
 notice_show_user:
   url:     /:sf_culture/notice/:company_slug/:location_slug/:id/:position_slug
@@ -62,13 +62,13 @@ notice_show_user:
   requirements:
     id:        \d+
     sf_method: GET
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
 
 article_search:
-  url:   /:sf_culture/search
+  url:   /:sf_culture/article_search
   param: { module: sfCooperationArticle, action: search }
   requirements:
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
  
 article:
   class:   sfDoctrineRouteCollection
@@ -78,7 +78,7 @@ article:
     prefix_path:    /:sf_culture/article
     module:         sfCooperationArticle
   requirements:
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
  
 article_show_user:
   url:     /:sf_culture/article/:title_slug/:id/:author_slug
@@ -91,27 +91,21 @@ article_show_user:
   requirements:
     id:        \d+
     sf_method: GET
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
 
 category_article:
-  url:     /:sf_culture/category/:slug.:sf_format
+  url:     /:sf_culture/category_article/:slug.:sf_format
   class:   sfDoctrineRoute
-  param:   { module: sfCooperationCategory, action: ariticle, sf_format: html }
+  param:   { module: sfCooperationCategory, action: article, sf_format: html }
   options: { model: CooperationCategory, type: object, method: doSelectForSlug }
   requirements:
     sf_format: (?:html|atom)
-    sf_culture: (?:fr|en)
+    sf_culture: (?:zh|en)
 
 change_language:
   url:   /change_language
   param: { module: sfCooperationLanguage, action: changeLanguage }
- 
-localized_homepage:
-  url:   /:sf_culture/
-  param: { module: sfCooperationMain, action: index }
-  requirements:
-    sf_culture: (?:fr|en)
- 
-homepage:
-  url:   /
-  param: { module: sfCooperationMain, action: index }
+
+mobile_signin:
+  url:   /mobile/login
+  param: { module: sfGuardAuth, action: mobile }
