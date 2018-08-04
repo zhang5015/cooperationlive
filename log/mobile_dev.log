@@ -8052,3 +8052,420 @@ Jul 01 17:18:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Fou
 Jul 01 17:18:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Jul 01 17:18:16 symfony [info] {sfWebDebugLogger} Configuration 7.95 ms (5)
 Jul 01 17:18:16 symfony [info] {sfWebDebugLogger} Factories 42.45 ms (1)
+Aug 04 14:18:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',)
+Aug 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\storage\sfSessionStorage.class.php on line 72 (session_name(): Cannot change session name when headers already sent)
+Aug 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\storage\sfSessionStorage.class.php on line 84 (session_set_cookie_params(): Cannot change session cookie parameters when headers already sent)
+Aug 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\storage\sfSessionStorage.class.php on line 93 (session_start(): Cannot start session when headers already sent)
+ago 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): Headers already sent. You cannot change the session module's ini settings at this time)
+ago 04 14:18:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+ago 04 14:18:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+ago 04 14:18:47 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:18:47 symfony [info] {sfFrontWebController} Redirect to "http://cooperationlive.test/mobile_dev.php/en/"
+Aug 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Aug 04 14:18:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Aug 04 14:18:47 symfony [info] {sfWebResponse} Send header "Location: http://cooperationlive.test/mobile_dev.php/en/"
+Aug 04 14:18:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Aug 04 14:18:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:18:47 symfony [info] {sfWebDebugLogger} Configuration 524.23 ms (8)
+Aug 04 14:18:47 symfony [info] {sfWebDebugLogger} Factories 269.57 ms (1)
+Aug 04 14:18:47 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 3.98 ms (1)
+Aug 04 14:18:47 symfony [info] {sfWebResponse} Send content (117 o)
+Aug 04 14:18:48 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:18:48 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:18:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:18:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:18:48 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:18:48, 1)
+Aug 04 14:18:48 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:18:48 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:18:48 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:18:48 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:18:48 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:18:48 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:18:48 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:18:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:18:48 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:18:48 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:18:48 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Aug 04 14:18:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:18:48 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Aug 04 14:18:48 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:18:48 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\util\sfToolkit.class.php:351))
+Aug 04 14:18:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Configuration 299.86 ms (11)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Factories 57.30 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 364.78 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 10.17 ms (8)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 85.11 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 12.45 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.52 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.78 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.80 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 2.14 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.41 ms (1)
+Aug 04 14:18:48 symfony [info] {sfWebResponse} Send content (70976 o)
+Aug 04 14:18:48 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:18:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:18:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:18:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Configuration 20.24 ms (5)
+Aug 04 14:18:48 symfony [info] {sfWebDebugLogger} Factories 57.90 ms (1)
+Aug 04 14:22:21 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:22:21 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:22:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:22:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:22:21 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:22:22, 1)
+Aug 04 14:22:22 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:22:22 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:22:22 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:22:22 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:22:22 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:22:22 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:22:22 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:22:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:22:22 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:22:22 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:22:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:22:22 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:22:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Configuration 287.09 ms (11)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Factories 56.50 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 343.54 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.92 ms (8)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 63.88 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 6.95 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 1.70 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.52 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.60 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 1.74 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.51 ms (1)
+Aug 04 14:22:22 symfony [info] {sfWebResponse} Send content (71294 o)
+Aug 04 14:22:22 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:22:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:22:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:22:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Configuration 22.91 ms (5)
+Aug 04 14:22:22 symfony [info] {sfWebDebugLogger} Factories 64.68 ms (1)
+Aug 04 14:25:02 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:25:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/article/n-a/n-a" (/).
+Aug 04 14:25:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:25:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:25:02 symfony [info] {sfWebDebugLogger} Configuration 16.88 ms (5)
+Aug 04 14:25:02 symfony [info] {sfWebDebugLogger} Factories 54.12 ms (1)
+Aug 04 14:25:05 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:25:05 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:25:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:25:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:25:05 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:25:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:25:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:25:05, 1)
+Aug 04 14:25:05 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:25:06 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:25:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:25:06 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:25:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:25:06 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:25:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:25:06 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:25:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:25:06 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:25:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:25:06 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:25:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:25:06 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:25:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:25:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:25:06 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:25:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Configuration 276.09 ms (11)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Factories 63.00 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 301.86 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.27 ms (8)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 44.10 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.45 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 1.72 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.49 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.91 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 1.99 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.54 ms (1)
+Aug 04 14:25:06 symfony [info] {sfWebResponse} Send content (71261 o)
+Aug 04 14:25:06 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:25:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:25:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:25:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Configuration 19.52 ms (5)
+Aug 04 14:25:06 symfony [info] {sfWebDebugLogger} Factories 60.05 ms (1)
+Aug 04 14:26:47 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:26:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:26:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:26:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:26:47 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:26:47, 1)
+Aug 04 14:26:47 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:26:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:26:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:26:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:26:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:26:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:26:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:26:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:26:47 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:26:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:26:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:26:47 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:26:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Configuration 255.85 ms (11)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Factories 37.70 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 286.77 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.70 ms (8)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 46.10 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.28 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 1.54 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.48 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.70 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 1.60 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 2.26 ms (1)
+Aug 04 14:26:47 symfony [info] {sfWebResponse} Send content (71282 o)
+Aug 04 14:26:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:26:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:26:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:26:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:26:48 symfony [info] {sfWebDebugLogger} Configuration 17.17 ms (5)
+Aug 04 14:26:48 symfony [info] {sfWebDebugLogger} Factories 51.86 ms (1)
+Aug 04 14:27:30 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:27:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:27:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:27:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:27:30 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:27:31, 1)
+Aug 04 14:27:31 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:27:31 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:27:31 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:27:31 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:27:31 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:27:31 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:27:31 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:27:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:27:31 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:27:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:27:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:27:31 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:27:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Configuration 253.80 ms (11)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Factories 36.18 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 303.31 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.56 ms (8)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 46.21 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.36 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.26 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.57 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.78 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 1.64 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.37 ms (1)
+Aug 04 14:27:31 symfony [info] {sfWebResponse} Send content (71294 o)
+Aug 04 14:27:31 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:27:31 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:27:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:27:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Configuration 28.89 ms (5)
+Aug 04 14:27:31 symfony [info] {sfWebDebugLogger} Factories 65.43 ms (1)
+Aug 04 14:27:57 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:27:57 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:27:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:27:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:27:57 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:27:57, 1)
+Aug 04 14:27:58 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:27:58 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:27:58 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:27:58 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:27:58 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:27:58 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:27:58 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:27:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:27:58 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:27:58 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:27:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:27:58 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:27:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Configuration 264.48 ms (11)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Factories 35.15 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 315.88 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.34 ms (8)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 61.42 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.17 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 1.62 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 10.90 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 3.38 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 2.72 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.98 ms (1)
+Aug 04 14:27:58 symfony [info] {sfWebResponse} Send content (71342 o)
+Aug 04 14:27:58 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:27:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:27:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:27:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Configuration 21.34 ms (5)
+Aug 04 14:27:58 symfony [info] {sfWebDebugLogger} Factories 66.63 ms (1)
+Aug 04 14:30:12 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:30:12 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:30:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:30:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:30:12 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:30:12, 1)
+Aug 04 14:30:12 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:30:12 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:30:12 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:30:12 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:30:12 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:30:12 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:30:12 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:30:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:30:12 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:30:12 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:30:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:30:12 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:30:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Configuration 266.25 ms (11)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Factories 55.42 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 302.39 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.71 ms (8)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 42.75 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.19 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 1.55 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.46 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 2.07 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 1.63 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.34 ms (1)
+Aug 04 14:30:12 symfony [info] {sfWebResponse} Send content (71375 o)
+Aug 04 14:30:13 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:30:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:30:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:30:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:30:13 symfony [info] {sfWebDebugLogger} Configuration 23.51 ms (5)
+Aug 04 14:30:13 symfony [info] {sfWebDebugLogger} Factories 72.08 ms (1)
+Aug 04 14:48:16 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 14:48:16 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:48:16 symfony [notice] {sfWebDebugLogger}  Notice at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 239 (session_start(): A session had already been started - ignoring)
+Aug 04 14:48:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 14:48:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 14:48:16 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 14:48:16, 1)
+Aug 04 14:48:16 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 14:48:16 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 14:48:16 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 14:48:16 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 14:48:16 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 14:48:16 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 14:48:16 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 14:48:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 14:48:16 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:48:16 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 14:48:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 14:48:16 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 14:48:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Configuration 270.91 ms (11)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Factories 54.77 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 294.88 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.89 ms (8)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 44.16 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 4.89 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 1.74 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.53 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.65 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 1.75 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.53 ms (1)
+Aug 04 14:48:16 symfony [info] {sfWebResponse} Send content (71353 o)
+Aug 04 14:48:16 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 14:48:16 symfony [notice] {sfWebDebugLogger}  Notice at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 239 (session_start(): A session had already been started - ignoring)
+Aug 04 14:48:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 14:48:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 14:48:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Configuration 28.82 ms (5)
+Aug 04 14:48:16 symfony [info] {sfWebDebugLogger} Factories 66.73 ms (1)
+Aug 04 19:42:47 symfony [info] {sfPatternRouting} Match route "localized_homepage" (/:sf_culture/) for /en/ with parameters array (  'module' => 'sfCooperationMobile',  'action' => 'index',  'sf_culture' => 'en',)
+Aug 04 19:42:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 19:42:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 04 19:42:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 04 19:42:47 symfony [info] {sfCooperationMobileActions} Call "sfCooperationMobileActions->executeIndex()"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.created_at AS c__created_at, c.updated_at AS c__updated_at, c2.id AS c2__id, c2.category_id AS c2__category_id, c2.title AS c2__title, c2.author AS c2__author, c2.body AS c2__body, c2.link AS c2__link, c2.image AS c2__image, c2.abstract AS c2__abstract, c2.is_public AS c2__is_public, c2.is_activated AS c2__is_activated, c2.expires_at AS c2__expires_at, c2.created_at AS c2__created_at, c2.updated_at AS c2__updated_at FROM cooperation_category c LEFT JOIN cooperation_article c2 ON c.id = c2.category_id WHERE (c2.expires_at > ? AND c2.is_activated = ?) - (2018-08-04 19:42:47, 1)
+Aug 04 19:42:47 symfony [info] {sfPHPView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/indexSuccess.php"
+Aug 04 19:42:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_newsList.php"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 3 - (1, 1, 4)
+Aug 04 19:42:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_filmList.php"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 1)
+Aug 04 19:42:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_brandList.php"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 2 - (1, 1, 2)
+Aug 04 19:42:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_topicList.php"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 5 - (1, 1, 3)
+Aug 04 19:42:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_noticeList.php"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 4 - (1, 1, 5)
+Aug 04 19:42:47 symfony [info] {sfPartialView} Render "C:/xampp/htdocs/cooperationlive/plugins/sfCooperationPlugin/modules/sfCooperationMobile/templates/_caseList.php"
+Aug 04 19:42:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.id AS c__id, c.category_id AS c__category_id, c.title AS c__title, c.author AS c__author, c.body AS c__body, c.link AS c__link, c.image AS c__image, c.abstract AS c__abstract, c.is_public AS c__is_public, c.is_activated AS c__is_activated, c.expires_at AS c__expires_at, c.created_at AS c__created_at, c.updated_at AS c__updated_at FROM cooperation_article c WHERE (c.is_activated = ? AND c.is_public = ? AND c.category_id = ?) ORDER BY c.created_at desc  LIMIT 9 - (1, 1, 6)
+Aug 04 19:42:47 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 19:42:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\cooperationlive\apps\mobile\templates/layout.php"
+Aug 04 19:42:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 04 19:42:47 symfony [info] {sfWebResponse} Send header "content-type: text/html"
+Aug 04 19:42:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Configuration 276.46 ms (11)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Factories 68.82 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Action "sfCooperationMobile/index" 296.94 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.10 ms (8)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} View "Success" for "sfCooperationMobile/index" 55.85 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_newsList" 5.45 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_filmList" 2.06 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_brandList" 1.51 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_topicList" 1.80 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_noticeList" 2.19 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebDebugLogger} Partial "sfCooperationMobile/_caseList" 1.87 ms (1)
+Aug 04 19:42:47 symfony [info] {sfWebResponse} Send content (71364 o)
+Aug 04 19:42:48 symfony [warning] {sfWebDebugLogger}  Warning at C:\xampp\htdocs\cooperationlive\lib\vendor\symfony\lib\user\sfBasicSecurityUser.class.php on line 238 (ini_set(): A session is active. You cannot change the session module's ini settings at this time)
+Aug 04 19:42:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/en/“/uploads/articles/”/" (/).
+Aug 04 19:42:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 04 19:42:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 04 19:42:48 symfony [info] {sfWebDebugLogger} Configuration 24.19 ms (5)
+Aug 04 19:42:48 symfony [info] {sfWebDebugLogger} Factories 73.65 ms (1)

@@ -10,28 +10,25 @@
  */
 class sfCooperationLanguageActions extends sfActions
 {
-    /**
-     * Executes index action
-     *
-     * @param sfRequest $request A request object
-     */
-    public function executeIndex(sfWebRequest $request)
-    {
-        $this->forward('default', 'module');
-    }
+  /**
+   * Executes index action
+   *
+   * @param sfRequest $request A request object
+   */
+  public function executeIndex(sfWebRequest $request)
+  {
+    $this->forward('default', 'module');
+  }
 
-    public function executeChangeLanguage(sfWebRequest $request)
-    {
-        $form = new sfFormLanguage(
-        $this->getUser(),
-        array('languages' => array('en', 'fr'))
-        );
-        $form->disableLocalCSRFProtection();
+  public function executeChangeLanguage(sfWebRequest $request)
+  {
+    $form = new sfFormLanguage($this->getUser(), array('languages' => array('en', 'fr')));
+    $form->disableLocalCSRFProtection();
 
-        $form->process($request);
+    $form->process($request);
 
-        return $this->redirect('localized_homepage');
-    }
+    return $this->redirect('localized_homepage');
+  }
 
 //    public function executeChangeLanguage(sfWebRequest $request)
 //    {

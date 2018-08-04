@@ -75,15 +75,11 @@
       <h1 class="text-white">Topic</h1>
     </div>
 		<?php include_partial('sfCooperationMobile/topicList')?>
-
-
 		<?php include_partial('sfCooperationMobile/noticeList') ?>
-
     <div class="w-100 bg-dark text-center">
 			<h1 class="text-white">案例欣赏</h1>
       <h1 class="text-white">Case appreciation</h1>
     </div>
 		<?php include_partial('sfCooperationMobile/caseList') ?>
-	
 		<!--预约面板--> 
 

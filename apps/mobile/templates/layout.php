@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <!--  <meta name="viewport" content="width=device-width, initial-scale=1" />-->
   <title>CooperationLive Botman</title>
    <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/article.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.css" />
-  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/article.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.css"/>
+  <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
   <style type="text/css">
         #panel {
@@ -23,17 +23,17 @@
           right: 10px;
           width: 200px;
         }
-    </style>
+  </style>
   <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&amp;key=您申请的key值"></script>
   <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
   <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
    <!-- Styles -->
  </head>
  <body>
   <div id="container" class="container-fluid">
-   <hr class="bg-danger m-3" />
+   <hr class="bg-danger m-3"/>
    <h2 class="text-danger text-center">COOPERATION LIVE</h2>
     <?php echo $sf_content ?>
     <div class="w-100 mb-5" style="height: 14rem">
@@ -46,32 +46,32 @@
      <strong><a href="//www.cooperationlive.com/" target="_blank">cooperationlive.com</a></strong> All Rights Reserved. 备案号：辽ICP备18003786号-2
     </div>
     </div>
-  <div class="row no-gutters fixed-bottom bg-danger" >
-   <div class="col w-20 text-white align-self-center" id="navItem_1" onclick="calling()">
+  <div class="row fixed-bottom bg-danger py-3">
+   <div class="col w-20 text-white align-self-center text-center" id="navItem_1" onclick="calling()">
     <span class="fa fa-phone fa-2x"></span>
     <div class="text-white" id="describeName_1">
      电话咨询
     </div>
    </div>
-   <div class="col w-20 text-white align-self-center" id="navItem_2" onclick="consultation()">
+   <div class="col w-20 text-white align-self-center text-center" id="navItem_2" onclick="consultation()">
     <span class="fa fa-envelope fa-2x"></span>
     <div class="text-white" id="describeName_2">
      信息咨询
     </div>
    </div>
-   <div class="col w-20 text-white align-self-center" id="navItem_3" onclick="openQQ()">
+   <div class="col w-20 text-white align-self-center text-center" id="navItem_3" onclick="openQQ()">
     <span class="fa fa-qq fa-2x"></span>
     <div class="text-white" id="describeName_3">
      QQ客服
     </div>
    </div>
-   <div class="col w-20 text-white align-self-center" id="navItem_4" onclick="showMap()">
-    <span class="fa fa-map fa-2x"></span>
+   <div class="col w-20 text-white align-self-center text-center" id="navItem_4" onclick="showMap()">
+    <span class="fa fa-map-marker fa-2x"></span>
     <div class="text-white" id="describeName_4">
      在线地图
     </div>
    </div>
-   <div class="col w-20 text-white align-self-center" id="navItem_5" onclick="addComment()">
+   <div class="col w-20 text-white align-self-center text-center" id="navItem_5" onclick="addComment()">
     <span class="fa fa-comment fa-2x"></span>
     <div class="text-white" id="describeName_5">
      在线留言
