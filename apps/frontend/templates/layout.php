@@ -29,7 +29,7 @@
 <div id="g_main">
   <div id="web" class="mt-3">
       <div class="row p-3">
-        <div class="mx-3"><h2 class="text-danger">Cooperation Live</h2>
+        <div class="mx-3"><h2 class="text-danger"><strong>Cooperation Live</strong></h2>
         </div>
         <div class="ml-auto">
           <div class="row">

@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
    <!--  <meta name="viewport" content="width=device-width, initial-scale=1" />-->
-  <title>CooperationLive Botman</title>
+  <title><?php include_slot('title') ?></title>
    <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" type="text/css" media="screen" href="/css/article.css"/>
@@ -34,7 +34,7 @@
  <body>
   <div id="container" class="container-fluid">
    <hr class="bg-danger m-3"/>
-   <h2 class="text-danger text-center">COOPERATION LIVE</h2>
+    <h2 class="text-danger text-center"><strong>COOPERATION LIVE</strong></h2>
     <?php echo $sf_content ?>
     <div class="w-100 mb-5" style="height: 14rem">
     <div class="bg-danger text-white text-right" onclick="window.scrollTo(0,0);">
@@ -46,33 +46,33 @@
      <strong><a href="//www.cooperationlive.com/" target="_blank">cooperationlive.com</a></strong> All Rights Reserved. 备案号：辽ICP备18003786号-2
     </div>
     </div>
-  <div class="row fixed-bottom bg-danger py-3">
+  <div class="row fixed-bottom bg-danger py-5">
    <div class="col w-20 text-white align-self-center text-center" id="navItem_1" onclick="calling()">
-    <span class="fa fa-phone fa-2x"></span>
+    <span class="fa fa-phone fa-5x"></span>
     <div class="text-white" id="describeName_1">
      电话咨询
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_2" onclick="consultation()">
-    <span class="fa fa-envelope fa-2x"></span>
+    <span class="fa fa-envelope fa-5x"></span>
     <div class="text-white" id="describeName_2">
      信息咨询
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_3" onclick="openQQ()">
-    <span class="fa fa-qq fa-2x"></span>
+    <span class="fa fa-qq fa-5x"></span>
     <div class="text-white" id="describeName_3">
      QQ客服
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_4" onclick="showMap()">
-    <span class="fa fa-map-marker fa-2x"></span>
+    <span class="fa fa-map-marker fa-5x"></span>
     <div class="text-white" id="describeName_4">
      在线地图
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_5" onclick="addComment()">
-    <span class="fa fa-comment fa-2x"></span>
+    <span class="fa fa-comment fa-5x"></span>
     <div class="text-white" id="describeName_5">
      在线留言
     </div>
