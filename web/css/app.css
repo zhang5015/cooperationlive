@@ -526,6 +526,11 @@ mark,
   height: auto;
 }
 
+.img-display{
+  width: 136px;
+  height: 87px;
+}
+
 .figure {
   display: inline-block;
 }

@@ -3,11 +3,13 @@
 <!--<strong>Topic</strong>-->
 <div class="panel" newsname="<?php echo $topics[0]->getTitle() ?>" >
     <div class="panel-body">
+      <div class="thumbnail col-sm-6 col-md-4">
     <?php if($topics[0]->getImage()):?>
       <img title="" class="w-90"  alt="文章附图" src="/uploads/articles/<?php echo $topics[0]->getImage() ?>" />
     <?php else: ?>
       <img  title="" class="w-90" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
     <?php endif; ?>
+      </div>
     </div>
     <div class="panel-footer bg-white border-0">
     <?php echo link_to($topics[0]->getTitle(), 'article_show_user', $topics[0]) ?>
