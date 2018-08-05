@@ -1,5 +1,5 @@
 <div class="media">
-  <div class="media-body">
+  <div class="media-body w-70">
   <div id="myCarousel" class="carousel slide">
     <!-- 轮播（Carousel）指标 -->
     <ol class="carousel-indicators">
@@ -28,7 +28,7 @@
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
    </div>
   </div>
-  <div><?php include_partial('sfCooperationMain/newsList') ?></div>
+  <div class="w-30"><?php include_partial('sfCooperationMain/newsList') ?></div>
 </div>
 <table class="container-fluid">
 <tbody>
