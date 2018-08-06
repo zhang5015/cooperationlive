@@ -4,18 +4,18 @@ dev:
     param:
       dsn: 'mysql:host=localhost;dbname=cooperation'
       username: root
-      password: '123456'
+      password: '564d886a9e99'
 prod:
   doctrine:
     class: sfDoctrineDatabase
     param:
       dsn: 'mysql:host=localhost;dbname=cooperation'
       username: root
-      password: '5E92c33bdd42'
+      password: '564d886a9e99'
 test:
   doctrine:
     class: sfDoctrineDatabase
     param:
       dsn: 'mysql:host=localhost;dbname=cooperation_test'
       username: root
-      password: '123456'
+      password: '564d886a9e99'
