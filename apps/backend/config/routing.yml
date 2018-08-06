@@ -7,14 +7,14 @@ cooperation_affiliate:
     column:               id
     with_wildcard_routes: true
 
-cooperation_notice_autoNotice:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                CooperationNotice
-    module:               autoNotice
-    prefix_path:          /autoNotice
-    column:               id
-    with_wildcard_routes: true
+#cooperation_notice_autoNotice:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                CooperationNotice
+#    module:               autoNotice
+#    prefix_path:          /autoNotice
+#    column:               id
+#    with_wildcard_routes: true
 
 cooperation_category:
   class: sfDoctrineRouteCollection
@@ -25,14 +25,14 @@ cooperation_category:
     column:               id
     with_wildcard_routes: true
 
-cooperation_notice:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                CooperationNotice
-    module:               notice
-    prefix_path:          notice
-    column:               id
-    with_wildcard_routes: true
+#cooperation_notice:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                CooperationNotice
+#    module:               notice
+#    prefix_path:          notice
+#    column:               id
+#    with_wildcard_routes: true
 
 cooperation_article:
   class: sfDoctrineRouteCollection
@@ -65,7 +65,7 @@ sf_guard_password:
 # default rules
 homepage:
   url:   /
-  param: { module: notice, action: index }
+  param: { module: article, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules

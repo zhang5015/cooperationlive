@@ -15,6 +15,7 @@ class BasesfGuardFormSignin extends BaseForm
    */
   public function setup()
   {
+//    $this->disableCSRFProtection();
     $this->setWidgets(array(
       'username' => new sfWidgetFormInputText(),
       'password' => new sfWidgetFormInputPassword(array('type' => 'password')),

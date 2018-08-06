@@ -1,59 +1,57 @@
-<table>
-  <tbody>
-    <tr>
-      <th>Id:</th>
-      <td><?php echo $cooperation_article->getId() ?></td>
-    </tr>
-    <tr>
-      <th>Category:</th>
-      <td><?php echo $cooperation_article->getCategoryId() ?></td>
-    </tr>
-    <tr>
-      <th>Title:</th>
-      <td><?php echo $cooperation_article->getTitle() ?></td>
-    </tr>
-    <tr>
-      <th>Author:</th>
-      <td><?php echo $cooperation_article->getAuthor() ?></td>
-    </tr>
-    <tr>
-      <th>Body:</th>
-      <td><?php echo $cooperation_article->getBody() ?></td>
-    </tr>
-    <tr>
-      <th>Link:</th>
-      <td><?php echo $cooperation_article->getLink() ?></td>
-    </tr>
-    <tr>
-      <th>Image:</th>
-      <td><?php echo $cooperation_article->getImage() ?></td>
-    </tr>
-    <tr>
-      <th>Abstract:</th>
-      <td><?php echo $cooperation_article->getAbstract() ?></td>
-    </tr>
-    <tr>
-      <th>Is public:</th>
-      <td><?php echo $cooperation_article->getIsPublic() ?></td>
-    </tr>
-    <tr>
-      <th>Is activated:</th>
-      <td><?php echo $cooperation_article->getIsActivated() ?></td>
-    </tr>
-    <tr>
-      <th>Expires at:</th>
-      <td><?php echo $cooperation_article->getExpiresAt() ?></td>
-    </tr>
-    <tr>
-      <th>Created at:</th>
-      <td><?php echo $cooperation_article->getCreatedAt() ?></td>
-    </tr>
-    <tr>
-      <th>Updated at:</th>
-      <td><?php echo $cooperation_article->getUpdatedAt() ?></td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+    <div class="row">
+      <div class="col-2 font-weight-bold">Id:</div>
+      <div class="col-10"><?php echo $cooperation_article->getId() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Category:</div>
+      <div class="col-10"><?php echo $cooperation_article->getCategoryId() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Title:</div>
+      <div class="col-10"><?php echo $cooperation_article->getTitle() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Author:</div>
+      <div class="col-10"><?php echo $cooperation_article->getAuthor() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Body:</div>
+      <div class="col-10"><?php echo $cooperation_article->getBody() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Link:</div>
+      <div class="col-10"><?php echo $cooperation_article->getLink() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Image:</div>
+      <div class="col-10"><?php echo $cooperation_article->getImage() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Abstract:</div>
+      <div class="col-10"><?php echo $cooperation_article->getAbstract() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Is public:</div>
+      <div class="col-10"><?php echo $cooperation_article->getIsPublic() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Is activated:</div>
+      <div class="col-10"><?php echo $cooperation_article->getIsActivated() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Expires at:</div>
+      <div class="col-10"><?php echo $cooperation_article->getExpiresAt() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Created at:</div>
+      <div class="col-10"><?php echo $cooperation_article->getCreatedAt() ?></div>
+    </div>
+    <div class="row">
+      <div class="col-2 font-weight-bold">Updated at:</div>
+      <div class="col-10"><?php echo $cooperation_article->getUpdatedAt() ?></div>
+    </div>
+</div>
 
 <hr />
 
