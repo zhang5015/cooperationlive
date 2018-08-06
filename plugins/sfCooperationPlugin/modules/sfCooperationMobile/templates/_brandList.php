@@ -1,7 +1,6 @@
 <?php
 	$brands =  Doctrine_Core::getTable('CooperationArticle')->getBrandList();
 ?>
-
 <ul class="list-group">
 <?php foreach ($brands as $i => $article): ?>
    <li class="list-group-item">

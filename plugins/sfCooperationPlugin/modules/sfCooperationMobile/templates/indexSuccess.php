@@ -1,4 +1,4 @@
-    <div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide">
     <!-- 轮播（Carousel）指标 -->
     <ol class="carousel-indicators">
      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -24,7 +24,7 @@
     <!-- 轮播（Carousel）导航 -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
-   </div>
+</div>
     <table class="w-100 border-white mt-3">
      <tr class="text-center">
       <td class="text-center bg-dark " rowspan="2">
@@ -81,5 +81,3 @@
       <h1 class="text-white">Case appreciation</h1>
     </div>
 		<?php include_partial('sfCooperationMobile/caseList') ?>
-		<!--预约面板--> 
-

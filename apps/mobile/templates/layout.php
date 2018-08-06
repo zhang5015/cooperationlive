@@ -33,18 +33,16 @@
  </head>
  <body>
   <div id="container" class="container-fluid">
-   <hr class="bg-danger m-3"/>
-    <h2 class="text-danger text-center"><strong>COOPERATION LIVE</strong></h2>
+    <hr class="bg-danger m-3"/>
+    <h1 class="text-danger text-center"><strong>COOPERATION LIVE</strong></h1>
     <?php echo $sf_content ?>
-    <div class="w-100 mb-5" style="height: 14rem">
-    <div class="bg-danger text-white text-right" onclick="window.scrollTo(0,0);">
-     top
-    </div>
-    <div class="w-100">
-      Copyright <span class="fa fa-copyright"></span> 2018 - 版权所有
-     <strong><a href="//www.cooperationlive.com/" target="_blank">电脑版</a></strong>&nbsp;
-     <strong><a href="//www.cooperationlive.com/" target="_blank">cooperationlive.com</a></strong> All Rights Reserved. 备案号：辽ICP备18003786号-2
-    </div>
+    <div class="w-100 mb-5" style="height: 18rem;">
+      <div class="bg-danger text-white text-right" onclick="window.scrollTo(0,0);"><h3><strong>top</strong></h3></div>
+      <div class="w-100>
+        Copyright <span class="fa fa-copyright"></span> 2018 - 版权所有
+        <strong><a href="//www.cooperationlive.com/" target="_blank">电脑版</a></strong>&nbsp;
+        <strong><a href="//www.cooperationlive.com/" target="_blank">cooperationlive.com</a></strong> All Rights Reserved. 备案号：辽ICP备18003786号-2
+      </div>
     </div>
   <div class="row fixed-bottom bg-danger py-5">
    <div class="col w-20 text-white align-self-center text-center" id="navItem_1" onclick="calling()">

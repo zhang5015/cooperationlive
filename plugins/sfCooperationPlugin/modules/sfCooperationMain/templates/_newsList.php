@@ -6,7 +6,7 @@
     <?php if($newArticles[0]->getImage()):?>
       <img style="width: 136px; height: 87px;"  alt="文章附图" src="/uploads/articles/<?php echo $newArticles[0]->getImage() ?>" />
     <?php else: ?>
-      <img  style="width: 136px; height: 87px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
+      <img style="width: 136px; height: 87px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
     <?php endif; ?>
         </div>
     <div class="panel-footer bg-white border-0">
@@ -21,7 +21,7 @@
     <?php if($newArticles[1]->getImage()):?>
       <img style="width: 136px; height: 87px;"  alt="文章附图" src="/uploads/articles/<?php echo $newArticles[1]->getImage() ?>" />
     <?php else: ?>
-      <img  style="width: 136px; height: 87px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
+      <img style="width: 136px; height: 87px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
     <?php endif; ?>
     </div>
     <div class="panel-footer bg-white border-0">
@@ -36,7 +36,7 @@
     <?php if($newArticles[2]->getImage()):?>
       <img style="width: 136px; height: 87px;"  alt="文章附图" src="/uploads/articles/<?php echo $newArticles[2]->getImage() ?>" />
     <?php else: ?>
-      <img  style="width: 136px; height: 87px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
+      <img style="width: 136px; height: 87px;" alt="文章附图" src="/styles/AD0IlIzuBRACGAAg0YXJwgUoh4-8xAUwiQE4ZA.jpg" />
     <?php endif; ?>
       </div>
     <div class="panel-footer bg-white border-0">

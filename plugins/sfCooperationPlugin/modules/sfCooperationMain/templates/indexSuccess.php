@@ -30,15 +30,13 @@
   </div>
   <div class="w-30"><?php include_partial('sfCooperationMain/newsList') ?></div>
 </div>
-<table class="container-fluid">
-<tbody>
-<tr>
-  <td class="w-20"><?php include_partial('sfCooperationMain/filmList')?></td>
-  <td class="w-40"><?php include_partial('sfCooperationMain/brandList')?></td>
-  <td class="w-40"><?php include_partial('sfCooperationMain/topicList')?></td>
-</tr>
-</tbody>
-</table>
+
+<div class="media">
+  <div class="media-body w-20"><?php include_partial('sfCooperationMain/filmList')?></div>
+  <div class="media-body w-40"><?php include_partial('sfCooperationMain/brandList')?></div>
+  <div class="media-body w-40"><?php include_partial('sfCooperationMain/topicList')?></div>
+</div>
+
 <table class="container-fluid">
 <tbody>
 <tr>
