@@ -80,7 +80,7 @@ class Doctrine_Inflector
     /**
      * Check if a string has utf7 characters in it
      *
-     * By bmorel at ssi dot fr
+     * By bmorel at ssi dot zh
      *
      * @param  string $string
      * @return boolean $bool

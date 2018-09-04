@@ -47,8 +47,8 @@
       <tr>
         <th><label for="article_fr">Fr</label></th>
         <td>
-          <?php echo $form['fr']->renderError() ?>
-          <?php echo $form['fr'] ?>
+          <?php echo $form['zh']->renderError() ?>
+          <?php echo $form['zh'] ?>
 
         <?php echo $form['id'] ?>
         </td>

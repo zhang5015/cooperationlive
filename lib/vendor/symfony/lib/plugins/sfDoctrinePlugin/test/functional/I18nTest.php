@@ -17,9 +17,9 @@ $article = new Article();
 $article->title = 'test';
 $t->is($article->Translation['en']->title, 'test');
 
-sfContext::getInstance()->getUser()->setCulture('fr');
-$article->title = 'fr test';
-$t->is($article->Translation['fr']->title, 'fr test');
+sfContext::getInstance()->getUser()->setCulture('zh');
+$article->title = 'zh test';
+$t->is($article->Translation['zh']->title, 'zh test');
 
 $t->is($article->getTitle(), $article->title);
 $article->setTitle('test');
@@ -27,7 +27,7 @@ $t->is($article->getTitle(), 'test');
 
 $article->setTestColumn('test');
 $t->is($article->getTestColumn(), 'test');
-$t->is($article->Translation['fr']['test_column'], 'test');
+$t->is($article->Translation['zh']['test_column'], 'test');
 
 $article->free(true);
 
@@ -37,7 +37,7 @@ class MyArticleForm extends ArticleForm
   {
     parent::configure();
 
-    $this->embedI18n(array('en', 'fr'));
+    $this->embedI18n(array('en', 'zh'));
 
     $authorForm = new AuthorForm($this->object->Author);
     unset($authorForm['id']);
@@ -59,7 +59,7 @@ $data = array(
   'en' => array(
     'title' => 'english title',
     'body'  => 'english body'),
-  'fr' => array(
+  'zh' => array(
     'title' => 'french title',
     'body'  => 'french body'),
   'created_at' => time(),
@@ -85,7 +85,7 @@ $values = array(
     'test_column' => '',
     'slug' => '',
   ),
-  'fr' => 
+  'zh' =>
   array(
     'title' => 'french title',
     'body' => 'french body',
@@ -122,13 +122,13 @@ $expected = array(
       'lang' => 'en',
       'slug' => 'english-title',
     ),
-    'fr' => 
+    'zh' =>
     array(
       'id' => $article->id,
       'title' => 'french title',
       'body' => 'french body',
       'test_column' => '',
-      'lang' => 'fr',
+      'lang' => 'zh',
       'slug' => 'french-title',
     ),
   ),
@@ -161,13 +161,13 @@ $expected = array(
     'lang' => 'en',
     'slug' => 'english-title',
   ),
-  'fr' => 
+  'zh' =>
   array(
     'id' => $article->id,
     'title' => 'french title',
     'body' => 'french body',
     'test_column' => '',
-    'lang' => 'fr',
+    'lang' => 'zh',
     'slug' => 'french-title',
   ),
   'Author' => 
@@ -196,13 +196,13 @@ $data = array(
     'lang' => 'en',
     'slug' => 'english-title',
   ),
-  'fr' =>
+  'zh' =>
   array(
     'id' => $article->id,
     'title' => 'french title',
     'body' => 'french body',
     'test_column' => '',
-    'lang' => 'fr',
+    'lang' => 'zh',
     'slug' => 'french-title',
   ),
   'Author' =>
@@ -226,7 +226,7 @@ $data = array(
   'en' => array(
     'title' => 'english title',
     'body'  => 'english body'),
-  'fr' => array(
+  'zh' => array(
     'title' => 'french title',
     'body'  => 'french body'),
   'created_at' => time(),
@@ -240,5 +240,5 @@ $t->is($articleForm->isValid(), false);
 $article = new Article();
 sfContext::getInstance()->getUser()->setCulture('en');
 $article->title = 'test';
-sfContext::getInstance()->getUser()->setCulture('fr');
+sfContext::getInstance()->getUser()->setCulture('zh');
 $t->is($article->title, 'test');

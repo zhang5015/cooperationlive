@@ -4,7 +4,7 @@
 <div id="article" class="container">
 <h1><?php echo $article->getTitle() ?></h1>
 <h2><?php echo $article->getAuthor() ?></h2>
-<h3><small>published on <?php echo $article->getDateTimeObject('created_at')->format('m/d/Y') ?></small>
+<h3><small><?php echo __('发布于') ?> <?php echo $article->getDateTimeObject('created_at')->format('m/d/Y') ?></small>
 </h3>
 
 <?php if ($article->getImage()): ?>

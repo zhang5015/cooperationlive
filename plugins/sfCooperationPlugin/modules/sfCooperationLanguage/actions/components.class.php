@@ -6,7 +6,7 @@ class sfCooperationLanguageComponents extends sfComponents
   {
     $this->form = new sfFormLanguage(
       $this->getUser(),
-      array('languages' => array('en', 'fr'))
+      array('languages' => array('en', 'zh'))
     );
     $this->form->disableLocalCSRFProtection();
   }

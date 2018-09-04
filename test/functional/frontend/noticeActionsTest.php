@@ -29,7 +29,7 @@
 //;
 //
 //// test/functional/frontend/noticeActionsTest.php
-//$browser->setHttpHeader('ACCEPT_LANGUAGE', 'fr_FR,fr,en;q=0.7');
+//$browser->setHttpHeader('ACCEPT_LANGUAGE', 'fr_FR,zh,en;q=0.7');
 //$browser->
 //  info('6 - User culture')->
 // 
@@ -39,31 +39,31 @@
 //  get('/')->
 //  with('response')->isRedirected()->
 //  followRedirect()->
-//  with('user')->isCulture('fr')->
+//  with('user')->isCulture('zh')->
 // 
-//  info('  6.2 - Available cultures are en and fr')->
+//  info('  6.2 - Available cultures are en and zh')->
 //  get('/it/')->
 //  with('response')->isStatusCode(404)
 //;
 // 
-//$browser->setHttpHeader('ACCEPT_LANGUAGE', 'en,fr;q=0.7');
+//$browser->setHttpHeader('ACCEPT_LANGUAGE', 'en,zh;q=0.7');
 //$browser->
 //  info('  6.3 - The culture guessing is only for the first request')->
 // 
 //  get('/')->
 //  with('response')->isRedirected()->
 //  followRedirect()->
-//  with('user')->isCulture('fr')
+//  with('user')->isCulture('zh')
 // test/functional/frontend/noticeActionsTest.php
 $browser->
   info('  7 - Notice creation page')->
  
-  get('/fr/')->
+  get('/zh/')->
   with('view_cache')->isCached(true, false)->
  
   createNotice(array('category_id' => Doctrine_Core::getTable('CooperationCategory')->findOneBySlug('programming')->getId()), true)->
  
-  get('/fr/')->
+  get('/zh/')->
   with('view_cache')->isCached(true, false)->
   with('response')->checkElement('.category_programming .more_notices', '/23/')
 ;

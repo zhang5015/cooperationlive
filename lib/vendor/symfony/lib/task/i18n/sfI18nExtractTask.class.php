@@ -49,30 +49,30 @@ class sfI18nExtractTask extends sfBaseTask
 The [i18n:extract|INFO] task extracts i18n strings from your project files
 for the given application and target culture:
 
-  [./symfony i18n:extract frontend fr|INFO]
+  [./symfony i18n:extract frontend zh|INFO]
 
 By default, the task only displays the number of new and old strings
 it found in the current project.
 
 If you want to display the new strings, use the [--display-new|COMMENT] option:
 
-  [./symfony i18n:extract --display-new frontend fr|INFO]
+  [./symfony i18n:extract --display-new frontend zh|INFO]
 
 To save them in the i18n message catalogue, use the [--auto-save|COMMENT] option:
 
-  [./symfony i18n:extract --auto-save frontend fr|INFO]
+  [./symfony i18n:extract --auto-save frontend zh|INFO]
 
 If you want to display strings that are present in the i18n messages
 catalogue but are not found in the application, use the 
 [--display-old|COMMENT] option:
 
-  [./symfony i18n:extract --display-old frontend fr|INFO]
+  [./symfony i18n:extract --display-old frontend zh|INFO]
 
 To automatically delete old strings, use the [--auto-delete|COMMENT] but
 be careful, especially if you have translations for plugins as they will
 appear as old strings but they are not:
 
-  [./symfony i18n:extract --auto-delete frontend fr|INFO]
+  [./symfony i18n:extract --auto-delete frontend zh|INFO]
 EOF;
   }
 

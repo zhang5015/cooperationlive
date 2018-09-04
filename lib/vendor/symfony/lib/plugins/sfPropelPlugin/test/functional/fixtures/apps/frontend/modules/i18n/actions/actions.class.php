@@ -12,7 +12,7 @@ class i18nActions extends sfActions
 {
   public function executeIndex()
   {
-    $this->getUser()->setCulture('fr');
+    $this->getUser()->setCulture('zh');
 
     $this->movies = MoviePeer::doSelect(new Criteria());
   }

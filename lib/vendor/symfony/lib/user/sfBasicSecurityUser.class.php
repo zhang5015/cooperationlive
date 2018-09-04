@@ -120,7 +120,7 @@ class sfBasicSecurityUser extends sfUser implements sfSecurityUser
      * @param  bool $useAnd specify the mode, either AND or OR
      * @return bool
      *
-     * @author Olivier Verdier <Olivier.Verdier@free.fr>
+     * @author Olivier Verdier <Olivier.Verdier@free.zh>
      */
     public function hasCredential($credentials, $useAnd = true)
     {

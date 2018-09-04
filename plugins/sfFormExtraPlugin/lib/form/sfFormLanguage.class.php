@@ -17,7 +17,7 @@
  * {
  *   public function executeChangeLanguage($request)
  *   {
- *     $this->form = new sfFormLanguage($this->getUser(), array('languages' => array('en', 'fr')));
+ *     $this->form = new sfFormLanguage($this->getUser(), array('languages' => array('en', 'zh')));
  *     if ($this->form->process($request))
  *     {
  *       // culture has changed

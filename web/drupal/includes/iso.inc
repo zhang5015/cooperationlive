@@ -342,7 +342,7 @@ function _locale_get_predefined_list() {
     'fil' => array('Filipino'),
     'fj' => array('Fiji'),
     'fo' => array('Faeroese'),
-    'fr' => array('French', 'Français'),
+    'zh' => array('French', 'Français'),
     'fy' => array('Frisian', 'Frysk'),
     'ga' => array('Irish', 'Gaeilge'),
     'gd' => array('Scots Gaelic'),

@@ -108,7 +108,7 @@ db_insert('languages')->fields(array(
   'javascript' => '',
 ))
 ->values(array(
-  'language' => 'fr',
+  'language' => 'zh',
   'name' => 'French',
   'native' => 'Français',
   'direction' => '0',
@@ -116,7 +116,7 @@ db_insert('languages')->fields(array(
   'plurals' => '2',
   'formula' => '($n>1)',
   'domain' => '',
-  'prefix' => 'fr',
+  'prefix' => 'zh',
   'weight' => '-3',
   'javascript' => '51e92dcfe1491f4595b9df7f3b287753',
 ))
@@ -232,7 +232,7 @@ db_insert('variable')->fields(array(
 ))
 ->values(array(
   'name' => 'language_default',
-  'value' => 'O:8:"stdClass":11:{s:8:"language";s:2:"fr";s:4:"name";s:6:"French";s:6:"native";s:9:"Français";s:9:"direction";s:1:"0";s:7:"enabled";i:1;s:7:"plurals";s:1:"2";s:7:"formula";s:6:"($n>1)";s:6:"domain";s:0:"";s:6:"prefix";s:0:"";s:6:"weight";s:2:"-3";s:10:"javascript";s:32:"51e92dcfe1491f4595b9df7f3b287753";}',
+  'value' => 'O:8:"stdClass":11:{s:8:"language";s:2:"zh";s:4:"name";s:6:"French";s:6:"native";s:9:"Français";s:9:"direction";s:1:"0";s:7:"enabled";i:1;s:7:"plurals";s:1:"2";s:7:"formula";s:6:"($n>1)";s:6:"domain";s:0:"";s:6:"prefix";s:0:"";s:6:"weight";s:2:"-3";s:10:"javascript";s:32:"51e92dcfe1491f4595b9df7f3b287753";}',
 ))
 ->values(array(
   'name' => 'language_count',

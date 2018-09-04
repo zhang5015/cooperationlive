@@ -22,7 +22,7 @@ class sfCooperationNoticeActions extends sfActions
         {
             if ($this->getUser()->isFirstRequest())
             {
-                $culture = $request->getPreferredCulture(array('en', 'fr'));
+                $culture = $request->getPreferredCulture(array('en', 'zh'));
                 $this->getUser()->setCulture($culture);
                 $this->getUser()->isFirstRequest(false);
             }

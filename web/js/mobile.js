@@ -459,7 +459,7 @@ Fai.top._jzProUrl = '';
 Fai.top._portalHost = '';
 Fai.top._homeHost = '';
 //    Fai.top._jzProUrl = 'jz.faisco.com';
-//    Fai.top._portalHost = 'www.faisco.cn';
+//    Fai.top._portalHost = 'www.faisco.zh';
 //    Fai.top._homeHost = 'www.faisco.com';
 
 jm(document)

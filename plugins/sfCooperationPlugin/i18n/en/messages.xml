@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN"
+  "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="zh" target-language="en" datatype="plaintext"
+      original="messages" date="2008-12-14T12:11:22Z"
+      product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>首页</source>
+        <target>Home Page</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>品牌策划</source>
+        <target>Brand Planning</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>媒体资源</source>
+        <target>Media</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>关于我们</source>
+        <target>About Us</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>新闻动态</source>
+        <target>News</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>咖啡屋</source>
+        <target>Cafe House</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>联系我们</source>
+        <target>Contract Us</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>and %count% more...</source>
+        <target>et %count% autres...</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>©2018 版权所有</source>
+        <target>©2018 All rights reserved</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>备案号：辽ICP备18003786号-2</source>
+        <target>Record No.: Liao ICP18003786-2</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>手机版</source>
+        <target>Mobile</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>管理登录</source>
+        <target>Management System</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>返回列表</source>
+        <target>Back to list</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>编辑文章</source>
+        <target>Edit article</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>案例欣赏</source>
+        <target>Case Appreciation</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>一站式影视制作服务</source>
+        <target>Film and television production services</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>从前期策划到执行拍摄，从影片剪辑到三维特效从创意到画面，从文字到配乐策划团队、拍摄团队、后期团队，新视文化掌控所有核心战斗力这一切，只为了让您的影片更具性价比，让您享受一站式影视创作服务。阿我们热爱我们的行业，这是我们的生活方式之一</source>
+        <target>From the early planning to the execution of shooting, from the film clip to three-dimensional effects from the creative to the screen, from text to the soundtrack planning team, shooting team, post-team, the new visual culture control all the core combat effectiveness of all this, only to make your film more cost-effective, so you enjoy a one-stop film and television creation services. Ah, we love our industry, and this is one of our lifestyles.</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>发布新文章</source>
+        <target>Publish A New Article</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>发布于</source>
+        <target>published on</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

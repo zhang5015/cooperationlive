@@ -78,7 +78,7 @@ class Doctrine_Validator_Country extends Doctrine_Validator_Driver
         'ck' =>    'Cook Islands',
         'cl' =>    'Chile',
         'cm' =>    'Cameroon',
-        'cn' =>    'China',
+        'zh' =>    'China',
         'co' =>    'Colombia',
         'cr' =>    'Costa Rica',
         'cs' =>    'Czechoslovakia',

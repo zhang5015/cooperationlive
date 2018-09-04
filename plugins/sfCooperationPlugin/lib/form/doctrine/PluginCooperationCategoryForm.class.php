@@ -18,9 +18,9 @@ abstract class PluginCooperationCategoryForm extends BaseCooperationCategoryForm
     {
         $this->removeFields();
 
-        $this->embedI18n(array('en', 'fr'));
+        $this->embedI18n(array('en', 'zh'));
         $this->widgetSchema->setLabel('en', 'English');
-        $this->widgetSchema->setLabel('fr', 'French');
+        $this->widgetSchema->setLabel('zh', 'French');
     }
 
     protected function removeFields()

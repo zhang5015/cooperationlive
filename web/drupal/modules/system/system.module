@@ -3626,7 +3626,7 @@ function system_date_formats() {
  *   - format: The format string.
  *   - type: The machine-readable name of the date type.
  *   - locales: An array of language codes. This can include both 2 character
- *     language codes like 'en and 'fr' and 5 character language codes like
+ *     language codes like 'en and 'zh' and 5 character language codes like
  *     'en-gb' and 'en-us'.
  *   - locked: A boolean indicating whether or not this date type should be
  *     configurable from the user interface.
@@ -3689,7 +3689,7 @@ function system_date_formats_rebuild() {
  *
  * @param $langcode
  *   (optional) Language code for the current locale. This can be a 2 character
- *   language code like 'en' and 'fr' or a 5 character language code like
+ *   language code like 'en' and 'zh' or a 5 character language code like
  *   'en-gb' and 'en-us'.
  * @param $type
  *   (optional) The date type name.
@@ -3795,7 +3795,7 @@ function _system_date_format_types_build() {
  *   - format: The PHP date format string.
  *   - type: The machine-readable name of the date type the format belongs to.
  *   - locales: An array of language codes. This can include both 2 character
- *     language codes like 'en and 'fr' and 5 character language codes like
+ *     language codes like 'en and 'zh' and 5 character language codes like
  *     'en-gb' and 'en-us'.
  *   - locked: A boolean indicating whether or not this date type should be
  *     configurable from the user interface.

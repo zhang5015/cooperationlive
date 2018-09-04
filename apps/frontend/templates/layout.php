@@ -1,6 +1,6 @@
 <!-- apps/frontend/templates/layout.php -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
 <head>
     <title><?php include_slot('title') ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -55,24 +55,24 @@
 <div class="mx-3">
       <nav class="navbar navbar-default bg-danger" role="navigation">
 	<div class="navbar-header">
-            <a class="navbar-brand" href="#" ><span class="text-white">首页</span></a>
+            <a class="navbar-brand" href="#" ><span class="text-white"><?php echo __('首页') ?></span></a>
 	</div>
 	<div class="navbar-expand">
         <ul class="nav navbar-nav">
-          <li><a class="navbar-brand" href="#" ><span class="text-white">品牌策划</span></a>
+          <li><a class="navbar-brand" href="#" ><span class="text-white"><?php echo __('品牌策划') ?></span></a>
           </li>
           <li>
-            <a class="navbar-brand" href="#"><span class="text-white">媒体资源</span></a>
+            <a class="navbar-brand" href="#"><span class="text-white"><?php echo __('媒体资源') ?></span></a>
           </li>
-          <li><a class="navbar-brand" href="#" ><span class="text-white">关于我们</span></a>
-          </li>
-          <li>
-            <a class="navbar-brand" href="#" ><span class="text-white">新闻动态</span></a>
+          <li><a class="navbar-brand" href="#" ><span class="text-white"><?php echo __('关于我们') ?></span></a>
           </li>
           <li>
-            <a class="navbar-brand" href="#"><span class="text-white">咖啡屋</span></a>
+            <a class="navbar-brand" href="#" ><span class="text-white"><?php echo __('新闻动态') ?></span></a>
           </li>
-          <li><a class="navbar-brand" href="#"><span class="text-white">联系我们</span></a>
+          <li>
+            <a class="navbar-brand" href="#"><span class="text-white"><?php echo __('咖啡屋') ?></span></a>
+          </li>
+          <li><a class="navbar-brand" href="#"><span class="text-white"><?php echo __('联系我们') ?></span></a>
           </li>
         </ul>
   </div>
@@ -81,13 +81,12 @@
     </div>
   <div class="container"><?php echo $sf_content ?></div>
   <div class="w-100 bg-light">
-    <div class="row no-gutters"><div class="col text-center">©2018 版权所有</div></div>
-    <div class="row no-gutters"><div class="col text-center">All Rights Reserved. 备案号：辽ICP备18003786号-2</div></div>
+    <div class="row no-gutters"><div class="col text-center"><?php echo __('©2018 版权所有') ?>&nbsp;<?php echo __('备案号：辽ICP备18003786号-2') ?></div></div>
     <div class="row no-gutters">
       <div class="col text-right">
-      <a href="http://m.cooperationlive.com/" target="_blank">手机版</a>
+      <a href="http://m.cooperationlive.com/" target="_blank"><?php echo __('手机版') ?></a>
       <span>|</span>
-      <a rel="nofollow" hidefocus="true" href="http://manage.cooperationlive.com" onclick='Fai.closeTip("#footerLogin");'>管理登录</a>
+      <a rel="nofollow" hidefocus="true" href="http://manage.cooperationlive.com" onclick='Fai.closeTip("#footerLogin");'><?php echo __('管理登录') ?></a>
       </div>
       <div class="col text-left ml-3">
       <?php include_component('sfCooperationLanguage', 'language') ?>

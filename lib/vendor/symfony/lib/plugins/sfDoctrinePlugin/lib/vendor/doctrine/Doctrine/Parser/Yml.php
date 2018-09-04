@@ -28,7 +28,7 @@
  * @link        www.doctrine-project.org
  * @since       1.0
  * @version     $Revision: 1080 $
- * @author      Jonathan H. Wage <jwage@mac.com>, Thomas Courbon <harthie@yahoo.fr>
+ * @author      Jonathan H. Wage <jwage@mac.com>, Thomas Courbon <harthie@yahoo.zh>
  */
 class Doctrine_Parser_Yml extends Doctrine_Parser
 {

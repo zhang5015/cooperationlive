@@ -20,17 +20,17 @@ function system_default_date_formats() {
   $formats[] = array(
     'type' => 'short',
     'format' => 'd/m/Y - H:i',
-    'locales' => array('en-gb', 'en-hk', 'en-ie', 'el-gr', 'es-es', 'fr-be', 'fr-fr', 'fr-lu', 'it-it', 'nl-be', 'pt-pt'),
+    'locales' => array('en-gb', 'en-hk', 'en-ie', 'el-gr', 'es-es', 'zh-be', 'zh-zh', 'zh-lu', 'it-it', 'nl-be', 'pt-pt'),
   );
   $formats[] = array(
     'type' => 'short',
     'format' => 'Y/m/d - H:i',
-    'locales' => array('en-ca', 'fr-ca', 'no-no', 'sv-se'),
+    'locales' => array('en-ca', 'zh-ca', 'no-no', 'sv-se'),
   );
   $formats[] = array(
     'type' => 'short',
     'format' => 'd.m.Y - H:i',
-    'locales' => array('de-ch', 'de-de', 'de-lu', 'fi-fi', 'fr-ch', 'is-is', 'pl-pl', 'ro-ro', 'ru-ru'),
+    'locales' => array('de-ch', 'de-de', 'de-lu', 'fi-fi', 'zh-ch', 'is-is', 'pl-pl', 'ro-ro', 'ru-ru'),
   );
   $formats[] = array(
     'type' => 'short',
@@ -92,12 +92,12 @@ function system_default_date_formats() {
   $formats[] = array(
     'type' => 'medium',
     'format' => 'D, d/m/Y - H:i',
-    'locales' => array('en-gb', 'en-hk', 'en-ie', 'el-gr', 'es-es', 'fr-be', 'fr-fr', 'fr-lu', 'it-it', 'nl-be', 'pt-pt'),
+    'locales' => array('en-gb', 'en-hk', 'en-ie', 'el-gr', 'es-es', 'zh-be', 'zh-zh', 'zh-lu', 'it-it', 'nl-be', 'pt-pt'),
   );
   $formats[] = array(
     'type' => 'medium',
     'format' => 'D, Y/m/d - H:i',
-    'locales' => array('en-ca', 'fr-ca', 'no-no', 'sv-se'),
+    'locales' => array('en-ca', 'zh-ca', 'no-no', 'sv-se'),
   );
   $formats[] = array(
     'type' => 'medium',

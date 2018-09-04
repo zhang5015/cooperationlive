@@ -153,8 +153,8 @@ function locale_language_from_browser($languages) {
   }
 
   // We should take pristine values from the HTTP headers, but Internet Explorer
-  // from version 7 sends only specific language tags (eg. fr-CA) without the
-  // corresponding generic tag (fr) unless explicitly configured. In that case,
+  // from version 7 sends only specific language tags (eg. zh-CA) without the
+  // corresponding generic tag (zh) unless explicitly configured. In that case,
   // we assume that the lowest value of the specific tags is the value of the
   // generic language to be as close to the HTTP 1.1 spec as possible.
   // See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4 and

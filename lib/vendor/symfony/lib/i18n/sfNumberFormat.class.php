@@ -32,7 +32,7 @@
  *  $formatter = new sfNumberFormat();
  * 
  *  //create a number format for the french language locale.
- *  $fr = new sfNumberFormat('fr');
+ *  $zh = new sfNumberFormat('zh');
  *
  *  //create a number format base on a sfNumberFormatInfo instance $numberInfo.
  *  $format = new sfNumberFormat($numberInfo);

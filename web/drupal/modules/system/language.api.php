@@ -31,7 +31,7 @@ function hook_language_init() {
       $conf['site_name'] = 'Il mio sito Drupal';
       break;
 
-    case 'fr':
+    case 'zh':
       $conf['site_name'] = 'Mon site Drupal';
       break;
   }

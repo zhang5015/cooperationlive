@@ -47,12 +47,11 @@
       </div>
       <div class="panel-footer bg-white border-0">
         <div class="card border-0">
-          <div class="card-title"><strong class="text-success">一站式影视制作服务</strong></div>
-          <div class="card-body"><span class="text-info">从前期策划到执行拍摄，从影片剪辑到三维特效从创意到画面，从文字到配乐策划团队、拍摄团队、后期团队，新视文化掌控所有核心战斗力这一切，只为了让您的影片更具性价比，让您享受一站式影视创作服务。阿我们热爱我们的行业，这是我们的生活方式之一</span>	</div>
+          <div class="card-title"><strong class="text-success"><?php echo __('一站式影视制作服务') ?></strong></div>
+          <div class="card-body"><span class="text-info"><?php echo __('从前期策划到执行拍摄，从影片剪辑到三维特效从创意到画面，从文字到配乐策划团队、拍摄团队、后期团队，新视文化掌控所有核心战斗力这一切，只为了让您的影片更具性价比，让您享受一站式影视创作服务。阿我们热爱我们的行业，这是我们的生活方式之一') ?></span>	</div>
         </div>
       </div>
     </div>
-<!--    --><?php //include_partial('sfCooperationMain/noticeList') ?>
   </td>
   <td class="w-30"><?php include_partial('sfCooperationMain/sample') ?></td>
   <td class="w-40"></td>
@@ -60,7 +59,7 @@
 </tbody>
 </table>
 <div>
-  <div class="row no-gutters"><div class="col text-left text-danger"><strong>案例欣赏</strong></div></div>
+  <div class="row no-gutters"><div class="col text-left text-danger"><strong><?php echo __('案例欣赏') ?></strong></div></div>
   <hr class="bg-danger">
   <?php include_partial('sfCooperationMain/caseList') ?>
 </div>

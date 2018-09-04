@@ -181,17 +181,17 @@ function _locale_test_plural_format_tests() {
     // Test data for French (simpler formula).
     array(
       'count' => 1,
-      'language' => 'fr',
+      'language' => 'zh',
       'expected-result' => 0,
     ),
     array(
       'count' => 0,
-      'language' => 'fr',
+      'language' => 'zh',
       'expected-result' => 1,
     ),
     array(
       'count' => 5,
-      'language' => 'fr',
+      'language' => 'zh',
       'expected-result' => 1,
     ),
 

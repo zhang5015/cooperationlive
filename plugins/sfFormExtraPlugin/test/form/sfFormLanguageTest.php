@@ -34,12 +34,12 @@ catch (RuntimeException $e)
 {
   $t->pass('__construct() throws a RuntimeException if you don\'t pass a "languages" option');
 }
-$form = new sfFormLanguage($user, array('languages' => array('en', 'fr')));
+$form = new sfFormLanguage($user, array('languages' => array('en', 'zh')));
 $t->is($form->getDefault('language'), 'en', '__construct() sets the default language value to the user language');
 $w = $form->getWidgetSchema();
-$t->is($w['language']->getOption('languages'), array('en', 'fr'), '__construct() uses the "languages" option for the select form widget');
+$t->is($w['language']->getOption('languages'), array('en', 'zh'), '__construct() uses the "languages" option for the select form widget');
 $v = $form->getValidatorSchema();
-$t->is($v['language']->getOption('languages'), array('en', 'fr'), '__construct() uses the "languages" option for the validator');
+$t->is($v['language']->getOption('languages'), array('en', 'zh'), '__construct() uses the "languages" option for the validator');
 
 // ->process()
 $t->diag('->process()');
@@ -48,10 +48,10 @@ $t->diag('->process()');
 $t->diag('with CSRF disabled');
 sfForm::disableCSRFProtection();
 
-$form = new sfFormLanguage($user, array('languages' => array('en', 'fr')));
-$request->setParameter('language', 'fr');
+$form = new sfFormLanguage($user, array('languages' => array('en', 'zh')));
+$request->setParameter('language', 'zh');
 $t->is($form->process($request), true, '->process() returns true if the form is valid');
-$t->is($user->getCulture(), 'fr', '->process() changes the user culture');
+$t->is($user->getCulture(), 'zh', '->process() changes the user culture');
 
 $request->setParameter('language', 'es');
 $t->is($form->process($request), false, '->process() returns true if the form is not valid');
@@ -63,7 +63,7 @@ sfToolkit::clearDirectory($sessionPath);
 $t->diag('with CSRF enabled');
 sfForm::enableCSRFProtection('secret');
 
-$form = new sfFormLanguage($user, array('languages' => array('en', 'fr')));
-$request->setParameter('language', 'fr');
+$form = new sfFormLanguage($user, array('languages' => array('en', 'zh')));
+$request->setParameter('language', 'zh');
 $request->setParameter('_csrf_token', $form->getCSRFToken('secret'));
 $t->is($form->process($request), true, '->process() returns true if the form is valid');

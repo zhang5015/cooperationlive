@@ -25,7 +25,7 @@ db_insert('node')->fields(array(
   'nid' => '53',
   'vid' => '63',
   'type' => 'translatable_page',
-  'language' => 'fr',
+  'language' => 'zh',
   'title' => 'First translatable page',
   'uid' => '1',
   'status' => '1',
