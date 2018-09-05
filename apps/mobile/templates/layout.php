@@ -33,46 +33,47 @@
  </head>
  <body>
   <div id="container" class="container-fluid">
-    <hr class="bg-danger m-3"/>
+    <div id="container" class="container-fluid">
+    <div class="row no-gutters border-0 float-right"><div class="mr-3"><?php include_component('sfCooperationLanguage', 'language') ?></div></div>
     <h1 class="text-danger text-center"><strong>COOPERATION LIVE</strong></h1>
     <?php echo $sf_content ?>
     <div class="w-100 mb-5" style="height: 18rem;">
       <div class="bg-danger text-white text-right" onclick="window.scrollTo(0,0);"><h3><strong>top</strong></h3></div>
       <div class="w-100>
-        Copyright <span class="fa fa-copyright"></span> 2018 - 版权所有
-        <strong><a href="//www.cooperationlive.com/" target="_blank">电脑版</a></strong>&nbsp;
-        <strong><a href="//www.cooperationlive.com/" target="_blank">cooperationlive.com</a></strong> All Rights Reserved. 备案号：辽ICP备18003786号-2
+        Copyright <span class="fa fa-copyright"></span> <?php echo __('©2018 版权所有') ?>
+        <strong><a href="//www.cooperationlive.com/" target="_blank"><?php echo __('电脑版') ?></a></strong>&nbsp;
+        <strong><a href="//www.cooperationlive.com/" target="_blank">cooperationlive.com</a></strong> <?php echo __('备案号：辽ICP备18003786号-2') ?>
       </div>
     </div>
   <div class="row fixed-bottom bg-danger py-5">
    <div class="col w-20 text-white align-self-center text-center" id="navItem_1" onclick="calling()">
     <span class="fa fa-phone fa-5x"></span>
     <div class="text-white" id="describeName_1">
-     电话咨询
+     <?php echo __('电话咨询') ?>
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_2" onclick="consultation()">
     <span class="fa fa-envelope fa-5x"></span>
     <div class="text-white" id="describeName_2">
-     信息咨询
+     <?php echo __('信息咨询') ?>
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_3" onclick="openQQ()">
     <span class="fa fa-qq fa-5x"></span>
     <div class="text-white" id="describeName_3">
-     QQ客服
+     <?php echo __('QQ客服') ?>
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_4" onclick="showMap()">
     <span class="fa fa-map-marker fa-5x"></span>
     <div class="text-white" id="describeName_4">
-     在线地图
+     <?php echo __('在线地图') ?>
     </div>
    </div>
    <div class="col w-20 text-white align-self-center text-center" id="navItem_5" onclick="addComment()">
     <span class="fa fa-comment fa-5x"></span>
     <div class="text-white" id="describeName_5">
-     在线留言
+     <?php echo __('在线留言') ?>
     </div>
    </div>
   </div>

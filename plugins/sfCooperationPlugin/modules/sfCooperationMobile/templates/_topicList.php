@@ -1,6 +1,6 @@
 <?php $topicList =  Doctrine_Core::getTable('CooperationArticle')->getTopicList(); ?>
-<div>文章列表</div>
-<?php echo link_to('更多', 'category_article', $topicList) ?>
+<div><?php echo __('文章列表') ?></div>
+<?php echo link_to(__('更多'), 'category_article', $topicList) ?>
 <div class="list-group">
 <?php foreach ($topicList as $i => $article): ?>
   <div class="list-group-item">

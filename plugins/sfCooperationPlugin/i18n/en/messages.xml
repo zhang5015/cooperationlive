@@ -83,6 +83,58 @@
         <source>发布于</source>
         <target>published on</target>
       </trans-unit>
+      <trans-unit id="18">
+        <source>电脑版</source>
+        <target>PC</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>电话咨询</source>
+        <target>Telephone consultation</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>信息咨询</source>
+        <target>Information Consulting</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>QQ客服</source>
+        <target>QQ Customer Service</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>在线地图</source>
+        <target>Online Map</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>在线留言</source>
+        <target>Leave Message</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>留言板</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>图文展示</source>
+        <target>Graphic display</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>列表多图</source>
+        <target>List multiple graphs</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>影视制作</source>
+        <target>Film Production</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>公关活动</source>
+        <target>PR activities</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>文章列表</source>
+        <target>List of articles</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>更多</source>
+        <target>More</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

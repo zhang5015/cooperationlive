@@ -6,7 +6,7 @@ $newArticles = Doctrine_Core::getTable('CooperationArticle')->getNewList();
        data-source="/images/AD0I0amXBhACGAAg-K3PxQUonfG97wIwgAU4tAE!640x640.jpg"/>
 </div>
 
-<?php echo link_to('更多', 'category_article', $newArticles) ?>
+<?php echo link_to(__('更多'), 'category_article', $newArticles) ?>
 
 <?php foreach ($newArticles as $i => $article): ?>
   <div class="row flex-row py-1">

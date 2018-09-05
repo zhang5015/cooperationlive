@@ -1,5 +1,5 @@
 <?php $caseList =  Doctrine_Core::getTable('CooperationArticle')->getCaseList(); ?>
-<div>图文展示</div>
+<div><?php echo __('图文展示') ?></div>
 <div class="row my-1">
 <?php //foreach ($caseList as $i => $case): ?>
 <!--  <div class="col-6">-->

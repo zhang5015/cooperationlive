@@ -28,31 +28,31 @@
     <table class="w-100 border-white mt-3">
      <tr class="text-center">
       <td class="text-center bg-dark " rowspan="2">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"><p class="fa fa-home before fa-5x"></p> <p>网站首页</p></a>
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"><p class="fa fa-home before fa-5x"></p> <p><?php echo __('首页') ?></p></a>
       </td>
       <td class="text-center bg-dark ">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"><p class="fa fa-pencil before fa-3x"></p> <p>品牌策划</p></a>
-      </td>
-      </tr>
-      <tr class="text-center">
-      <td class="text-center bg-dark ">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-file-video-o before fa-3x"></p> <p>媒体资源</p> </a>
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"><p class="fa fa-pencil before fa-3x"></p> <p><?php echo __('品牌策划') ?></p></a>
       </td>
       </tr>
       <tr class="text-center">
       <td class="text-center bg-dark ">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-user before fa-3x"></p> <p>关于我们</p></a>
-      </td>
-      <td class="text-center bg-dark ">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-newspaper-o before fa-3x"></p> <p>新闻动态</p></a>
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-file-video-o before fa-3x"></p> <p><?php echo __('媒体资源') ?></p> </a>
       </td>
       </tr>
       <tr class="text-center">
       <td class="text-center bg-dark ">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-commenting before fa-3x"></p> <p>留言板</p></a>
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-user before fa-3x"></p> <p><?php echo __('关于我们') ?></p></a>
       </td>
       <td class="text-center bg-dark ">
-       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-coffee before fa-3x"></p> <p>咖啡屋</p></a>
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-newspaper-o before fa-3x"></p> <p><?php echo __('新闻动态') ?></p></a>
+      </td>
+      </tr>
+      <tr class="text-center">
+      <td class="text-center bg-dark ">
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-commenting before fa-3x"></p> <p><?php echo __('留言板') ?></p></a>
+      </td>
+      <td class="text-center bg-dark ">
+       <a class="text-white" href="http://m.cooperationlive.com" target="_self"> <p class="fa fa-coffee before fa-3x"></p> <p><?php echo __('咖啡屋') ?></p></a>
       </td>
       </tr>
      </table>
