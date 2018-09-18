@@ -27,24 +27,24 @@ class CooperationUser
     }
   }
  
-  static public function addNoticeToHistory(sfUser $user, CooperationNotice $notice)
+  static public function addArticleToHistory(sfUser $user, CooperationArticle $article)
   {
-    $ids = $user->getAttribute('notice_history', array());
+    $ids = $user->getAttribute('article_history', array());
  
-    if (!in_array($notice->getId(), $ids))
+    if (!in_array($article->getId(), $ids))
     {
-      array_unshift($ids, $notice->getId());
-      $user->setAttribute('notice_history', array_slice($ids, 0, 3));
+      array_unshift($ids, $article->getId());
+      $user->setAttribute('article_history', array_slice($ids, 0, 3));
     }
   }
  
-  static public function getNoticeHistory(sfUser $user)
+  static public function getArticleHistory(sfUser $user)
   {
-    $ids = $user->getAttribute('notice_history', array());
+    $ids = $user->getAttribute('article_history', array());
  
     if (!empty($ids))
     {
-      return Doctrine_Core::getTable('CooperationNotice')
+      return Doctrine_Core::getTable('CooperationArticle')
         ->createQuery('a')
         ->whereIn('a.id', $ids)
         ->execute();
@@ -53,8 +53,8 @@ class CooperationUser
     return array();
   }
  
-  static public function resetNoticeHistory(sfUser $user)
+  static public function resetArticleHistory(sfUser $user)
   {
-    $user->getAttributeHolder()->remove('notice_history');
+    $user->getAttributeHolder()->remove('article_history');
   }
 }

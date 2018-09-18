@@ -7,215 +7,206 @@
  */
 class PluginCooperationArticleTable extends Doctrine_Table
 {
-	public function addActiveArticlesQuery(Doctrine_Query $q = null)
-	{
-		if (is_null($q))
-		{
-			$q = Doctrine_Query::create()
-			->from('CooperationArticle j');
-		}
+  public function addActiveArticlesQuery(Doctrine_Query $q = null)
+  {
+    if (is_null($q)) {
+      $q = Doctrine_Query::create()->from('CooperationArticle j');
+    }
 
-		$alias = $q->getRootAlias();
+    $alias = $q->getRootAlias();
 
-		$q->andWhere($alias . '.is_activated = ?', 1);
-		$q->andWhere($alias . '.is_public = ?', 1);
+    $q->andWhere($alias . '.is_activated = ?', 1);
+    $q->andWhere($alias . '.is_public = ?', 1);
 
-		return $q;
-	}
+    return $q;
+  }
 
-	public function cleanup($days)
-	{
-		$q = $this->createQuery('a')
-		->delete()
-		->andWhere('a.is_activated = ?', 0)
-		->andWhere('a.created_at < ?', date('Y-m-d', time() - 86400 * $days));
+  public function cleanup($days)
+  {
+    $q = $this->createQuery('a')->delete()->andWhere('a.is_activated = ?', 0)->andWhere('a.created_at < ?', date('Y-m-d', time() - 86400 * $days));
 
-		return $q->execute();
-	}
+    return $q->execute();
+  }
 
-	public function countActiveArticles(Doctrine_Query $q = null)
-	{
-		return $this->addActiveArticlesQuery($q)->count();
-	}
+  public function countActiveArticles(Doctrine_Query $q = null)
+  {
+    return $this->addActiveArticlesQuery($q)->count();
+  }
 
-	public function getActiveArticles(Doctrine_Query $q = null)
-	{
-		return $this->addActiveArticlesQuery($q)->execute();
-	}
+  public function getActiveArticles(Doctrine_Query $q = null)
+  {
+    return $this->addActiveArticlesQuery($q)->execute();
+  }
 
-	public function getLatestPost()
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
+  public function getLatestPost()
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		$this->addActiveArticlesQuery($q);
+    $this->addActiveArticlesQuery($q);
 
-		return $q->fetchOne();
-	}
+    return $q->fetchOne();
+  }
 
-	public function countArticleList($categoryId)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
+  public function countArticleList($categoryId)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		$this->addActiveArticlesQuery($q);
+    $this->addActiveArticlesQuery($q);
 
-		$q->andWhere('j.category_id = ?', $categoryId);
+    $q->andWhere('j.category_id = ?', $categoryId);
 
-		return $q->execute()->count();
-	}
-	
-	public function getNewList($max = 3)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
+    return $q->execute()->count();
+  }
 
-		$this->addActiveArticlesQuery($q);
+  public function getNewList($max = 3)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
+
+    $this->addActiveArticlesQuery($q);
 //		$q->leftJoin('j.CooperationCategory c')
 //        ->leftJoin('c.Translation t')
 //        ->andWhere('t.lang = ?', 'en');
 //        ->andWhere('t.slug = ?', $slug);
 
 
-		$q->andWhere('j.category_id = ?', 4);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
+    $q->andWhere('j.category_id = ?', 4);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
 
-		return $q->execute();
-	}
+    return $q->execute();
+  }
 
-	public function getFilmList($max = 4)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
+  public function getFilmList($max = 4)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		$this->addActiveArticlesQuery($q);
-
-
-		$q->andWhere('j.category_id = ?', 1);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
-
-		return $q->execute();
-	}
-
-	public function getBrandList($max = 2)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
-
-		$this->addActiveArticlesQuery($q);
+    $this->addActiveArticlesQuery($q);
 
 
-		$q->andWhere('j.category_id = ?', 2);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
+    $q->andWhere('j.category_id = ?', 1);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
 
-		return $q->execute();
-	}
+    return $q->execute();
+  }
 
-	public function getTopicList($max=5)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
+  public function getBrandList($max = 2)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		$this->addActiveArticlesQuery($q);
-
-
-		$q->andWhere('j.category_id = ?', 3);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
-
-		return $q->execute();
-	}
-	public function getNoticeList($max=4)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
-
-		$this->addActiveArticlesQuery($q);
+    $this->addActiveArticlesQuery($q);
 
 
-		$q->andWhere('j.category_id = ?', 5);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
+    $q->andWhere('j.category_id = ?', 2);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
 
-		return $q->execute();
-	}
+    return $q->execute();
+  }
 
-	public function getCaseList($max=9)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
+  public function getTopicList($max = 5)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		$this->addActiveArticlesQuery($q);
-
-
-		$q->andWhere('j.category_id = ?', 6);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
-
-		return $q->execute();
-	}
-
-	public function getSampleList($max=4)
-	{
-		$q = Doctrine_Query::create()->from('CooperationArticle j');
-
-		$this->addActiveArticlesQuery($q);
+    $this->addActiveArticlesQuery($q);
 
 
-		$q->andWhere('j.category_id = ?', 7);
-		$q->addOrderBy('j.created_at desc ');
-		$q->limit($max);
+    $q->andWhere('j.category_id = ?', 3);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
 
-		return $q->execute();
-	}
+    return $q->execute();
+  }
 
-	public function retrieveActiveArticle(Doctrine_Query $q)
-	{
-		return $this->addActiveArticlesQuery($q)->fetchOne();
-	}
+  public function getNoticeList($max = 4)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-	public function retrieveBackendArticleList(Doctrine_Query $q)
-	{
-		$rootAlias = $q->getRootAlias();
+    $this->addActiveArticlesQuery($q);
 
-		$q->leftJoin($rootAlias . '.CooperationCategory c');
 
-		return $q;
-	}
+    $q->andWhere('j.category_id = ?', 5);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
 
-	static public function getLuceneIndex()
-	{
-		ProjectConfiguration::registerZend();
+    return $q->execute();
+  }
 
-		if (file_exists($index = self::getLuceneIndexFile()))
-		{
-			return Zend_Search_Lucene::open($index);
-		}
+  public function getCaseList($max = 9)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		return Zend_Search_Lucene::create($index);
-	}
+    $this->addActiveArticlesQuery($q);
 
-	static public function getLuceneIndexFile()
-	{
-		return sfConfig::get('sf_data_dir').'/article.'.sfConfig::get('sf_environment').'.index';
-	}
 
-	public function getForLuceneQuery($query)
-	{
-		$hits = self::getLuceneIndex()->find($query);
+    $q->andWhere('j.category_id = ?', 6);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
 
-		$pks = array();
-		foreach ($hits as $hit)
-		{
-			$pks[] = $hit->pk;
-		}
+    return $q->execute();
+  }
 
-		if (empty($pks))
-		{
-			return array();
-		}
+  public function getSampleList($max = 4)
+  {
+    $q = Doctrine_Query::create()->from('CooperationArticle j');
 
-		$q = $this->createQuery('j')
-		->whereIn('j.id', $pks)
-		->limit(20);
+    $this->addActiveArticlesQuery($q);
 
-		$q = $this->addActiveArticlesQuery($q);
 
-		return $q->execute();
-	}
+    $q->andWhere('j.category_id = ?', 7);
+    $q->addOrderBy('j.created_at desc ');
+    $q->limit($max);
+
+    return $q->execute();
+  }
+
+  public function retrieveActiveArticle(Doctrine_Query $q)
+  {
+    return $this->addActiveArticlesQuery($q)->fetchOne();
+  }
+
+  public function retrieveBackendArticleList(Doctrine_Query $q)
+  {
+    $rootAlias = $q->getRootAlias();
+
+    $q->leftJoin($rootAlias . '.CooperationCategory c');
+
+    return $q;
+  }
+
+  static public function getLuceneIndex()
+  {
+    ProjectConfiguration::registerZend();
+
+    if (file_exists($index = self::getLuceneIndexFile())) {
+      return Zend_Search_Lucene::open($index);
+    }
+
+    return Zend_Search_Lucene::create($index);
+  }
+
+  static public function getLuceneIndexFile()
+  {
+    return sfConfig::get('sf_data_dir') . '/article.' . sfConfig::get('sf_environment') . '.index';
+  }
+
+  public function getForLuceneQuery($query)
+  {
+    $hits = self::getLuceneIndex()->find($query);
+
+    $pks = array();
+    foreach ($hits as $hit) {
+      $pks[] = $hit->pk;
+    }
+
+    if (empty($pks)) {
+      return array();
+    }
+
+    $q = $this->createQuery('j')->whereIn('j.id', $pks)->limit(20);
+
+    $q = $this->addActiveArticlesQuery($q);
+
+    return $q->execute();
+  }
 }

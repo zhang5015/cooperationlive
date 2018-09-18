@@ -1,5 +1,4 @@
 <?php
-
 /**
  * article actions.
  *
@@ -11,7 +10,13 @@
 class sfCooperationMainActions extends sfActions
 {
 
-	public function executeIndex(sfWebRequest $request)
+  /**
+   * @param sfWebRequest $request
+   * @throws Doctrine_Table_Exception
+   * @throws sfException
+   * @throws sfStopException
+   */
+  public function executeIndex(sfWebRequest $request)
 	{
 		if (!$request->getParameter('sf_culture'))
 		{
@@ -28,7 +33,6 @@ class sfCooperationMainActions extends sfActions
 
 			$this->redirect('localized_homepage');
 		}
-
 		$this->categories = Doctrine_Core::getTable('CooperationCategory')->getWithArticles();
 	}
 
